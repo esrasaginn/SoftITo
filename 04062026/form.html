@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <label for="İsim"></label>
+        <input type="text" id="isim" required>
+
+        <label for="Soyisim"></label>
+        <input type="text" id="soyisim" required>
+
+        <label for="Telefon Numarası"></label>
+        <input type="text" id="telefonnumarası" required>
+
+        <label for="Fotoğraf"></label>
+        <input type="text" id="fotograf" required>
+
+        <button type="submit">Gönder</button>
+    </form>
+    
+    <script>
+    const form = document.getElementById("bilgi-formu");
+    const sonucDiv = document.getElementById("sonuc");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const isim = document.getElementById("isim").value;
+        const soyisim = document.getElementById("soyisim").value;
+        const tel = document.getElementById("tel").value;
+        const resimInput = document.getElementById("resim");
+
+        document.getElementById("yaz-isim").textContent = isim;
+        document.getElementById("yaz-soyisim").textContent = soyisim;
+        document.getElementById("yaz-tel").textContent = tel;
+
+        const resimDosyasi = resimInput.files[0];
+        const imgElement = document.getElementById("onizleme-resim");
+
+        if (resimDosyasi) {
+            const reader = new FileReader();
+
+            reader.onload = function (olay) {
+                imgElement.src = olay.target.result;
+                imgElement.style.display = "block";
+            };
+
+            reader.readAsDataURL(resimDosyasi);
+        } else {
+            imgElement.style.display = "none";
+        }
+
+        sonucDiv.style.display = "block";
+    });
+    </script>
+</body>
+</html>
