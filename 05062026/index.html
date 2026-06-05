@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tailwind CSS Ders 2: Temeller</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .classic-btn {
+            background-color: brown;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: none;
+            cursol: pointer;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 p-8">
+    <div class="msx-w-xl mx-auto bg-white p-6 rounded shadow">
+        <h1 class="text-xl font-bold mb-4">Modern CSS & Tailwind CSS</h1>
+
+        <div class="mb-6">
+            <h2 class="font-semibold mb-2">1. Kladik CSS vs Tailwind</h2>
+            <div class="flex gap-4">
+                <button class="classic-btn">Klasik CSS Buton</button>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">
+                    Tailwind CSS Buton
+                </button>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="font-semibold mb-2">2. Temel Sınıflar</h2>
+            <div class="mb-6">
+                <p class="text-lg text-red-500 font-bold">Kırmızı Büyük Metin (text-lg text-red-500 font-bold)</p>
+
+                <div class="bg-yellow-100 border p-4 rounded text-sm">
+                    Sarı Kutu (bg-yellow-100 border p-4 rounded)
+                </div>
+
+                <div class="bg-slate-800 text-white p-4 rounded text-center hover:bg-slate-700">
+                    Hover Deneme (hover:bg-slate-700)
+                </div>
+            </div>
+            <div class="mt-8 border-t pt-6 flex flex-wrap gap-3 text-xs">
+                <a href="demo.html" target="_blank" class="bg-indigo-600 text-white font-bold- px-4 py-2 rounded hover:bg-indigo-750 transition-color"> Landing Page Demosu</a>
+                <a href="flex.html" target="_blank" class="bg-pink-600 text-white font-bold- px-4 py-2 rounded hover:bg-indigo-750 transition-color"> Flexbox Gösterimi</a>
+                <a href="form.html" target="_blank" class="bg-red-600 text-white font-bold- px-4 py-2 rounded hover:bg-indigo-750 transition-color"> Form Gösterimi</a>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

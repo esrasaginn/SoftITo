@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 p-8 flex flex-col items-center">
+    <div class="max-w-xl w-full bg-white p-6 rounded shadow">
+        <h1 class="text-xl font-bold mb-4">Tailwind Flexbox</h1>
+        <div class="flex flex-col gap-4">
+            <div>
+                <span class="text-xs text-slate-400 block mb-1">flex gap-4(yanyana yerleşim)</span>
+                <div class="flex gap-4 bg-slate-55 p-3 border rounded">
+                    <div class="bg-blue-500 text-white p-3 rounded"> Kutu1</div>
+                    <div class="bg-yellow-500 text-white p-3 rounded"> Kutu2</div>
+                    <div class="bg-red-500 text-white p-3 rounded"> Kutu3</div>
+                </div>
+            </div>
+            <div>
+                <span class="text-xs text-slate-500 block mb-1">Flex (iki uca Yaslama)</span>
+                <div class="flex justify-between items-center bg-slate-55 border rounded">
+                    <span class="font-semibold text-slate-700">Sol</span>
+                    <button class="bg-slate-800 text-white px-2 py-2 rounded text-sm">Sağ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
