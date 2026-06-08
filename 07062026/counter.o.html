@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div id="box" class="bg-white p-8 rounded-xl shadow text-center transition-color duration-300">
+        <h1 class="text-4xl font-bold text-red-300 my-4 mb-2">Canlı Sayaç</h1>
+        <div id="number" class="text-4xl text-blue-300 my-4">0</div>
+        <div class="flex gap-4 justify-center">
+            <button onclick="change(-1)" class="bg-red-500 text-white px-4 rounded font-bold">-</button>
+            <button onclick="change(1)" class="bg-green-500 text-white px-4 rounded font-bold">+</button>
+        </div>
+    </div>
+    <script>
+        let count = 0;
+        const box = document.getElementById('box');
+        const number = document.getElementById('number');
+       
+        function change(e) {
+    count += e;
+    number.textContent = count;
+
+    // Sabit olan, hiç değişmeyen tasarım sınıflarımız:
+    const baseClass = "p-8 rounded-xl shadow text-center duration-300 transition-colors";
+    let bgClass = "bg-white"; // Sayaç 0 ise beyaz kalacak
+
+    if (count > 0) {
+        // Sayıyı 100 ile çarpıp derinlik buluyoruz. En fazla 900, en az 100 olabilir.
+        let depth = Math.min(count * 100, 900); 
+        bgClass = `bg-green-${depth}`;
+    } else if (count < 0) {
+        // Eksilerde de yönü artıya çevirmek için Math.abs (mutlak değer) kullanıyoruz.
+        let depth = Math.min(Math.abs(count) * 100, 900);
+        bgClass = `bg-red-${depth}`;
+    }
+
+    // Sabit sınıflar ile dinamik renk sınıfını birleştirip kutuya uyguluyoruz
+    box.className = `${baseClass} ${bgClass}`;
+}
+
+    </script>
+</body>
+</html>
