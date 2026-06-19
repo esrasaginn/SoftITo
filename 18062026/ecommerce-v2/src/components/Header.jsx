@@ -1,3 +1,7 @@
+import { useContext } from "react";
+import { UserContext } from "../context/UserContext";
+import { useTheme } from "../hooks/useTheme";
+
 export default function Header({
   searchInput,
   setSearchInput,
@@ -5,6 +9,9 @@ export default function Header({
   setSelectedCategory,
   setSearchQuery,
   setView,
+  onLoginClick,
+  onCartClick,
+  cartCount,
 }) {
   const handleLogoClick = () => {
     setView("home");
@@ -12,6 +19,8 @@ export default function Header({
     setSearchQuery("");
     setSearchInput("");
   };
+  const { user, logout } = useContext(UserContext);
+  const {theme,toggleTheme}=useTheme()
   return (
     <>
       <header className="header">
@@ -24,21 +33,34 @@ export default function Header({
               type="text"
               placeholder="Ürün,Kategori veya Marka Ara..."
               className="search-input"
-              onChange={(e)=>setSearchInput(e.target.value)}
+              onChange={(e) => setSearchInput(e.target.value)}
               value={searchInput}
             />
-            <button type="submit" className="search-button">Ara</button>
+            <button type="submit" className="search-button">
+              Ara
+            </button>
           </form>
           <div className="header-actions">
-            <div className="action-item" onClick={()=>setView('addProduct')}>
+            <div className="header-item" onClick={toggleTheme}>
+              <span>{theme==='light'?'🌙':'️️️☀️'}</span>
+            </div>
+            <div className="action-item" onClick={() => setView("addProduct")}>
               <span>Yeni Ürün</span>
             </div>
-            <div className="action-item">
-              <span>Giriş Yap</span>
-            </div>
-            <div className="action-item">
+
+            {user ? (
+              <div className="action-item" onClick={logout}>
+                <span>Çıkış Yap</span>
+              </div>
+            ) : (
+              <div className="action-item" onClick={onLoginClick}>
+                <span>Giriş Yap</span>
+              </div>
+            )}
+
+            <div className="action-item" onClick={onCartClick}>
               <span>Sepetim</span>
-              <span className="badge">0</span>
+              <span className="badge">{cartCount}</span>
             </div>
           </div>
         </div>

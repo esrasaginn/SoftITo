@@ -20,7 +20,7 @@ export default function CategoriesList({
             <div
               key={cat.name}
               className="category-card"
-              onClick={onCategoryClick(cat.name)}
+              onClick={()=>onCategoryClick(cat.name)}
             >
               <div className="category-icon-box">
                 <span>{cat.name.substring(0,1)}</span>
