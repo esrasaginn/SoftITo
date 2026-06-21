@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen p-6 md:p-12">
+
+    <main class="max-w-4xl mx-auto space-y-8">
+        <header class="text-center border-b pb-6">
+            <h1 class="text-3xl font-bold text-indigo-600">JavaScript</h1>
+            <p class="text-slate-500 mt-2 text-sm">Bugüne kadar öğrendiğimiz tüm JavaScript pratikleri.</p>
+        </header>
+
+        <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+            <h2 class="text-lg font-bold text-slate-900 mb-3">1. Let & Const Kapsam Yönetimi</h2>
+            <div class="flex flex-wrap gap-3 mb-4">
+                <button id="btn-let" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm font-medium transition">Let Skorunu Arttır</button>
+                <button id="btn-const" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded text-sm font-medium transition">Const Yeniden Atama Dene</button>
+                <button id="btn-array-push" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded text-sm font-medium transition">Const Diziye Eleman Ekle</button>
+            </div>
+
+            <div class="bg-slate-100 p-3 rounded text-xs font-mono space-y-1">
+                <div id="let-display">Skor: 10</div>
+                <div id="const-display">Const Durumu: Hata tetiklenmedi.</div>
+                <div id="array-display">Dizi İçeriği: ["kodlama"]</div>
+            </div>
+        </section>
+
+
+
+        <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+            <h2 class="text-lg font-bold text-slate-900 mb-3">2. Arrow Functions & 'this' Bağlamı (Canlı Sayaç)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <div class="bg-red-50 p-4 rounded-lg border border-red-100">
+                    <button id="btn-classic" class="w-full bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded text-sm font-medium transition">Klasik Sayaç Başlat</button>
+                    <div class="text-center text-xl font-bold text-red-700 mt-2" id="classic-display">0 (NaN Hatası)</div>
+                </div>
+                <div class="bg-emerald-50 p-4 rounded-lg border border-emerald-100">
+                    <button id="btn-arrow" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded text-sm font-medium transition">Arrow Sayaç Başlat</button>
+                    <div class="text-center text-xl font-bold text-emerald-700 mt-2" id="arrow-display-num">0</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+            <h2 class="text-lg font-bold text-slate-900 mb-3">3. Modern Nesne (Object) Özellikleri</h2>
+            <div class="flex gap-3 mb-4 items-end">
+                <div class="flex-1">
+                    <label class="block text-xs font-semibold text-slate-500 mb-1">Marka</label>
+                    <input type="text" id="input-brand" value="Apple" class="w-full border p-2 rounded text-sm focus:outline-indigo-500">
+                </div>
+                <div class="flex-1">
+                    <label class="block text-xs font-semibold text-slate-500 mb-1">Fiyat (TL)</label>
+                    <input type="number" id="input-price" value="50000" class="w-full border p-2 rounded text-sm focus:outline-indigo-500">
+                </div>
+                <button id="btn-object" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded text-sm font-medium transition h-[38px]">Nesne Üret</button>
+            </div>
+            <div id="object-display" class="bg-slate-100 p-3 rounded text-xs font-mono">Cihaz bilgisi henüz üretilmedi.</div>
+        </section>
+
+        <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+            <h2 class="text-lg font-bold text-slate-900 mb-3">4. Spread Operatörü (...) ile Kopyalama & Birleştirme</h2>
+            <div class="flex flex-wrap gap-3 mb-4">
+                <button id="btn-spread-copy" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm font-medium transition">Güvenli Dizi Kopyala (Spread)</button>
+                <button id="btn-spread-merge" class="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded text-sm font-medium transition">Ayar Nesnelerini Birleştir</button>
+            </div>
+            <div id="spread-display" class="bg-slate-100 p-3 rounded text-xs font-mono space-y-1">
+                <div>Dizi / Nesne işlem durumu bekleniyor...</div>
+            </div>
+        </section>
+
+        <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+            <h2 class="text-lg font-bold text-slate-900 mb-3">5. Rest Operatörü ve Yapı Sökme (Destructuring)</h2>
+            <div class="flex flex-wrap gap-3 mb-4">
+                <button id="btn-rest-sum" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm font-medium transition">Dinamik Sayıları Topla (10, 20, 30, 40)</button>
+                <button id="btn-destruct" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded text-sm font-medium transition">Diziyi Parçala (Destructuring)</button>
+            </div>
+            <div id="rest-display" class="bg-slate-100 p-3 rounded text-xs font-mono space-y-1">
+                <div>İşlem sonucu bekleniyor...</div>
+            </div>
+        </section>
+
+        <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+            <h2 class="text-lg font-bold text-slate-900 mb-3">6. Gelişmiş Dizi Metotları (map & filter)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-500 mb-1">Ürün Ara</label>
+                    <input type="text" id="search-product" placeholder="örn: iPhone..." class="w-full border p-2 rounded text-sm focus:outline-indigo-500">
+                </div>
+
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-500 mb-1">Maksimum Fiyat</label>
+                    <input type="number" id="price-limit" value="80000" class="w-full border p-2 rounded text-sm focus:outline-indigo-500">
+                </div>
+
+
+
+            </div>
+            <button id="btn-filter" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded text-sm font-medium transition mb-4">Filtrele ve Listele</button>
+            
+
+            <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                </div>
+        </section>
+
+    </main>
+
+    <script>
+ 
+        let skor = 10;
+        const hobiler = ['kodlama'];
+
+
+        document.getElementById('btn-let').addEventListener('click', () => {
+            skor += 5;
+            document.getElementById('let-display').innerText = `Let Skor: ${skor}`;
+        });
+
+
+        document.getElementById('btn-const').addEventListener('click', () => {
+            try {
+                const limit = 100;
+                limit = 200; 
+            } catch (err) {
+                document.getElementById('const-display').innerText = `Const Durumu (Hata Yakalandı): ${err.message}`;
+            }
+        });
+
+        document.getElementById('btn-array-push').addEventListener('click', () => {
+            hobiler.push('Grafik');
+
+            document.getElementById('array-display').innerText = `Dizi İçeriği: ${JSON.stringify(hobiler)}`;
+        });
+
+
+
+
+        let classicInterval = null;
+        let arrowInterval = null;
+
+
+
+
+        document.getElementById('btn-classic').addEventListener('click', () => {
+            if (classicInterval) clearInterval(classicInterval);
+
+            const sayacObj = {
+                sayi: 0,
+
+                baslat() {
+
+                    classicInterval = setInterval(function() {
+                        
+                        this.sayi = (this.sayi || 0) + 1;
+                        document.getElementById('classic-display').innerText = this.sayi;
+                    }, 1000);
+
+
+                }
+
+
+            };
+            sayacObj.baslat();
+
+            
+        });
+
+
+
+        document.getElementById('btn-arrow').addEventListener('click', () => {
+            if (arrowInterval) clearInterval(arrowInterval);
+            const sayacObj = {
+                sayi: 0,
+
+                baslat() {
+
+                    arrowInterval = setInterval(() => {
+                       
+                        this.sayi++;
+                        document.getElementById('arrow-display-num').innerText = this.sayi;
+                    }, 1000);
+                }
+            };
+            sayacObj.baslat();
+        });
+
+
+ 
+
+
+        document.getElementById('btn-object').addEventListener('click', () => {
+            const marka = document.getElementById('input-brand').value;
+            const fiyat = document.getElementById('input-price').value;
+
+            
+            const cihaz = {
+                marka,
+                fiyat,
+                bilgi() {
+                    return `${this.marka} markalı cihaz, ${this.fiyat} TL fiyatındadır.`;
+                }
+            };
+            document.getElementById('object-display').innerText = cihaz.bilgi();
+        });
+
+
+
+        document.getElementById('btn-spread-copy').addEventListener('click', () => {
+            const meyveler = ['Elma', 'Armut'];
+            const güvenliKopya = [...meyveler, 'Kiraz']; 
+            document.getElementById('spread-display').innerHTML = `
+                <div>Orijinal Dizi: ${JSON.stringify(meyveler)}</div>
+                <div class="text-emerald-600 font-bold">Spread ile Yeni Dizi: ${JSON.stringify(güvenliKopya)}</div>
+            `;
+        });
+
+        document.getElementById('btn-spread-merge').addEventListener('click', () => {
+            const varsayilanAyarlar = { tema: 'koyu', dil: 'TR' };
+            const kullaniciAyarlari = { dil: 'EN' };
+            const sonAyarlar = { ...varsayilanAyarlar, ...kullaniciAyarlari }; 
+            document.getElementById('spread-display').innerHTML = `<div>Birleşen Nesne: ${JSON.stringify(sonAyarlar)} (Dil 'EN' olarak ezildi)</div>`;
+        });
+
+
+        
+        document.getElementById('btn-rest-sum').addEventListener('click', () => {
+           
+
+            const topla = (...parametreler) => parametreler.reduce((a, b) => a + b, 0);
+            const sonuc = topla(10, 20, 30, 40);
+            document.getElementById('rest-display').innerHTML = `<div>Rest Operatörü Toplam Sonucu: ${sonuc}</div>`;
+        });
+
+        document.getElementById('btn-destruct').addEventListener('click', () => {
+            const öğrenciVerisi = ['Esra', 'Front-10', 90, 95, 100];
+            
+            const [ad, sinif, ...notlar] = öğrenciVerisi;
+            document.getElementById('rest-display').innerHTML = `
+                <div>İsim: <b>${ad}</b>, Sınıf: <b>${sinif}</b></div>
+                <div class="text-indigo-600">Rest ile Kalan Notlar Dizisi: ${JSON.stringify(notlar)}</div>
+            `;
+        });
+
+
+      
+
+
+        const urunlerHavuzu = [
+            { id: 1, ad: 'iPhone 17 Pro Max', fiyat: 110000 },
+            { id: 2, ad: 'iPhone 16 Pro Max', fiyat: 75000 },
+            { id: 3, ad: 'iPhone 15 Pro Max', fiyat: 47500 },
+            { id: 4, ad: 'iPhone 14 Pro Max', fiyat: 39000 },
+            { id: 5, ad: 'iPhone 13 Pro Max', fiyat: 28000 },
+        ];
+
+        const urunleriListele = () => {
+            const aramaKelimesi = document.getElementById('search-product').value.toLowerCase();
+            const fiyatLimiti = parseFloat(document.getElementById('price-limit').value) || 999999;
+
+            
+            const filtrelenmisUrunler = urunlerHavuzu.filter(urun => {
+                return urun.ad.toLowerCase().includes(aramaKelimesi) && urun.fiyat <= fiyatLimiti;
+            });
+
+           
+            const kartlarHTML = filtrelenmisUrunler.map(urun => `
+                <div class="bg-slate-100 p-3 rounded-lg border border-slate-200 flex justify-between items-center">
+                    <span class="font-medium text-sm">${urun.ad}</span>
+                    <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded font-bold">${urun.fiyat.toLocaleString()} TL</span>
+                </div>
+            `).join(''); 
+
+
+
+            document.getElementById('products-grid').innerHTML = kartlarHTML || '<div class="text-xs text-red-500 col-span-2">Kriterlere uygun ürün bulunamadı.</div>';
+        };
+
+       
+        document.getElementById('btn-filter').addEventListener('click', urunleriListele);
+        
+        
+        urunleriListele();
+
+
+
+
+    </script>
+</body>
+</html>
