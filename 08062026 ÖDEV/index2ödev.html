@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- HTML5 belgesi olduğunu belirtir -->
+
+<html lang="tr"> <!-- dil olarak Türkçe'yi belirtir -->
+
+<head><!-- belge başlığı ve meta bilgilerini içeren bölüm -->
+
+    <meta charset="UTF-8"><!-- Türkçe karakterlerin doğru görüntülenmesini sağlar -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- mobil cihazlarda düzgün görüntülenmesi için viewport ayarlarını yapar -->
+    <!-- width=device-width: cihazın genişliğine göre ölçekleme yapar, initial-scale=1.0: başlangıçta ölçek 1 olarak ayarlanır -->
+
+    <title>Document</title><!-- tarayıcı sekmesinde görünen başlık -->
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"><!-- Tailwind CSS kütüphanesini projeye dahil eder -->
+
+</head><!-- belge başlığı ve meta bilgilerini içeren bölümün sonu -->
+
+<body class="bg-indigo-50 text-gray-800 font-sans min-h-screen p-8 flex flex-col items-center justify-center gap-6"><!-- belge içeriği, Tailwind CSS sınıflarıyla stil verilmiş -->
+    <!-- bg-indigo-50: açık indigo arka plan, text-gray-800: koyu gri metin, font-sans: sans-serif yazı tipi, min-h-screen: minimum ekran yüksekliği, p-8: 2rem iç boşluk, flex flex-col: esnek kutu düzeni ve dikey hizalama, items-center: yatayda ortala, justify-center: dikeyde ortala, gap-6: elemanlar arasında 1.5rem boşluk --> 
+
+    <div class="text-center max-w-md"><!-- metin ortalanmış ve maksimum genişliği orta boyutta sınırlanmış bir block -->
+        <!-- text-center: metni ortalar, max-w-md: maksimum genişliği orta boy(medium) olarak ayarlar-->
+
+        <div><!-- başlık ve açıklama içeren bölüm -->
+
+            <h1 class="text-xl font-bold text-gray-900 mb-2">Fiyatlandırma Kartı Flex Column</h1><!-- text-xl: ekstra büyük metin, font-bold: kalın yazı tipi, text-gray-900: çok koyu gri metin, mb-2: 2 birim alt boşluk -->
+
+            <p class="text-xs text-gray-500">Kart Elemanları üst üste sıralamak için flex-col, öne çıkan rozeri en üstte göstermek için ise order-first sınıfı kullanacağız</p><!-- text-xs: ekstra küçük metin, text-gray-500: orta gri metin -->
+
+        </div><!-- başlık ve açıklama içeren bölümün sonu -->
+
+        <div class="w-full max-w-xs bg-white border-gray-200 rounded-2xl p-6 flex flex-col gap-4 shadow-sm"><!-- w-full:genişliği tam, max-w-xs:maksimum genişliği küçük(xs), bg-white:beyaz arka plan, border-gray-200:gri sınır, rounded-2xl: 2xl yuvarlatılmış köşeler, p-6: 6 birim iç boşluk, flex flex-col: esnek kutu düzeni, gap-4: elemanlar arasında 4 birim boşluk, shadow-sm: hafif gölge -->
+
+        <div>
+            <h2 class="text-sm font-bold text-gray-800 uppercase tracking-wider">Standart Paket</h2><!-- text-sm: küçük metin, font-bold: kalın yazı tipi, text-gray-800: koyu gri metin, uppercase: tüm harfleri büyük yapar, tracking-wider: harfler arasında geniş boşluk -->
+
+            <p class="text-2xl font-extrabold text-gray-900 mt-1">99 TL / Ay</p><!-- text-2xl: ekstra büyük metin, font-extrabold: ekstra kalın yazı tipi, text-gray-900: çok koyu gri metin, mt-1: 1 birimüst boşluk -->
+        </div>
+
+        <div class="px-2.5 py-1 bg-indigo-100 border border-indigo-200 text-indigo-700 text-[9px] font-extrabold rounded-full self-start order-first uppercase tracking-wide"><!-- px-2.5: yatayda 0.625rem iç boşluk, py-1: dikeyde 1 birim iç boşluk, bg-indigo-100: açık indigo arka plan, border border-indigo-200: indigo renkli sınır, text-indigo-700: koyu indigo metin, text-[9px]: 9px özel boyutta metin, font-extrabold: ekstra kalın yazı tipi, rounded-full: tam yuvarlatılmış köşeler, self-start: kendi başlangıcına hizala, order-first: bu elemanı diğerlerinden önce göster, uppercase: tüm harfleri büyük yapar, tracking-wide: harfler arasında geniş boşluk -->
+            En Popüler Paket(order-first)
+        </div>
+
+        <div class="text-xs text-gray-500 space-y-2 border border-gray-100 pt-4"><!-- text-xs: ekstra küçük metin, text-gray-500: orta gri metin, space-y-2: dikeyde elemanlar arasında 2 birim boşluk, border border-gray-100: çok açık gri sınır, pt-4: 4 birim üst boşluk -->
+            <p>1 Sınırız Proje</p>
+            <p>25 tane kişisel proje</p>
+            <p>Grup Çalışması</p>
+        </div>
+
+        <button class="w-full py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-xs font-semibold transition-color mt-2">Satın Al</button><!-- w-full: genişliği tam, py-2: dikeyde 2 birim iç boşluk, bg-indigo-600: indigo arka plan, hover:bg-indigo-700: üzerine gelindiğinde daha koyu indigo arka plan, text-white: beyaz metin, rounded-lg: büyük yuvarlatılmış köşeler, text-xs: ekstra küçük metin, font-semibold: yarı kalın yazı tipi, transition-color: renk geçişi efekti, mt-2: 2 birim üst boşluk -->
+    </div>
+    </div>
+</body>
+</html>

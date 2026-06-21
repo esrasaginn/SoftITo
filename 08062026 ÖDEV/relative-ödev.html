@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Relative Örnekleri</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+
+    <div class="bg-white p-8 rounded-xl shadow-sm max-w-2xl w-full space-y-12">
+        
+        <div class="border-b pb-2">
+            <h1 class="text-xl font-bold text-gray-800">Relative Örnekleri</h1>
+        </div>
+
+        <div class="space-y-2">
+            <div class="border border border-gray-300 p-2 bg-gray-50 rounded">
+                <div class="w-48 bg-blue-500 text-white p-2 rounded text-center text-sm">
+                    relative yok
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-2">
+            <div class="border border border-gray-300 p-2 bg-gray-50 rounded">
+                <div class="relative bottom-5 -right-10 w-48 bg-emerald-500 text-white p-2 rounded text-center text-sm shadow-md">
+                    relative bottom-5 -right-10
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-2">
+            <div class="border border border-gray-300 p-2 bg-gray-50 rounded mt-6">
+                <div class="relative top-6 left-4 w-48 bg-amber-500 text-white p-2 rounded text-center text-sm shadow-md">
+                    relative top-6 left-4
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-2">
+            <div class="border border border-gray-300 p-2 bg-gray-50 rounded">
+                <div class="relative left-[155px] w-48 bg-rose-500 text-white p-2 rounded text-center text-sm shadow-md">
+                    relative left-[155px]
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
