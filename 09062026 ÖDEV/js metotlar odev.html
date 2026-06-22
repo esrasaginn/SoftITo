@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body style="font-family: sans-serif; padding: 20px; max-width: 600px;">
+
+    <h1>JavaScript Metotları</h1>
+
+    <div style="background: #333; color: #fff; padding: 10px; font-family: monospace; border-radius: 10px; margin-bottom: 20px;">
+        <span id="konsol-ekrani">
+            sayılar = [1, 2, 3, 4, 5]<br>
+            kelimeler = ["elma", "armut", "muz"]<br>
+        </span>
+    </div>
+
+    <ul>
+        <li style="margin-bottom: 8px;"><button onclick="calistirMap()">map()</button> - Karesini Al</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirFind()">find()</button> - 3'ten büyük ilk sayı</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirReduce()">reduce()</button> - Sayıları topla</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirFilter()">filter()</button> - Çift sayıları seç</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirSome()">some()</button> - 5'ten büyük var mı?</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirEvery()">every()</button> - Hepsi pozitif mi?</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirPush()">push()</button> - Sona 6 ekle</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirIncludes()">includes()</button> - 'muz' var mi?</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirToLowerCase()">toLowerCase()</button> - Küçük harf yap</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirToUpperCase()">toUpperCase()</button> - Büyük harf yap</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirTrim()">trim()</button> - Boşlukları temizle</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirSplit()">split()</button> - Kelimelere böl</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirJoin()">join()</button> - Tireyle birleştir</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirParseFloat()">parseFloat()</button> - Ondalıklı sayıyı ayıkla</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirSetInterval()">setInterval() Başlat</button> - Zamanlayıcı başlat</li>
+        <li style="margin-bottom: 8px;"><button onclick="calistirClearInterval()">clearInterval() Durdur</button> - Zamanlayıcı durdur</li>
+    </ul>
+
+
+    <script>
+        var sayilar = [1, 2, 3, 4, 5];
+        var kelimeler = ["elma", "armut", "muz"];
+        var kirliMetin = "   Deneme bir ki!   ";
+        var zamanlayiciID = null;
+        var sayac = 1;
+
+        function ekranaYaz(mesaj) {
+            document.getElementById("konsol-ekrani").innerText = mesaj;
+        }
+
+        function calistirMap() {
+            var yeniDizi = sayilar.map(function(x) { return x * x; });
+            ekranaYaz("map() -> [" + yeniDizi.join(", ") + "]");
+        }
+
+        function calistirFind() {
+            var sonuc = sayilar.find(function(x) { return x > 3; });
+            ekranaYaz("find() -> " + sonuc);
+        }
+
+        function calistirReduce() {
+            var toplam = sayilar.reduce(function(acc, x) { return acc + x; }, 0);
+            ekranaYaz("reduce() -> Toplam: " + toplam);
+        }
+
+        function calistirFilter() {
+            var ciftler = sayilar.filter(function(x) { return x % 2 === 0; });
+            ekranaYaz("filter() -> [" + ciftler.join(", ") + "]");
+        }
+
+        function calistirSome() {
+            var varMi = sayilar.some(function(x) { return x > 5; });
+            ekranaYaz("some() -> " + varMi);
+        }
+
+        function calistirEvery() {
+            var hepsiMi = sayilar.every(function(x) { return x > 0; });
+            ekranaYaz("every() -> " + hepsiMi);
+        }
+
+        function calistirPush() {
+            sayilar.push(6);
+            ekranaYaz("push() -> Guncel Dizi: [" + sayilar.join(", ") + "]");
+        }
+
+        function calistirIncludes() {
+            var kontrol = kelimeler.includes("muz");
+            ekranaYaz("includes() -> " + kontrol);
+        }
+
+        function calistirToLowerCase() {
+            ekranaYaz("toLowerCase() -> " + kirliMetin.toLowerCase());
+        }
+
+        function calistirToUpperCase() {
+            ekranaYaz("toUpperCase() -> " + kirliMetin.toUpperCase());
+        }
+
+        function calistirTrim() {
+            ekranaYaz("trim() -> '" + kirliMetin.trim() + "'");
+        }
+
+        function calistirSplit() {
+            var parcalar = kirliMetin.trim().split(" ");
+            ekranaYaz("split() -> [" + parcalar.join(" - ") + "]");
+        }
+
+        function calistirJoin() {
+            var birlesik = kelimeler.join("-");
+            ekranaYaz("join() -> " + birlesik);
+        }
+
+        function calistirParseFloat() {
+            var sayi = parseFloat("45.99 TL");
+            ekranaYaz("parseFloat() -> " + sayi);
+        }
+
+        function calistirSetInterval() {
+            if(zamanlayiciID !== null) return; 
+            sayac = 1;
+            ekranaYaz("Zamanlayıcı başladı...");
+            zamanlayiciID = setInterval(function() {
+                ekranaYaz("setInterval() -> Sayac: " + sayac);
+                sayac++;
+            }, 1000);
+        }
+
+        function calistirClearInterval() {
+            if(zamanlayiciID !== null) {
+                clearInterval(zamanlayiciID);
+                zamanlayiciID = null;
+                ekranaYaz("clearInterval() -> Zamanlayıcı durduruldu.");
+            } else {
+                ekranaYaz("Çalışan bir zamanlayıcı yok!");
+            }
+        }
+    </script>
+</body>
+</html>
