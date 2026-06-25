@@ -1,20 +1,71 @@
-import React from 'react'
+import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  incrementStock,
+  decrementStock,
+  addStockMovement,
+} from "../store/stockSlice";
 
 export default function Stock() {
+  const dispatch = useDispatch();
+  const stockItems = useSelector((state) => state.stock.items);
+  const movements = useSelector((state) => state.stock.movements);
+
+  // Local Form State
+  const [selectedSku, setSelectedSku] = useState(stockItems[0]?.sku || "");
+  const [movementType, setMovementType] = useState("Giriş");
+  const [quantity, setQuantity] = useState(5);
+  const [note, setNote] = useState("");
+
+  // Dynamic Warehouse capacity calculations
+  const qtyDepoA = stockItems
+    .filter((i) => i.location.includes("Depo-A"))
+    .reduce((sum, i) => sum + i.quantity, 0);
+  const qtyDepoB = stockItems
+    .filter((i) => i.location.includes("Depo-B"))
+    .reduce((sum, i) => sum + i.quantity, 0);
+
+  // Capacity limits (Depo-A: 100 items, Depo-B: 30 items)
+  const capacityA = Math.min(100, Math.round((qtyDepoA / 100) * 100));
+  const capacityB = Math.min(100, Math.round((qtyDepoB / 30) * 100));
+
+  const handleMovementSubmit = (e) => {
+    e.preventDefault();
+    if (!selectedSku || quantity <= 0) return;
+
+    dispatch(
+      addStockMovement({
+        sku: selectedSku,
+        type: movementType,
+        quantity,
+        note,
+      }),
+    );
+
+    // Reset fields
+    setQuantity(5);
+    setNote("");
+  };
+
   return (
     <div className="tab-content stock-content">
       <div className="page-header">
         <div>
           <h1 className="page-title">Stok Yönetimi</h1>
-          <p className="page-subtitle">Ürün stok miktarları, hareket giriş/çıkışları ve uyarı limitleri.</p>
+          <p className="page-subtitle">
+            Ürün stok miktarları, hareket giriş/çıkışları ve uyarı limitleri.
+          </p>
         </div>
       </div>
 
       <div className="grid-two-cols">
+        {/* Stock List */}
         <div className="card-container col-span-two">
           <div className="card-title">
             <span>Stok Durum Tablosu</span>
-            <span className="badge-warning">12 Kritik Seviye</span>
+            <span className="badge-warning">
+              {stockItems.filter((i) => i.quantity <= 10).length} Kritik Sınır
+            </span>
           </div>
 
           <div className="table-wrapper">
@@ -30,156 +81,104 @@ export default function Stock() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="table-row">
-                  <td className="table-cell">
-                    <span className="sku-code">SKU-849-APL</span>
-                  </td>
-                  <td className="table-cell">
-                    <div>
-                      <p className="font-semibold text-slate-900">Macbook Pro 14" M3</p>
-                      <p className="subtext">Depo-A • Raf B3</p>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <span className="category-tag">Bilgisayar</span>
-                  </td>
-                  <td className="table-cell">
-                    <div className="stock-level-container">
-                      <span className="font-semibold text-slate-900">45 Adet</span>
-                      <div className="stock-bar-wrapper">
-                        <div className="stock-bar-fill stock-bar-fill-success" style={{ width: '80%' }}></div>
+                {stockItems.map((item) => (
+                  <tr key={item.id} className="table-row">
+                    <td className="table-cell">
+                      <span className="sku-code">{item.sku}</span>
+                    </td>
+                    <td className="table-cell">
+                      <div>
+                        <p className="font-semibold text-slate-900">
+                          {item.name}
+                        </p>
+                        <p className="subtext">{item.location}</p>
                       </div>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <span className="badge-success">Stokta Var</span>
-                  </td>
-                  <td className="table-cell text-right">
-                    <div className="cell-actions">
-                      <button type="button" className="btn-stock-action">+</button>
-                      <button type="button" className="btn-stock-action">-</button>
-                      <button type="button" className="btn-stock-detail">Detay</button>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr className="table-row">
-                  <td className="table-cell">
-                    <span className="sku-code">SKU-102-LOG</span>
-                  </td>
-                  <td className="table-cell">
-                    <div>
-                      <p className="font-semibold text-slate-900">Logitech MX Master 3S</p>
-                      <p className="subtext">Depo-A • Raf C1</p>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <span className="category-tag">Aksesuar</span>
-                  </td>
-                  <td className="table-cell">
-                    <div className="stock-level-container">
-                      <span className="font-semibold text-slate-900">8 Adet</span>
-                      <div className="stock-bar-wrapper">
-                        <div className="stock-bar-fill stock-bar-fill-warning" style={{ width: '25%' }}></div>
+                    </td>
+                    <td className="table-cell">
+                      <span className="category-tag">{item.category}</span>
+                    </td>
+                    <td className="table-cell">
+                      <div className="stock-level-container">
+                        <span className="font-semibold text-slate-900">
+                          {item.quantity} Adet
+                        </span>
+                        <div className="stock-bar-wrapper">
+                          <div
+                            className={`stock-bar-fill ${
+                              item.quantity === 0
+                                ? "stock-bar-fill-danger"
+                                : item.quantity <= 10
+                                  ? "stock-bar-fill-warning"
+                                  : "stock-bar-fill-success"
+                            }`}
+                            style={{
+                              width: `${Math.min(100, (item.quantity / 50) * 100)}%`,
+                            }}
+                          ></div>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <span className="badge-warning">Kritik Sınır</span>
-                  </td>
-                  <td className="table-cell text-right">
-                    <div className="cell-actions">
-                      <button type="button" className="btn-stock-action">+</button>
-                      <button type="button" className="btn-stock-action">-</button>
-                      <button type="button" className="btn-stock-detail">Detay</button>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr className="table-row">
-                  <td className="table-cell">
-                    <span className="sku-code">SKU-773-DEL</span>
-                  </td>
-                  <td className="table-cell">
-                    <div>
-                      <p className="font-semibold text-slate-900">Dell UltraSharp 27"</p>
-                      <p className="subtext">Depo-B • Raf A2</p>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <span className="category-tag">Monitör</span>
-                  </td>
-                  <td className="table-cell">
-                    <div className="stock-level-container">
-                      <span className="font-semibold text-slate-900">0 Adet</span>
-                      <div className="stock-bar-wrapper">
-                        <div className="stock-bar-fill stock-bar-fill-danger" style={{ width: '0%' }}></div>
+                    </td>
+                    <td className="table-cell">
+                      <span
+                        className={
+                          item.quantity === 0
+                            ? "badge-danger"
+                            : item.quantity <= 10
+                              ? "badge-warning"
+                              : "badge-success"
+                        }
+                      >
+                        {item.status}
+                      </span>
+                    </td>
+                    <td className="table-cell text-right">
+                      <div className="cell-actions">
+                        <button
+                          type="button"
+                          onClick={() => dispatch(incrementStock(item.id))}
+                          className="btn-stock-action"
+                        >
+                          +
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => dispatch(decrementStock(item.id))}
+                          className="btn-stock-action"
+                        >
+                          -
+                        </button>
                       </div>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <span className="badge-danger">Tükendi</span>
-                  </td>
-                  <td className="table-cell text-right">
-                    <div className="cell-actions">
-                      <button type="button" className="btn-stock-action">+</button>
-                      <button type="button" className="btn-stock-action">-</button>
-                      <button type="button" className="btn-stock-detail">Detay</button>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr className="table-row">
-                  <td className="table-cell">
-                    <span className="sku-code">SKU-520-HPG</span>
-                  </td>
-                  <td className="table-cell">
-                    <div>
-                      <p className="font-semibold text-slate-900">HP LaserJet Pro M404n</p>
-                      <p className="subtext">Depo-A • Raf B10</p>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <span className="category-tag">Yazıcı</span>
-                  </td>
-                  <td className="table-cell">
-                    <div className="stock-level-container">
-                      <span className="font-semibold text-slate-900">18 Adet</span>
-                      <div className="stock-bar-wrapper">
-                        <div className="stock-bar-fill stock-bar-fill-success" style={{ width: '50%' }}></div>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <span className="badge-success">Stokta Var</span>
-                  </td>
-                  <td className="table-cell text-right">
-                    <div className="cell-actions">
-                      <button type="button" className="btn-stock-action">+</button>
-                      <button type="button" className="btn-stock-action">-</button>
-                      <button type="button" className="btn-stock-detail">Detay</button>
-                    </div>
-                  </td>
-                </tr>
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
         </div>
 
+        {/* Stock Control Panels */}
         <div className="flex-container">
+          {/* Stock In/Out adjustment */}
           <div className="card-container">
             <div className="card-title">
               <span>Hızlı Stok Hareketi Girişi</span>
-              <span className="text-xs text-emerald-600 font-semibold">Giriş / Çıkış</span>
+              <span className="text-xs text-emerald-600 font-semibold">
+                Giriş / Çıkış
+              </span>
             </div>
-            <form onSubmit={(e) => e.preventDefault()}>
+            <form onSubmit={handleMovementSubmit}>
               <div className="form-group">
                 <label className="form-label">Ürün Seçin</label>
-                <select className="form-select">
-                  <option>Macbook Pro 14" M3 (SKU-849-APL)</option>
-                  <option>Logitech MX Master 3S (SKU-102-LOG)</option>
-                  <option>Dell UltraSharp 27" (SKU-773-DEL)</option>
-                  <option>HP LaserJet Pro M404n (SKU-520-HPG)</option>
+                <select
+                  className="form-select"
+                  value={selectedSku}
+                  onChange={(e) => setSelectedSku(e.target.value)}
+                >
+                  {stockItems.map((item) => (
+                    <option key={item.id} value={item.sku}>
+                      {item.name} ({item.sku})
+                    </option>
+                  ))}
                 </select>
               </div>
 
@@ -187,11 +186,23 @@ export default function Stock() {
                 <label className="form-label">Hareket Tipi</label>
                 <div className="movement-selector">
                   <label className="movement-label">
-                    <input type="radio" name="movement-type" defaultChecked className="text-indigo-600" />
+                    <input
+                      type="radio"
+                      name="movement-type"
+                      checked={movementType === "Giriş"}
+                      onChange={() => setMovementType("Giriş")}
+                      className="text-indigo-600"
+                    />
                     Stok Ekle (+)
                   </label>
                   <label className="movement-label">
-                    <input type="radio" name="movement-type" className="text-indigo-600" />
+                    <input
+                      type="radio"
+                      name="movement-type"
+                      checked={movementType === "Çıkış"}
+                      onChange={() => setMovementType("Çıkış")}
+                      className="text-indigo-600"
+                    />
                     Stok Çıkar (-)
                   </label>
                 </div>
@@ -199,18 +210,36 @@ export default function Stock() {
 
               <div className="form-group">
                 <label className="form-label">Miktar (Adet)</label>
-                <input type="number" className="form-input" placeholder="10" defaultValue="5" />
+                <input
+                  type="number"
+                  className="form-input"
+                  value={quantity}
+                  onChange={(e) =>
+                    setQuantity(Math.max(1, parseInt(e.target.value, 10) || 1))
+                  }
+                  placeholder="5"
+                  required
+                />
               </div>
 
               <div className="form-group">
                 <label className="form-label">Açıklama / Fiş No</label>
-                <input type="text" className="form-input" placeholder="Örn: Yeni sevkiyat girişi" />
+                <input
+                  type="text"
+                  className="form-input"
+                  value={note}
+                  onChange={(e) => setNote(e.target.value)}
+                  placeholder="Örn: Yeni sevkiyat girişi"
+                />
               </div>
 
-              <button type="button" className="btn-submit">Hareketi Kaydet</button>
+              <button type="submit" className="btn-submit">
+                Hareketi Kaydet
+              </button>
             </form>
           </div>
 
+          {/* Warehouse status mockup */}
           <div className="card-container">
             <div className="card-title">
               <span>Depo Dağılımı</span>
@@ -220,20 +249,26 @@ export default function Stock() {
               <div>
                 <div className="warehouse-label-row">
                   <span>Merkez Depo (Depo-A)</span>
-                  <span>78% Dolu</span>
+                  <span>{capacityA}% Dolu</span>
                 </div>
                 <div className="capacity-bar-wrapper">
-                  <div className="capacity-bar-fill capacity-bar-fill-primary" style={{ width: '78%' }}></div>
+                  <div
+                    className="capacity-bar-fill capacity-bar-fill-primary"
+                    style={{ width: `${capacityA}%` }}
+                  ></div>
                 </div>
               </div>
 
               <div>
                 <div className="warehouse-label-row">
                   <span>Yedek Depo (Depo-B)</span>
-                  <span>35% Dolu</span>
+                  <span>{capacityB}% Dolu</span>
                 </div>
                 <div className="capacity-bar-wrapper">
-                  <div className="capacity-bar-fill capacity-bar-fill-secondary" style={{ width: '35%' }}></div>
+                  <div
+                    className="capacity-bar-fill capacity-bar-fill-secondary"
+                    style={{ width: `${capacityB}%` }}
+                  ></div>
                 </div>
               </div>
             </div>
@@ -241,5 +276,5 @@ export default function Stock() {
         </div>
       </div>
     </div>
-  )
+  );
 }

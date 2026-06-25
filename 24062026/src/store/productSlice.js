@@ -18,7 +18,7 @@ const initialState = {
       sku: "SKU-849-APL",
       category: "Bilgisayar",
       price: 54999,
-      description: "Apple M3 Çip, 8C CPU,10C GPU, 8GB RAM, 512GB SSD",
+      description: "Apple M3 Çip, 8C CPU, 10C GPU, 8GB RAM, 512GB SSD",
       iconType: "desktop",
     },
     {
@@ -28,13 +28,13 @@ const initialState = {
       category: "Telefon",
       price: 42500,
       description:
-        "A16 Bionic İşlemci, 48MP ana kamera, USB-C girişi, siyah renk",
+        "A16 Bionic işlemci, 48MP ana kamera, USB-C girişi, Siyah renk",
       iconType: "phone",
     },
     {
       id: 3,
       name: "Logitech MX Master 3S",
-      sku: "SKU-102-lOG",
+      sku: "SKU-102-LOG",
       category: "Aksesuar",
       price: 2499,
       description:
@@ -53,15 +53,18 @@ const productSlice = createSlice({
         state.list.push(action.payload);
       },
       prepare: (product) => {
+        // Generate automatic SKU and next ID in prepare callback to keep reducer pure
         const categoryAbbr = (product.category || "GEN")
           .substring(0, 3)
           .toUpperCase();
         const randomNum = Math.floor(100 + Math.random() * 900);
         const sku = `SKU-${randomNum}-${categoryAbbr}`;
+
         let iconType = "box";
         if (product.category === "Bilgisayar") iconType = "desktop";
         else if (product.category === "Telefon") iconType = "phone";
         else if (product.category === "Aksesuar") iconType = "mouse";
+
         return {
           payload: {
             id: Date.now(),
@@ -91,6 +94,7 @@ const productSlice = createSlice({
         if (action.payload.category === "Bilgisayar") iconType = "desktop";
         else if (action.payload.category === "Telefon") iconType = "phone";
         else if (action.payload.category === "Aksesuar") iconType = "mouse";
+
         state.list[index] = {
           ...state.list[index],
           ...action.payload,

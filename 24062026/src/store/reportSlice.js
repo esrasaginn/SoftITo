@@ -25,7 +25,7 @@ const reportsSlice = createSlice({
   reducers: {
     generateReport: (state, action) => {
       const { type, range, format } = action.payload;
-      const fileExt = format === "Excel(.xlsx)" ? "xlsx" : "pdf";
+      const fileExt = format === "Excell(.xlsx)" ? "xlsx" : "pdf";
       const titleAbbr = type
         .split(" ")
         .map((w) => w[0])

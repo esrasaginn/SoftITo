@@ -111,7 +111,7 @@ const messageSlice = createSlice({
         minute: "2-digit",
       });
       const nextId =
-        state.threads[activeId].lenght > 0
+        state.threads[activeId].length > 0
           ? Math.max(...state.threads[activeId].map((m) => m.id)) + 1
           : 1;
       state.threads[activeId].push({

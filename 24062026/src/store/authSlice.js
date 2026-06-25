@@ -13,8 +13,8 @@ const authSlice = createSlice({
     login: (state, action) => {
       state.isAuth = true;
       state.user = {
-        name: "Esra S.",
-        role: action.payload,
+        name: "Selahaddin Ç.",
+        role: action.payload, // 'Admimn','Muhasebe','Teknik'
       };
       state.activeTab = "dashboard";
     },
@@ -23,12 +23,10 @@ const authSlice = createSlice({
       state.user = null;
       state.activeTab = "login";
     },
-
     setActiveTab: (state, action) => {
       state.activeTab = action.payload;
     },
   },
 });
-
 export const { login, logout, setActiveTab } = authSlice.actions;
 export default authSlice.reducer;

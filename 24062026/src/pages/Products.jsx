@@ -1,129 +1,316 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addProduct,
+  deleteProduct,
+  addCategory,
+  setSelectedCategory,
+  editProduct,
+  setSelectedProduct,
+  clearSelectedProduct,
+} from "../store/productSlice";
+
+function ProductIcon({ type }) {
+  if (type === "desktop") {
+    return (
+      <svg
+        className="placeholder-icon"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        ></path>
+      </svg>
+    );
+  }
+  if (type === "phone") {
+    return (
+      <svg
+        className="placeholder-icon"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+        ></path>
+      </svg>
+    );
+  }
+  if (type === "mouse") {
+    return (
+      <svg
+        className="placeholder-icon"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="1.5"
+          d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+        ></path>
+      </svg>
+    );
+  }
+  return (
+    <svg
+      className="placeholder-icon"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+      ></path>
+    </svg>
+  );
+}
 
 export default function Products() {
+  const dispatch = useDispatch();
+  const categories = useSelector((state) => state.products.categories);
+  const selectedCategory = useSelector(
+    (state) => state.products.selectedCategory,
+  );
+  const productList = useSelector((state) => state.products.list);
+  const selectedProduct = useSelector(
+    (state) => state.products.selectedProduct,
+  );
+
+  // Local Product Form State
+  const [name, setName] = useState("");
+  const [category, setCategory] = useState("Bilgisayar");
+  const [price, setPrice] = useState(15000);
+  const [description, setDescription] = useState("");
+
+  // Local Category Form State
+  const [newCatName, setNewCatName] = useState("");
+
+  useEffect(() => {
+    if (selectedProduct) {
+      setName(selectedProduct.name);
+      setCategory(selectedProduct.category);
+      setPrice(selectedProduct.price);
+      setDescription(selectedProduct.description);
+    } else {
+      setName("");
+      setCategory("Bilgisayar");
+      setPrice(15000);
+      setDescription("");
+    }
+  }, [selectedProduct]);
+
+  const handleProductSubmit = (e) => {
+    e.preventDefault();
+    if (!name.trim()) return;
+
+    const productData = {
+      name,
+      category,
+      price: parseFloat(price) || 0,
+      description,
+    };
+
+    if (selectedProduct) {
+      dispatch(editProduct({ id: selectedProduct.id, ...productData }));
+    } else {
+      dispatch(addProduct(productData));
+    }
+
+    // Reset Form
+    setName("");
+    setCategory("Bilgisayar");
+    setPrice(15000);
+    setDescription("");
+  };
+
+  const handleCategorySubmit = (e) => {
+    e.preventDefault();
+    if (!newCatName.trim()) return;
+    dispatch(addCategory(newCatName.trim()));
+    setNewCatName("");
+  };
+
+  const getCategoryCount = (cat) => {
+    if (cat === "Hepsi") return productList.length;
+    return productList.filter((p) => p.category === cat).length;
+  };
+
+  const filteredProducts =
+    selectedCategory === "Hepsi"
+      ? productList
+      : productList.filter((p) => p.category === selectedCategory);
+
   return (
     <div className="tab-content products-content">
       <div className="page-header">
         <div>
           <h1 className="page-title">Ürün Katalog Yönetimi</h1>
-          <p className="page-subtitle">Kategori bazlı ürün listesi, ürün ekleme, düzenleme ve katalog kontrolleri.</p>
+          <p className="page-subtitle">
+            Kategori bazlı ürün listesi, ürün ekleme, düzenleme ve katalog
+            kontrolleri.
+          </p>
         </div>
       </div>
 
       <div className="category-navbar">
-        <button type="button" className="category-btn-active">Hepsi (24)</button>
-        <button type="button" className="category-btn">Bilgisayar (8)</button>
-        <button type="button" className="category-btn">Aksesuar (10)</button>
-        <button type="button" className="category-btn">Yazıcı (4)</button>
-        <button type="button" className="category-btn">Yazılım Lisansları (2)</button>
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            type="button"
+            onClick={() => dispatch(setSelectedCategory(cat))}
+            className={
+              cat === selectedCategory ? "category-btn-active" : "category-btn"
+            }
+          >
+            {cat} ({getCategoryCount(cat)})
+          </button>
+        ))}
       </div>
 
       <div className="grid-two-cols">
         <div className="products-grid-column">
           <div className="grid-products">
-            <div className="product-card">
-              <div>
-                <div className="product-image-placeholder">
-                  <svg className="placeholder-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                  </svg>
+            {filteredProducts.map((product) => (
+              <div key={product.id} className="product-card">
+                <div>
+                  <div className="product-image-placeholder">
+                    <ProductIcon type={product.iconType} />
+                  </div>
+                  <div className="product-header-row">
+                    <span className="product-category-tag">
+                      {product.category}
+                    </span>
+                    <span className="font-semibold text-slate-900">
+                      ₺{product.price.toLocaleString("tr-TR")}
+                    </span>
+                  </div>
+                  <h3 className="product-title">{product.name}</h3>
+                  <p className="product-description">{product.description}</p>
                 </div>
-                <div className="product-header-row">
-                  <span className="product-category-tag">Bilgisayar</span>
-                  <span className="font-semibold text-slate-900">₺54,999.00</span>
+                <div className="product-actions">
+                  <button
+                    type="button"
+                    onClick={() => dispatch(setSelectedProduct(product))}
+                    className="btn-product-edit"
+                  >
+                    Düzenle
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => dispatch(deleteProduct(product.id))}
+                    className="btn-product-delete"
+                  >
+                    Katalogdan Kaldır
+                  </button>
                 </div>
-                <h3 className="product-title">Macbook Pro 14" M3</h3>
-                <p className="product-description">Apple M3 Çip, 8C CPU, 10C GPU, 8GB RAM, 512GB SSD</p>
               </div>
-              <div className="product-actions">
-                <button type="button" className="btn-product-edit">Düzenle</button>
-                <button type="button" className="btn-product-delete">Katalogdan Kaldır</button>
-              </div>
-            </div>
-
-            <div className="product-card">
-              <div>
-                <div className="product-image-placeholder">
-                  <svg className="placeholder-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                  </svg>
-                </div>
-                <div className="product-header-row">
-                  <span className="product-category-tag">Telefon</span>
-                  <span className="font-semibold text-slate-900">₺42,500.00</span>
-                </div>
-                <h3 className="product-title">iPhone 15 128GB</h3>
-                <p className="product-description">A16 Bionic işlemci, 48MP ana kamera, USB-C girişi, Siyah renk</p>
-              </div>
-              <div className="product-actions">
-                <button type="button" className="btn-product-edit">Düzenle</button>
-                <button type="button" className="btn-product-delete">Katalogdan Kaldır</button>
-              </div>
-            </div>
-
-            <div className="product-card">
-              <div>
-                <div className="product-image-placeholder">
-                  <svg className="placeholder-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-                  </svg>
-                </div>
-                <div className="product-header-row">
-                  <span className="product-category-tag">Aksesuar</span>
-                  <span className="font-semibold text-slate-900">₺2,499.00</span>
-                </div>
-                <h3 className="product-title">Logitech MX Master 3S</h3>
-                <p className="product-description">Kablosuz ergonomik fare, 8K DPI optik sensör, USB-C şarj edilebilir</p>
-              </div>
-              <div className="product-actions">
-                <button type="button" className="btn-product-edit">Düzenle</button>
-                <button type="button" className="btn-product-delete">Katalogdan Kaldır</button>
-              </div>
-            </div>
+            ))}
+            {filteredProducts.length === 0 && (
+              <p className="empty-message">
+                Bu kategoride kayıtlı ürün bulunmamaktadır.
+              </p>
+            )}
           </div>
         </div>
 
         <div className="flex-container">
           <div className="card-container">
             <div className="card-title">
-              <span>Yeni Ürün Ekle</span>
-              <span className="card-subtitle-link">+ Katalog</span>
+              <span>
+                {selectedProduct ? "Ürünü Düzenle" : "Yeni Ürün Ekle"}
+              </span>
+              {selectedProduct && (
+                <button
+                  type="button"
+                  onClick={() => dispatch(clearSelectedProduct())}
+                  className="btn-cancel-edit"
+                >
+                  Vazgeç
+                </button>
+              )}
             </div>
-            <form onSubmit={(e) => e.preventDefault()}>
+            <form onSubmit={handleProductSubmit}>
               <div className="form-group">
                 <label className="form-label">Ürün Adı</label>
-                <input type="text" className="form-input" placeholder="Örn: Macbook Pro 16" />
+                <input
+                  type="text"
+                  className="form-input"
+                  placeholder="Örn: Macbook Pro 16"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
               </div>
 
               <div className="form-group">
                 <label className="form-label">Kategori</label>
-                <select className="form-select">
-                  <option>Bilgisayar</option>
-                  <option>Telefon</option>
-                  <option>Aksesuar</option>
-                  <option>Yazıcı</option>
-                  <option>Yazılım Lisansları</option>
+                <select
+                  className="form-select"
+                  value={category}
+                  onChange={(e) => setCategory(e.target.value)}
+                >
+                  {categories
+                    .filter((c) => c !== "Hepsi")
+                    .map((c) => (
+                      <option key={c} value={c}>
+                        {c}
+                      </option>
+                    ))}
                 </select>
               </div>
 
               <div className="form-group">
                 <label className="form-label">Satış Fiyatı (TL)</label>
-                <input type="number" className="form-input" placeholder="0.00" defaultValue="15000" />
+                <input
+                  type="number"
+                  className="form-input"
+                  placeholder="0.00"
+                  value={price}
+                  onChange={(e) => setPrice(e.target.value)}
+                  required
+                />
               </div>
 
               <div className="form-group">
                 <label className="form-label">Ürün Açıklaması</label>
-                <textarea className="form-textarea" placeholder="Ürün özellikleri ve detaylı açıklaması..."></textarea>
+                <textarea
+                  className="form-textarea"
+                  placeholder="Ürün özellikleri ve detaylı açıklaması..."
+                  value={description}
+                  onChange={(e) => setDescription(e.target.value)}
+                ></textarea>
               </div>
 
               <div className="form-group">
                 <label className="form-label">Görsel Seçimi (Tasarım)</label>
                 <div className="image-upload-dashed">
-                  <span className="upload-text">Görsel yüklemek için sürükleyin veya tıklayın</span>
+                  <span className="upload-text">
+                    Görsel yüklemek için sürükleyin veya tıklayın
+                  </span>
                 </div>
               </div>
 
-              <button type="button" className="btn-submit">Kataloga Ekle</button>
+              <button type="submit" className="btn-submit">
+                {selectedProduct ? "Ürünü Güncelle" : "Kataloga Ekle"}
+              </button>
             </form>
           </div>
 
@@ -132,20 +319,33 @@ export default function Products() {
               <span>Kategori Yönetimi</span>
               <span className="card-subtitle-link">+ Ekle</span>
             </div>
-            <form onSubmit={(e) => e.preventDefault()}>
+            <form onSubmit={handleCategorySubmit}>
               <div className="form-group">
                 <label className="form-label">Kategori Adı</label>
-                <input type="text" className="form-input" placeholder="Örn: Network Cihazları" />
+                <input
+                  type="text"
+                  className="form-input"
+                  placeholder="Örn: Network Cihazları"
+                  value={newCatName}
+                  onChange={(e) => setNewCatName(e.target.value)}
+                  required
+                />
               </div>
               <div className="form-group">
                 <label className="form-label">Kategori Kodu (Ön Ek)</label>
-                <input type="text" className="form-input" placeholder="Örn: NET" />
+                <input
+                  type="text"
+                  className="form-input"
+                  placeholder="Örn: NET"
+                />
               </div>
-              <button type="button" className="btn-secondary w-full mt-2">Kategori Oluştur</button>
+              <button type="submit" className="btn-category-submit">
+                Kategori Oluştur
+              </button>
             </form>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

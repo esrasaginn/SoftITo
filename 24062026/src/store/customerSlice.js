@@ -11,7 +11,6 @@ const initialState = {
       balance: 12500,
       status: "Aktif",
     },
-
     {
       id: 2,
       name: "Mehmet Yılmaz",
@@ -21,7 +20,6 @@ const initialState = {
       balance: 4500,
       status: "Pasif",
     },
-
     {
       id: 3,
       name: "Selami Yılmaz",
@@ -31,7 +29,6 @@ const initialState = {
       balance: 1200,
       status: "Aktif",
     },
-
     {
       id: 4,
       name: "Esra Yılmaz",
@@ -42,13 +39,13 @@ const initialState = {
       status: "Pasif",
     },
   ],
-  selectedCustomer: null,
+  selecterCustomer: null,
 };
 
 const customerSlice = createSlice({
   name: "customer",
   initialState,
-  reducers: (state, action) => {
+  reducers: {
     addCustomer: (state, action) => {
       const nextId =
         state.list.length > 0
@@ -59,26 +56,25 @@ const customerSlice = createSlice({
         balance: 0,
         ...action.payload,
       });
-    };
+    },
     editCustomer: (state, action) => {
       const index = state.list.findIndex((c) => c.id === action.payload.id);
       if (index !== -1) {
         state.list[index] = { ...state.list[index], ...action.payload };
       }
-      state.selectedCustomer = null;
-    };
+      state.selecterCustomer = null;
+    },
     deleteCustomer: (state, action) => {
       state.list = state.list.filter((c) => c.id !== action.payload);
-    };
+    },
     selectCustomerForEdit: (state, action) => {
-      state.selectedCustomer = action.payload;
-    };
+      state.selecterCustomer = action.payload;
+    },
     clearSelectedCustomer: (state) => {
-      state.selectedCustomer = null;
-    };
+      state.selecterCustomer = null;
+    },
   },
 });
-
 export const {
   addCustomer,
   editCustomer,

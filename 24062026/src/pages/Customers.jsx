@@ -1,12 +1,78 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
+import {
+  addCustomer,
+  editCustomer,
+  deleteCustomer,
+  selectCustomerForEdit,
+  clearSelectedCustomer,
+} from "../store/customerSlice";
 
 export default function Customers() {
+  const dispatch = useDispatch();
+  const customerList = useSelector((state) => state.customers.list);
+  const selectedCustomer = useSelector(
+    (state) => state.customers.selecterCustomer,
+  );
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [status, setStatus] = useState("Aktif");
+  const [customerToDelete, setCustomerToDelete] = useState(null);
+
+  useEffect(() => {
+    if (selectedCustomer) {
+      setName(selectedCustomer.name);
+      setCompany(selectedCustomer.company);
+      setEmail(selectedCustomer.email);
+      setPhone(selectedCustomer.phone);
+      setStatus(selectedCustomer.status);
+    } else {
+      resetForm();
+    }
+  }, [selectedCustomer]);
+
+  const resetForm = () => {
+    setName("");
+    setCompany("");
+    setEmail("");
+    setPhone("");
+    setStatus("Aktif");
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!name.trim()) return;
+    const customerData = { name, company, email, phone, status };
+    if (selectedCustomer) {
+      dispatch(editCustomer({ id: selectedCustomer.id, ...customerData }));
+    } else {
+      dispatch(addCustomer(customerData));
+    }
+    resetForm();
+  };
+
+  const handleCancelEdit = () => {
+    dispatch(clearSelectedCustomer());
+  };
+
+  const handleConfirmDelete = () => {
+    if (customerToDelete) {
+      dispatch(deleteCustomer(customerToDelete.id));
+      setCustomerToDelete(null);
+    }
+  };
+
   return (
     <div className="tab-content customers-content">
       <div className="page-header">
         <div>
           <h1 className="page-title">Müşteri Yönetimi</h1>
-          <p className="page-subtitle">Müşteri listesi, ekleme, düzenleme ve silme panelleri.</p>
+          <p className="page-subtitle">
+            Müşteri listesi, ekleme, düzenleme ve silme panelleri.
+          </p>
         </div>
       </div>
 
@@ -14,7 +80,9 @@ export default function Customers() {
         <div className="card-container col-span-two">
           <div className="card-title">
             <span>Kayıtlı Müşteriler</span>
-            <span className="badge-info">Toplam 148 Müşteri</span>
+            <span className="badge-info">
+              Toplam {customerList.length} Müşteri
+            </span>
           </div>
 
           <div className="table-wrapper">
@@ -29,113 +97,63 @@ export default function Customers() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="table-row">
-                  <td className="table-cell">
-                    <div>
-                      <p className="font-semibold">Ahmet Yılmaz</p>
-                      <p className="subtext">Yılmaz Mühendislik A.Ş.</p>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <div>
-                      <p className="text-xs">ahmet.yilmaz@company.com</p>
-                      <p className="subtext">+90 532 111 2233</p>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <span className="cell-value">₺12,500.00</span>
-                  </td>
-                  <td className="table-cell">
-                    <span className="badge-success">Aktif</span>
-                  </td>
-                  <td className="table-cell text-right">
-                    <div className="cell-actions">
-                      <button type="button" className="btn-table-action">Düzenle</button>
-                      <button type="button" className="btn-table-action-danger">Sil</button>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr className="table-row">
-                  <td className="table-cell">
-                    <div>
-                      <p className="font-semibold">Zeynep Kaya</p>
-                      <p className="subtext">Zeynep Mimarlık LTD.</p>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <div>
-                      <p className="text-xs">zeynep.kaya@ltd.com</p>
-                      <p className="subtext">+90 541 222 3344</p>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <span className="cell-value">₺0.00</span>
-                  </td>
-                  <td className="table-cell">
-                    <span className="badge-success">Aktif</span>
-                  </td>
-                  <td className="table-cell text-right">
-                    <div className="cell-actions">
-                      <button type="button" className="btn-table-action">Düzenle</button>
-                      <button type="button" className="btn-table-action-danger">Sil</button>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr className="table-row">
-                  <td className="table-cell">
-                    <div>
-                      <p className="font-semibold">Mehmet Demir</p>
-                      <p className="subtext">Demir İnşaat Ticaret</p>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <div>
-                      <p className="text-xs">m.demir@demir.com.tr</p>
-                      <p className="subtext">+90 533 333 4455</p>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <span className="cell-value-debt">-₺4,350.00</span>
-                  </td>
-                  <td className="table-cell">
-                    <span className="badge-warning">Riskli</span>
-                  </td>
-                  <td className="table-cell text-right">
-                    <div className="cell-actions">
-                      <button type="button" className="btn-table-action">Düzenle</button>
-                      <button type="button" className="btn-table-action-danger">Sil</button>
-                    </div>
-                  </td>
-                </tr>
-
-                <tr className="table-row">
-                  <td className="table-cell">
-                    <div>
-                      <p className="font-semibold">Ayşe Yurt</p>
-                      <p className="subtext">Bireysel Müşteri</p>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <div>
-                      <p className="text-xs">ayse@yurt.com</p>
-                      <p className="subtext">+90 555 444 5566</p>
-                    </div>
-                  </td>
-                  <td className="table-cell">
-                    <span className="cell-value">₺1,800.00</span>
-                  </td>
-                  <td className="table-cell">
-                    <span className="badge-danger">Pasif</span>
-                  </td>
-                  <td className="table-cell text-right">
-                    <div className="cell-actions">
-                      <button type="button" className="btn-table-action">Düzenle</button>
-                      <button type="button" className="btn-table-action-danger">Sil</button>
-                    </div>
-                  </td>
-                </tr>
+                {customerList.map((c) => (
+                  <tr key={c.id} className="table-row">
+                    <td className="table-cell">
+                      <div>
+                        <p className="font-semibold">{c.name}</p>
+                        <p className="subtext">{c.company}</p>
+                      </div>
+                    </td>
+                    <td className="table-cell">
+                      <div>
+                        <p className="text-xs">{c.email}</p>
+                        <p className="subtext">{c.phone}</p>
+                      </div>
+                    </td>
+                    <td className="table-cell">
+                      <span
+                        className={
+                          c.balance < 0 ? "cell-value-debt" : "cell-value"
+                        }
+                      >
+                        {c.balance < 0 ? "-" : ""}
+                        {Math.abs(c.balance).toLocaleString("tr-TR")}
+                      </span>
+                    </td>
+                    <td className="table-cell">
+                      <span
+                        className={
+                          c.status === "Aktif"
+                            ? "badge-success"
+                            : c.status === "Riskli"
+                              ? "badge-warning"
+                              : "badge-danger"
+                        }
+                      >
+                        {c.status}
+                      </span>
+                    </td>
+                    <td className="table-cell text-right">
+                      <div className="cell-actions">
+                        <button
+                          type="button"
+                          className="btn-table-action"
+                          onClick={() => dispatch(selectCustomerForEdit(c))}
+                        >
+                          Düzenle
+                        </button>
+                        <button
+                          type="button"
+                          className="btn-table-action-danger"
+                          onClick={() => setCustomerToDelete(c)}
+                        >
+                          Sil
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
@@ -144,53 +162,113 @@ export default function Customers() {
         <div className="flex-container">
           <div className="card-container">
             <div className="card-title">
-              <span>Yeni Müşteri Ekle</span>
-              <span className="card-subtitle-link">+ Hızlı Ekle</span>
+              <span>
+                {selectedCustomer ? "MüşteriDüzenle" : "Yeni Müşteri Ekle"}
+              </span>
+              {selectedCustomer && (
+                <button
+                  type="button"
+                  onClick={handleCancelEdit}
+                  className="card-subtitle-link text-rose-600 hover:text-rose-800"
+                >
+                  Vazgeç
+                </button>
+              )}
             </div>
-            <form onSubmit={(e) => e.preventDefault()}>
+            <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label className="form-label">Ad Soyad / Firma Yetkilisi</label>
-                <input type="text" className="form-input" placeholder="Ahmet Yılmaz" />
+                <input
+                  type="text"
+                  className="form-input"
+                  placeholder="Ahmet Yılmaz"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
+                />
               </div>
               <div className="form-group">
                 <label className="form-label">Firma Ünvanı</label>
-                <input type="text" className="form-input" placeholder="Yılmaz Mühendislik A.Ş." />
+                <input
+                  type="text"
+                  className="form-input"
+                  placeholder="Yılmaz Mühendislik A.Ş."
+                  value={company}
+                  onChange={(e) => setCompany(e.target.value)}
+                  required
+                />
               </div>
               <div className="form-group">
                 <label className="form-label">E-posta Adresi</label>
-                <input type="email" className="form-input" placeholder="ahmet@firma.com" />
+                <input
+                  type="email"
+                  className="form-input"
+                  placeholder="ahmet@firma.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
               </div>
               <div className="form-group">
                 <label className="form-label">Telefon Numarası</label>
-                <input type="text" className="form-input" placeholder="+90 532 000 0000" />
+                <input
+                  type="text"
+                  className="form-input"
+                  placeholder="+90 532 000 0000"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  required
+                />
               </div>
               <div className="form-group">
                 <label className="form-label">Müşteri Durumu</label>
-                <select className="form-select">
-                  <option>Aktif</option>
-                  <option>Pasif</option>
-                  <option>Riskli</option>
+                <select
+                  className="form-select"
+                  onChange={(e) => setStatus(e.target.value)}
+                >
+                  <option value="Aktif">Aktif</option>
+                  <option value="Pasif">Pasif</option>
+                  <option value="Riskli">Riskli</option>
                 </select>
               </div>
-              <button type="button" className="btn-submit">Müşteriyi Kaydet</button>
+              <button type="submit" className="btn-submit">
+                {selectedCustomer
+                  ? "Değişiklikleri Kaydet"
+                  : "Müşteriyi Kaydet"}
+              </button>
             </form>
           </div>
 
-          <div className="card-alert-container">
-            <div className="card-title text-rose-800">
-              <span>Müşteri Silme Önizleme</span>
-              <span className="text-rose-500 font-bold">⚠</span>
+          {customerToDelete && (
+            <div className="card-alert-container">
+              <div className="card-title text-rose-800">
+                <span>Müşteri Silme Önizleme</span>
+                <span className="text-rose-500 font-bold">⚠</span>
+              </div>
+              <p className="alert-text">
+                <strong>{customerToDelete.name}</strong> isimli müşteriyi silmek
+                istediğinize emin misiniz? Bu işlem geri alınamaz.
+              </p>
+              <div className="flex-actions">
+                <button
+                  type="button"
+                  className="btn-danger flex-1"
+                  onClick={handleConfirmDelete}
+                >
+                  Evet, Sil
+                </button>
+                <button
+                  type="button"
+                  className="btn-secondary flex-1"
+                  onClick={() => setCustomerToDelete(null)}
+                >
+                  Vazgeç
+                </button>
+              </div>
             </div>
-            <p className="alert-text">
-              <strong>Ahmet Yılmaz</strong> isimli müşteriyi silmek istediğinize emin misiniz? Bu işlem geri alınamaz.
-            </p>
-            <div className="flex-actions">
-              <button type="button" className="btn-danger flex-1">Evet, Sil</button>
-              <button type="button" className="btn-secondary flex-1">Vazgeç</button>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </div>
-  )
+  );
 }
