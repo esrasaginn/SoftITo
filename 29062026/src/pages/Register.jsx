@@ -1,44 +1,67 @@
+// React kütüphanesinden useState ve useEffect kancalarını içe aktarır
 import { useState, useEffect } from 'react';
+// Redux kütüphanesinden dispatch ve selector kancalarını içe aktarır
 import { useDispatch, useSelector } from 'react-redux';
+// Yönlendirme işlemleri ve Link bileşeni için react-router-dom kütüphanesini içe aktarır
 import { useNavigate, Link } from 'react-router-dom';
+// authSlice dosyasındaki kayıt olma ve hata temizleme aksiyonlarını içe aktarır
 import { registerUser, clearAuthError } from '../store/slices/authSlice';
+// Ortak kullanılan Modal pencere bileşenini içe aktarır
 import Modal from '../components/Modal';
+// lucide-react kütüphanesinden arayüzde gösterilecek ikonları içe aktarır
 import { User, Phone, Mail, Lock, Eye, EyeOff, Loader2 } from 'lucide-react';
 
+// Kayıt Olma (Register) sayfa bileşenini tanımlar
 const Register = () => {
+  // Kullanıcı adı ve soyadı girdisini tutan local state
   const [name, setName] = useState('');
+  // Telefon numarası girdisini tutan local state
   const [phone, setPhone] = useState('');
+  // E-posta girdisini tutan local state
   const [email, setEmail] = useState('');
+  // Şifre girdisini tutan local state
   const [password, setPassword] = useState('');
+  // Şifreyi göster/gizle durumunu kontrol eden local state
   const [showPassword, setShowPassword] = useState(false);
 
-  // Checkbox States
+  // Kullanım Koşulları onay durumunu tutan checkbox state'i
   const [termsAccepted, setTermsAccepted] = useState(false);
+  // KVKK onay durumunu tutan checkbox state'i
   const [kvkkAccepted, setKvkkAccepted] = useState(false);
 
-  // Modal State
+  // KVKK metni modal penceresinin görünürlük durumunu tutan state
   const [isKvkkModalOpen, setIsKvkkModalOpen] = useState(false);
 
+  // Redux aksiyonlarını tetiklemek için dispatch kancasını tanımlar
   const dispatch = useDispatch();
+  // Sayfalar arası geçiş yapmak için navigate kancasını hazırlar
   const navigate = useNavigate();
+  // Redux store'dan kullanıcı, yüklenme ve hata durumlarını çeker
   const { user, loading, error } = useSelector((state) => state.auth);
 
+  // Sayfa yüklendiğinde (mount) auth hatalarını temizleyen efekt
   useEffect(() => {
     dispatch(clearAuthError());
   }, [dispatch]);
 
+  // Kullanıcı kaydı başarılı olduğunda tetiklenen efekt
   useEffect(() => {
+    // Eğer kullanıcı bilgisi oluştuysa anasayfaya yönlendirir
     if (user) {
       navigate('/');
     }
   }, [user, navigate]);
 
+  // Kayıt formu gönderildiğinde çalışan fonksiyon
   const handleSubmit = (e) => {
+    // Sayfanın yenilenmesini engeller
     e.preventDefault();
+    // Kullanım koşulları veya KVKK onaylanmadıysa uyarı verip durur
     if (!termsAccepted || !kvkkAccepted) {
       alert('Lütfen kullanım koşullarını ve KVKK metnini onaylayınız.');
       return;
     }
+    // Kayıt thunk aksiyonunu girilen bilgilerle dispatch eder
     dispatch(
       registerUser({
         name,
@@ -49,25 +72,28 @@ const Register = () => {
     );
   };
 
+  // Bileşenin render edeceği JSX yapısını döner
   return (
+    // Dikey ve yatayda ortalanmış esnek kayıt formu düzeni
     <div className="flex-1 flex items-center justify-center py-12 px-4 bg-slate-50">
+      {/* Kayıt kartı çerçevesi */}
       <div className="max-w-md w-full bg-white rounded-3xl border border-slate-100 shadow-xl p-8 space-y-6">
-        {/* Header */}
+        {/* Başlık alanı */}
         <div className="text-center space-y-2">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900">Hesap Oluşturun</h2>
           <p className="text-sm text-slate-500">Bizimle yeni seyahatlere başlamak için kaydolun.</p>
         </div>
 
-        {/* Error Alert */}
+        {/* Hata Mesajı Bölümü (Varsa gösterilir) */}
         {error && (
           <div className="p-4 bg-rose-50 border-l-4 border-rose-500 rounded-xl text-rose-700 text-sm font-medium">
             {error}
           </div>
         )}
 
-        {/* Form */}
+        {/* Kayıt Formu */}
         <form onSubmit={handleSubmit} className="space-y-4">
-          {/* Name Surname */}
+          {/* Ad Soyad Girdisi */}
           <div className="space-y-1">
             <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Ad Soyad</label>
             <div className="relative">
@@ -84,7 +110,7 @@ const Register = () => {
             </div>
           </div>
 
-          {/* Phone */}
+          {/* Telefon Numarası Girdisi */}
           <div className="space-y-1">
             <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Telefon Numarası</label>
             <div className="relative">
@@ -101,7 +127,7 @@ const Register = () => {
             </div>
           </div>
 
-          {/* Email */}
+          {/* E-posta Adresi Girdisi */}
           <div className="space-y-1">
             <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider">E-posta Adresi</label>
             <div className="relative">
@@ -118,7 +144,7 @@ const Register = () => {
             </div>
           </div>
 
-          {/* Password */}
+          {/* Şifre Girdisi */}
           <div className="space-y-1">
             <label className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Şifre</label>
             <div className="relative">
@@ -132,6 +158,7 @@ const Register = () => {
                 placeholder="••••••••"
                 id="registerPasswordInput"
               />
+              {/* Şifre Göster/Gizle Butonu */}
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
@@ -142,7 +169,7 @@ const Register = () => {
             </div>
           </div>
 
-          {/* Terms and Conditions Checkbox */}
+          {/* Kullanım Koşulları Onay Checkbox'ı */}
           <div className="flex items-start gap-2.5 py-1">
             <input
               type="checkbox"
@@ -156,7 +183,7 @@ const Register = () => {
             </label>
           </div>
 
-          {/* KVKK Checkbox */}
+          {/* KVKK Metni Onay Checkbox'ı */}
           <div className="flex items-start gap-2.5 py-1">
             <input
               type="checkbox"
@@ -166,6 +193,7 @@ const Register = () => {
               className="mt-1 h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500 cursor-pointer"
             />
             <label htmlFor="kvkkCheckbox" className="text-xs text-slate-500 select-none cursor-pointer">
+              {/* KVKK Metnini Açan Bağlantı Linki */}
               <span
                 onClick={(e) => {
                   e.preventDefault();
@@ -180,13 +208,14 @@ const Register = () => {
             </label>
           </div>
 
-          {/* Submit */}
+          {/* Kayıt Ol Gönder Butonu */}
           <button
             type="submit"
             disabled={loading}
             className="w-full py-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-400 text-white font-semibold rounded-xl shadow-md shadow-indigo-150 transition-all flex items-center justify-center gap-2"
             id="registerSubmitBtn"
           >
+            {/* Kayıt olabiliyor/yükleniyor durum göstergesi */}
             {loading ? (
               <>
                 <Loader2 className="animate-spin" size={18} />
@@ -198,7 +227,7 @@ const Register = () => {
           </button>
         </form>
 
-        {/* Footer */}
+        {/* Giriş Yönlendirme Alt Bilgisi */}
         <div className="text-center text-sm text-slate-500">
           Zaten hesabınız var mı?{' '}
           <Link to="/login" className="font-semibold text-indigo-600 hover:text-indigo-500 transition-colors">
@@ -207,12 +236,12 @@ const Register = () => {
         </div>
       </div>
 
-      {/* KVKK Modal */}
+      {/* KVKK Bilgilendirme Modal Penceresi */}
       <Modal
         isOpen={isKvkkModalOpen}
         onClose={() => {
           setIsKvkkModalOpen(false);
-          setKvkkAccepted(true); // Automatically accept on reading and closing, or let them click
+          setKvkkAccepted(true); // Okuyup kapatınca otomatik onaylar
         }}
         title="KVKK Aydınlatma Metni"
       >
@@ -227,7 +256,7 @@ const Register = () => {
             Toplanan kişisel verileriniz, Şirketimiz tarafından sunulan ürün ve hizmetlerden sizleri faydalandırmak için gerekli çalışmaların iş birimlerimiz tarafından yapılması, bilet satış süreçlerinin yürütülmesi ve güvenli ödeme simülasyonunun gerçekleştirilmesi amacıyla Kanun’un 5. ve 6. maddelerinde belirtilen kişisel veri işleme şartları ve amaçları dahilinde işlenecektir.
           </p>
 
-          <p className="font-semibold text-slate-800">3. İşlenen Kişisel Verilerin Kimlere ve Hangi Amaçla Aktarılabileceği</p>
+          <p className="font-semibold text-slate-800">3. Kişisel Verilerin Kimlere ve Hangi Amaçla Aktarılabileceği</p>
           <p>
             Kişisel verileriniz; yasal yükümlülüklerin yerine getirilmesi amacıyla yetkili kamu kurum ve kuruluşları ile seyahatlerinizi gerçekleştirecek otobüs veya havayolu şirketlerine aktarılabilecektir.
           </p>
@@ -247,4 +276,5 @@ const Register = () => {
   );
 };
 
+// Register bileşenini dışa aktarır
 export default Register;

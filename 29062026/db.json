@@ -20,6 +20,13 @@
       "email": "can@gmail.com",
       "password": "123",
       "id": "K3-w1lJvFiI"
+    },
+    {
+      "name": "esra sağın",
+      "phone": "5555175555",
+      "email": "esrasagin@gmail.com",
+      "password": "123456",
+      "id": "JFASfX_KbSo"
     }
   ],
   "trips": [
@@ -169,11 +176,11 @@
       "seats": [
         {
           "number": 1,
-          "isOccupied": false
+          "isOccupied": true
         },
         {
           "number": 2,
-          "isOccupied": false
+          "isOccupied": true
         },
         {
           "number": 3,
@@ -181,7 +188,7 @@
         },
         {
           "number": 4,
-          "isOccupied": false
+          "isOccupied": true
         },
         {
           "number": 5,
@@ -342,7 +349,7 @@
         },
         {
           "number": "2E",
-          "isOccupied": false
+          "isOccupied": true
         },
         {
           "number": "2F",
@@ -556,6 +563,64 @@
       ]
     }
   ],
-  "bookings": [],
+  "bookings": [
+    {
+      "userId": "JFASfX_KbSo",
+      "userEmail": "esrasagin@gmail.com",
+      "userName": "esra sağın",
+      "tripId": "t3",
+      "tripDetails": {
+        "from": "İstanbul",
+        "to": "Ankara",
+        "date": "2026-06-30",
+        "time": "10:15",
+        "type": "flight",
+        "company": "Türk Hava Yolları"
+      },
+      "selectedSeats": [
+        "2E",
+        "4F",
+        "5F",
+        "3F"
+      ],
+      "totalPrice": 7400,
+      "passengerDetails": {
+        "name": "esra sağın",
+        "email": "esrasagin@gmail.com",
+        "phone": "5555175555"
+      },
+      "bookingDate": "2026-06-30T08:36:33.992Z",
+      "paymentStatus": "success",
+      "id": "najqA2lxqf4"
+    },
+    {
+      "userId": "JFASfX_KbSo",
+      "userEmail": "esrasagin@gmail.com",
+      "userName": "esra sağın",
+      "tripId": "t2",
+      "tripDetails": {
+        "from": "İstanbul",
+        "to": "Ankara",
+        "date": "2026-06-30",
+        "time": "12:00",
+        "type": "bus",
+        "company": "Metro Turizm"
+      },
+      "selectedSeats": [
+        4,
+        1,
+        2
+      ],
+      "totalPrice": 1740,
+      "passengerDetails": {
+        "name": "esra sağın",
+        "email": "esrasagin@gmail.com",
+        "phone": "5555175555"
+      },
+      "bookingDate": "2026-06-30T09:10:38.160Z",
+      "paymentStatus": "success",
+      "id": "zAP2nRmDz9A"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

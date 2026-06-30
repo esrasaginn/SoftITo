@@ -1,10 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>29062026</title>
+    <title>BiletiniAl - Otobüs ve Uçak Seferleri</title>
+    <!-- Sayfa yüklenirken gece modu temasının anlık uygulanması ve FOUC engellenmesi için betik -->
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('color-scheme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
