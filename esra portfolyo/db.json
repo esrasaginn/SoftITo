@@ -1,0 +1,181 @@
+{
+  "profile": {
+    "name": "Esra Sağın",
+    "title": "Architect & Industrial Product Designer",
+    "location": "İstanbul, Türkiye",
+    "email": "esrasaginn@gmail.com",
+    "behance": "www.behance.net/esrasagin",
+    "linkedin": "www.linkedin.com/in/esra-sağin-79a495195"
+  },
+  "projects": [
+    {
+      "id": "1",
+      "title": "The Recursion Project: Levh-i Mahfuz",
+      "category": "Mimari Tasarım",
+      "client_studio": "Melek Zeynep Studio",
+      "exhibition": "2025 Londra Tasarım Bienali Türkiye Pavyonu, Somerset House",
+      "role": "Mimar - Kalite Kontrol ve Üretim Süreci Desteği",
+      "featured": true,
+      "description": "Somerset House, 1 Numaralı Galeri'de sergilenen enstalasyon projesi. Geleneksel geometrik örüntülerin ve döngüsel formların modern mimariyle yeniden yorumlanması.",
+      "image": "/assets/levh_i_mahfuz.png",
+      "details": {
+        "materials": "Paslanmaz Çelik Konstrüksiyon, Akrilik Optik Aynalar, Akustik Tekstiller",
+        "process": "3D Parametrik Modelleme, CNC Metal Kesim, Akustik ve Optik Simülasyonlar, Yerinde Kalite Kontrol ve Montaj Yönetimi",
+        "year": "2025",
+        "dimensions": "8.5m x 4.2m x 3.6m"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Kreatif Direktörlük ve Ambalaj Tasarımları",
+      "category": "Ambalaj Tasarımı",
+      "client_studio": "Ezel Kozmetik",
+      "role": "Creative Director",
+      "featured": false,
+      "description": "Kozmetik ürün gamı için modern ambalaj ve minimalist sürdürülebilir ürün tasarımları.",
+      "image": "/assets/ezel_packaging.png",
+      "details": {
+        "materials": "Geri Dönüştürülebilir Cam Şişeler, Biyo-bozunur Selülozik Karton Kutular, Kabartmalı Lak Baskı",
+        "process": "Marka Kimliği Geliştirme, Kalıp Tasarımı, Tipografi Çalışmaları, Endüstriyel Üretim Entegrasyonu",
+        "year": "2024",
+        "dimensions": "Standart Ürün Boyutları (50ml - 200ml)"
+      }
+    },
+    {
+      "id": "3",
+      "title": "Modular Living Space: Prefabricated Cabin",
+      "category": "Mimari Tasarım",
+      "client_studio": "İSTON A.Ş.",
+      "role": "Yardımcı Mimar",
+      "featured": true,
+      "description": "Şehir dışı ve acil durum barınma ihtiyaçları için tasarlanmış, prefabrik, modüler betonarme kabin projesi.",
+      "image": "/assets/prefabricated_cabin.png",
+      "details": {
+        "materials": "Hafif Prekast Beton Paneller, Poliüretan Isı Yalıtımı, Çelik Birleşim Elemanları",
+        "process": "Modüler Tasarım Optimizasyonu, Panel Birleşim Detayları, Yapısal Mukavemet Analizi",
+        "year": "2023",
+        "dimensions": "6.0m x 3.0m x 2.8m"
+      }
+    },
+    {
+      "id": "4",
+      "title": "Olympos: Espresso Machine Concept",
+      "category": "Ürün Tasarımı",
+      "client_studio": "Arzum Elektrikli Ev Aletleri",
+      "role": "Tasarım Stajyeri",
+      "featured": false,
+      "description": "Bakır ve bazalt dokularını bir araya getiren, geleneksel Türk kahvesi ve İtalyan espresso kültürünü harmanlayan mutfak robotu konsepti.",
+      "image": "/assets/olympos_espresso.png",
+      "details": {
+        "materials": "Fırçalanmış Bakır Alaşım, Döküm Bazalt Kompozit Gövde, Oled Gösterge Paneli",
+        "process": "Kullanıcı Deneyimi (UX) Araştırması, Ergonomik Form Analizi, Detaylı 3D Render ve CMF (Color, Material, Finish) Belirleme",
+        "year": "2018",
+        "dimensions": "32cm x 24cm x 38cm"
+      }
+    },
+    {
+      "id": "5",
+      "title": "Modulo: Modular Desk Organizer",
+      "category": "Ürün Tasarımı",
+      "client_studio": "Arzum (Konsept)",
+      "role": "Tasarım Stajyeri",
+      "featured": false,
+      "description": "Eloksallı alüminyum gövde ve mıknatıslı ahşap saklama haznelerinden oluşan, kişiselleştirilebilir modüler masaüstü organizer seti.",
+      "image": "/assets/modulo_organizer.png",
+      "details": {
+        "materials": "Eloksallı Alüminyum Ekstrüzyon, Doğal Meşe Masif, Neodimyum Mıknatıslar",
+        "process": "Ekstrüzyon Kalıp Analizi, Tolerans Modelleme, CMF Seçimleri, Ergonomik Ölçülendirme",
+        "year": "2018",
+        "dimensions": "30cm x 12cm x 5cm"
+      }
+    },
+    {
+      "id": "6",
+      "title": "Urban Canopy & Modular Seating",
+      "category": "Mimari Tasarım",
+      "client_studio": "İSTON İstanbul Beton Elemanları",
+      "role": "Mimar",
+      "featured": false,
+      "description": "Kamusal alanlar ve parklar için prekast beton modüllerin ve ahşap yüzeylerin bir araya getirilmesiyle tasarlanan gölgelik ve oturma birimi sistemi.",
+      "image": "/assets/urban_canopy.png",
+      "details": {
+        "materials": "Prekast Beton Bloklar, Emprenye Edilmiş Çam Kereste, Çelik Ankraj Elemanları",
+        "process": "Kalıp Tasarımı, Strüktürel Mukavemet Hesapları, Kentsel Alan Ergonomisi Planlaması",
+        "year": "2021",
+        "dimensions": "4.5m x 4.5m x 3.2m"
+      }
+    },
+    {
+      "id": "7",
+      "title": "Elysium Premium Perfume Packaging",
+      "category": "Ambalaj Tasarımı",
+      "client_studio": "Ezel Kozmetik",
+      "role": "Creative Director",
+      "featured": false,
+      "description": "Lüks niş parfüm pazarı için tasarlanmış, keskin geometrik açılara sahip kristal şişe ve el yapımı özel dokulu karton kutu tasarımı.",
+      "image": "/assets/elysium_perfume.png",
+      "details": {
+        "materials": "Kristal Cam Şişe, Pirinç Alaşımlı Gold Kapak, Özel Dokulu Mukavva Kutu, Kadife Astar",
+        "process": "Geometrik Şişe Form Modellemesi, Cam Kalıp Analizi, Kutu Konstrüksiyonu, Sıcak Yaldız Baskı Entegrasyonu",
+        "year": "2023",
+        "dimensions": "100ml Şişe Kapasitesi"
+      }
+    }
+  ],
+  "experiences": [
+    {
+      "id": "exp1",
+      "company": "Esra SAĞIN MİMARLIK BÜROSU",
+      "role": "Kurucu Mimar",
+      "period": "Nisan 2025 - Present",
+      "description": "Mimari konsept tasarım, parametrik detay geliştirme ve ürün tasarımı projelerinin yürütülmesi.",
+      "skills": ["Parametrik Tasarım", "Detay Çözümü", "Proje Yönetimi"]
+    },
+    {
+      "id": "exp2",
+      "company": "Melek Zeynep Studio",
+      "role": "Mimar (Proje Bazlı)",
+      "period": "Eylül 2024 - Mart 2025",
+      "description": "Londra Tasarım Bienali Türkiye Pavyonu 'Levh-i Mahfuz' projesinde imalat detaylarının çizilmesi, kalite kontrol süreçlerinin yönetilmesi ve Somerset House'daki yerinde kurulum süreçlerine destek verilmesi.",
+      "skills": ["Detay Çözümü", "Kalite Kontrol", "CNC İmalat", "Uluslararası Sergi Koordinasyonu"]
+    },
+    {
+      "id": "exp3",
+      "company": "Ezel Kozmetik",
+      "role": "Kreatif Direktör / Ürün Tasarımcısı",
+      "period": "Ocak 2022 - Ağustos 2024",
+      "description": "Marka kimliği oluşturulması, ürün ambalaj tasarımları, stand tasarımları ve üretici koordinasyonu süreçlerinin yönetimi.",
+      "skills": ["Kurumsal Kimlik", "Ambalaj Tasarımı", "Malzeme Seçimi", "Üretim Takibi"]
+    },
+    {
+      "id": "exp4",
+      "company": "İSTON İstanbul Beton Elemanları",
+      "role": "Mimar / Tasarımcı",
+      "period": "Ocak 2020 - Kasım 2021",
+      "description": "Kentsel mobilya tasarımları ve prekast modüler yapı sistemlerinin detaylarının çizilmesi.",
+      "skills": ["Prekast Detayları", "Kent Mobilyası", "3D Modelleme"]
+    },
+    {
+      "id": "exp5",
+      "company": "Arzum Elektrikli Ev Aletleri",
+      "role": "Endüstriyel Tasarım Stajyeri",
+      "period": "Haziran 2018 - Ekim 2018",
+      "description": "Yeni nesil mutfak aletleri konsept geliştirme, CMF analizleri ve prototip üretim süreçlerinde yer alınması.",
+      "skills": ["CMF Analizi", "Konsept Geliştirme", "Ergonomi"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "İstanbul Medipol Üniversitesi",
+      "degree": "Lisans Derecesi, Mimarlık",
+      "years": "2016 - 2021",
+      "details": "Mimari Projeler, Yapı Teknolojileri, Sayısal Tasarım ve Robotik Üretim Teknolojileri."
+    },
+    {
+      "institution": "İstanbul Medipol Üniversitesi",
+      "degree": "Lisans Derecesi, Endüstri Ürünleri Tasarımı - Bölüm 3.sü",
+      "years": "2015 - 2019",
+      "details": "Çift Anadal Programı (ÇAP) kapsamında tamamlandı. Ürün Ergonomisi, CMF Tasarımı, İmalat Yöntemleri."
+    }
+  ]
+}

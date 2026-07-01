@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@200;300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* --- 1. Global Reference Design System (Architectural Prestige - ESTRUCTURA) --- */
+:root {
+  --color-safir: #111111;
+  --color-safir-rgb: 17, 17, 17;
+  --color-terracotta: #0B132B; /* Blue Black Accent for Light Mode */
+  --color-terracotta-rgb: 11, 19, 43;
+  
+  /* ESTRUCTURA Light Mode (Default as per layout) */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8F9FA;
+  --text-primary: #111111;
+  --text-secondary: #666666;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --card-bg: rgba(248, 249, 250, 0.95);
+  --scrollbar-thumb: #111111;
+  --scrollbar-track: #F1F1F1;
+  
+  color-scheme: light dark;
+}
+
+/* Color Scheme Overrides */
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8F9FA;
+  --text-primary: #111111;
+  --text-secondary: #666666;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --card-bg: rgba(248, 249, 250, 0.95);
+  --scrollbar-thumb: #0B132B;
+  --scrollbar-track: #E5E7EB;
+  --color-terracotta: #0B132B;
+  --color-terracotta-rgb: 11, 19, 43;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-primary: #121318;
+  --bg-secondary: #1A1B22;
+  --text-primary: #FFFFFF;
+  --text-secondary: #FFFFFF; /* Force secondary texts to white in dark mode */
+  --border-color: rgba(255, 255, 255, 0.12);
+  --card-bg: rgba(26, 27, 34, 0.95);
+  --scrollbar-thumb: #8FA9C4;
+  --scrollbar-track: #121318;
+  --color-terracotta: #8FA9C4; /* Soft Steel/Slate Blue for Dark Mode */
+  --color-terracotta-rgb: 143, 169, 196;
+}
+
+/* --- 2. Global Resets with Outfit & Playfair Display --- */
+* {
+  border-radius: 0px !important;
+  font-family: 'Outfit', sans-serif;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* Heading Typography Setup */
+h1, h2, h3, h4, h5, h6, .serif-heading, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.architect-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  text-transform: none !important; /* Normal sentence case capitalization */
+}
+
+/* Scrollbar styling */
+html {
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  scrollbar-width: thin;
+}
+
+/* Webkit Scrollbar fallback */
+@supports not (scrollbar-color: auto) {
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+}
+
+/* --- 3. Thin Blueprint Grid Layout --- */
+.blueprint-grid {
+  position: relative;
+  background-color: var(--bg-primary);
+  background-image: 
+    linear-gradient(var(--border-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.blueprint-grid::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle, transparent 35%, var(--bg-primary) 90%);
+  pointer-events: none;
+}
+
+/* --- 4. Premium Component Styles --- */
+.navbar-custom {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-primary) !important;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-bottom: 1px solid transparent;
+  padding: 0.4rem 0.8rem !important;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--text-primary) !important;
+  border-bottom: 1px solid var(--color-terracotta);
+}
+
+/* Fine-lined Boxy Container */
+.bg-glass {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  box-shadow: none; /* Clean flat layout matching the mockup */
+}
+
+/* Custom Interactive Scale Hover */
+.scale-hover {
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-color 0.25s ease;
+}
+
+.scale-hover:hover {
+  transform: translateY(-2px);
+  border-color: var(--text-primary) !important;
+}
+
+/* Editorial Black/White Buttons */
+.btn-primary-sharp {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border: 1px solid var(--text-primary);
+  padding: 0.8rem 1.6rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  transition: all 0.15s ease;
+}
+
+.btn-primary-sharp:hover {
+  background-color: var(--color-terracotta);
+  border-color: var(--color-terracotta);
+  color: #FFFFFF;
+}
+
+.btn-secondary-sharp {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.8rem 1.6rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  transition: all 0.15s ease;
+}
+
+.btn-secondary-sharp:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+.btn-outline-blueblack, .btn-outline-indigo, .btn-outline-terracotta {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.45rem 0.9rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  transition: all 0.15s ease;
+}
+
+.btn-outline-blueblack:hover, .btn-outline-blueblack.active,
+.btn-outline-indigo:hover, .btn-outline-indigo.active,
+.btn-outline-terracotta:hover, .btn-outline-terracotta.active {
+  background-color: var(--text-primary);
+  border-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+/* Custom Progress Bars */
+.progress-container {
+  margin-bottom: 1.25rem;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  color: var(--text-secondary);
+}
+
+.progress-custom {
+  background-color: var(--border-color);
+  height: 4px;
+}
+
+.progress-bar-custom {
+  background-color: var(--text-primary);
+  height: 100%;
+}
+
+/* Timeline Components */
+.timeline-container {
+  position: relative;
+  padding-left: 1.75rem;
+}
+
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background-color: var(--border-color);
+}
+
+.timeline-node {
+  position: absolute;
+  left: -3px;
+  top: 24px;
+  width: 7px;
+  height: 7px;
+  background-color: var(--text-primary);
+  z-index: 10;
+}
+
+/* Forms */
+.form-control-sharp {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0.7rem;
+  font-size: 0.85rem;
+}
+
+.form-control-sharp:focus {
+  background-color: var(--bg-secondary);
+  border-color: var(--text-primary);
+  box-shadow: none;
+  color: var(--text-primary);
+  outline: none;
+}
+
+/* Fonts and Sizes */
+.hero-subtitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  color: var(--color-terracotta);
+  letter-spacing: 0.15em;
+}
+
+.font-monospace {
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
+/* Footer style */
+.footer-custom {
+  background-color: #111111; /* Always dark footer as per layout */
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 3rem 0;
+  color: #999999;
+}
+
+.footer-custom .text-secondary {
+  color: #999999 !important;
+}
+
+.footer-custom a {
+  color: #999999 !important;
+}
+
+.footer-custom a:hover {
+  color: #FFFFFF !important;
+}
+
+/* Black CTA Banner Block Styles */
+.black-cta-banner {
+  background-color: #111111;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.black-cta-banner h2, .black-cta-banner h3 {
+  color: #FFFFFF !important;
+}
+
+/* Ensure readability on dark panels */
+.black-cta-banner .text-secondary,
+.bg-dark .text-secondary,
+.bg-dark .text-white-50,
+.footer-custom .text-secondary {
+  color: #E2E8F0 !important;
+}
+
+/* Dark Mode Readability overrides for elements using Bootstrap text-dark / border-dark */
+html[data-theme="dark"] .text-dark:not(.btn),
+html[data-theme="dark"] strong.text-dark,
+html[data-theme="dark"] span.text-dark:not(.btn),
+html[data-theme="dark"] a.text-dark:not(.btn) {
+  color: var(--text-primary) !important;
+}
+
+html[data-theme="dark"] .border-dark {
+  border-color: var(--text-primary) !important;
+}
+
+/* Force ALL text elements in dark mode to be white (excluding buttons/badges) */
+html[data-theme="dark"] body,
+html[data-theme="dark"] p,
+html[data-theme="dark"] span:not(.btn):not(.badge),
+html[data-theme="dark"] a:not(.btn),
+html[data-theme="dark"] .text-secondary,
+html[data-theme="dark"] .text-muted,
+html[data-theme="dark"] .text-white-50,
+html[data-theme="dark"] li,
+html[data-theme="dark"] div:not(.btn):not(.badge):not(.card-body) {
+  color: #FFFFFF !important;
+}
+
+/* Keep the card structures and outline buttons working properly in dark mode */
+html[data-theme="dark"] .btn-outline-indigo,
+html[data-theme="dark"] .btn-outline-blueblack,
+html[data-theme="dark"] .btn-outline-terracotta {
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+html[data-theme="dark"] .btn-outline-indigo:hover,
+html[data-theme="dark"] .btn-outline-blueblack:hover,
+html[data-theme="dark"] .btn-outline-terracotta:hover {
+  background-color: #FFFFFF !important;
+  color: #121318 !important;
+}
