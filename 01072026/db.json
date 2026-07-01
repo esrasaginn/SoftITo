@@ -1,0 +1,3594 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "password123",
+      "fullName": "CRM Yöneticisi",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde"
+    }
+  ],
+  "customers": [
+    {
+      "id": "101",
+      "name": "Can Alkan",
+      "company": "Piksel Tasarım",
+      "email": "can@pikselyazilim.com",
+      "phone": "+90 555 123 45 67",
+      "status": "active",
+      "createdAt": "2026-06-28T10:00:00.000Z",
+      "budget": 24000
+    },
+    {
+      "id": "102",
+      "name": "Selin Kaya",
+      "company": "Nova Finans",
+      "email": "selin@novafinans.com",
+      "phone": "+90 532 987 65 43",
+      "status": "inactive",
+      "createdAt": "2026-06-29T14:30:00.000Z",
+      "budget": 20000
+    },
+    {
+      "id": "103",
+      "name": "Esra Sağın",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "esramim@gmail.com",
+      "phone": "+90 530 491 82 82",
+      "status": "active",
+      "createdAt": "2026-07-01T08:41:58.926Z",
+      "budget": 67500
+    },
+    {
+      "id": "104",
+      "name": "Ahmet Yılmaz",
+      "company": "Kuzey Yazılım",
+      "email": "ahmet@kuzeyyazilim.com",
+      "phone": "+90 542 111 22 33",
+      "status": "active",
+      "createdAt": "2026-05-10T09:00:00.000Z",
+      "budget": 93000
+    },
+    {
+      "id": "105",
+      "name": "Elif Demir",
+      "company": "Beta Teknoloji",
+      "email": "elif@betateknoloji.com",
+      "phone": "+90 533 222 33 44",
+      "status": "active",
+      "createdAt": "2026-05-22T11:30:00.000Z",
+      "budget": 13500
+    },
+    {
+      "id": "106",
+      "name": "Murat Şahin",
+      "company": "Alpha Danışmanlık",
+      "email": "murat@alphadanismanlik.com",
+      "phone": "+90 505 333 44 55",
+      "status": "active",
+      "createdAt": "2026-06-05T15:45:00.000Z",
+      "budget": 94500
+    },
+    {
+      "id": "107",
+      "name": "Zeynep Çelik",
+      "company": "Beta Teknoloji",
+      "email": "zeynep@betateknoloji.com",
+      "phone": "+90 532 444 55 66",
+      "status": "active",
+      "createdAt": "2026-06-18T14:20:00.000Z",
+      "budget": 10500
+    },
+    {
+      "id": "108",
+      "name": "Gökhan Kaya",
+      "company": "Nova Finans",
+      "email": "gokhan@novafinans.com",
+      "phone": "+90 536 555 66 77",
+      "status": "active",
+      "createdAt": "2026-07-01T09:15:00.000Z",
+      "budget": 71500
+    },
+    {
+      "id": "109",
+      "name": "Merve Öztürk",
+      "company": "Piksel Tasarım",
+      "email": "merve@pikselyazilim.com",
+      "phone": "+90 554 666 77 88",
+      "status": "inactive",
+      "createdAt": "2026-06-25T10:10:00.000Z",
+      "budget": 94500
+    },
+    {
+      "id": "110",
+      "name": "Burak Aslan",
+      "company": "Beta Teknoloji",
+      "email": "burak@betateknoloji.com",
+      "phone": "+90 541 777 88 99",
+      "status": "active",
+      "createdAt": "2026-05-15T16:00:00.000Z",
+      "budget": 89500
+    },
+    {
+      "id": "111",
+      "name": "Fatma Şen",
+      "company": "Alpha Danışmanlık",
+      "email": "fatma@alphadanismanlik.com",
+      "phone": "+90 507 888 99 00",
+      "status": "active",
+      "createdAt": "2026-07-01T10:30:00.000Z",
+      "budget": 12000
+    },
+    {
+      "id": "112",
+      "name": "Cem Çetin",
+      "company": "Alpha Danışmanlık",
+      "email": "cemcetin@alphadanismanlik.com",
+      "phone": "+90 542 530 58 65",
+      "status": "inactive",
+      "createdAt": "2026-06-17T03:15:24.211Z",
+      "budget": 20000
+    },
+    {
+      "id": "113",
+      "name": "Fatma Yılmaz",
+      "company": "Vatan Sanayi",
+      "email": "fatmayilmaz@vatansanayi.com",
+      "phone": "+90 506 394 31 94",
+      "status": "active",
+      "createdAt": "2026-03-03T23:56:37.505Z",
+      "budget": 42500
+    },
+    {
+      "id": "114",
+      "name": "Kemal Avcı",
+      "company": "Zirve Pazarlama",
+      "email": "kemalavci@zirvepazarlama.com",
+      "phone": "+90 555 944 07 47",
+      "status": "active",
+      "createdAt": "2026-06-16T01:45:46.846Z",
+      "budget": 80500
+    },
+    {
+      "id": "115",
+      "name": "Mustafa Çelik",
+      "company": "Zirve Pazarlama",
+      "email": "mustafacelik@zirvepazarlama.com",
+      "phone": "+90 543 419 78 48",
+      "status": "active",
+      "createdAt": "2026-04-11T12:05:36.747Z",
+      "budget": 23000
+    },
+    {
+      "id": "116",
+      "name": "Süleyman Kösem",
+      "company": "Toros Enerji",
+      "email": "suleymankosem@torosenerji.com",
+      "phone": "+90 555 377 55 87",
+      "status": "active",
+      "createdAt": "2026-03-18T05:20:35.217Z",
+      "budget": 22000
+    },
+    {
+      "id": "117",
+      "name": "Mustafa Kösem",
+      "company": "Piksel Tasarım",
+      "email": "mustafakosem@pikseltasarim.com",
+      "phone": "+90 507 865 92 10",
+      "status": "active",
+      "createdAt": "2026-04-26T10:14:12.384Z",
+      "budget": 26000
+    },
+    {
+      "id": "118",
+      "name": "Büşra Doğan",
+      "company": "Vatan Sanayi",
+      "email": "busradogan@vatansanayi.com",
+      "phone": "+90 544 329 78 20",
+      "status": "active",
+      "createdAt": "2026-04-30T07:45:44.676Z",
+      "budget": 7000
+    },
+    {
+      "id": "119",
+      "name": "Hüseyin Acar",
+      "company": "Piksel Tasarım",
+      "email": "huseyinacar@pikseltasarim.com",
+      "phone": "+90 555 627 62 43",
+      "status": "active",
+      "createdAt": "2026-03-23T21:59:20.036Z",
+      "budget": 19000
+    },
+    {
+      "id": "120",
+      "name": "Burak Yıldırım",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "burakyildirim@esramimarlikvetasarim.com",
+      "phone": "+90 544 991 49 35",
+      "status": "active",
+      "createdAt": "2026-03-07T20:18:48.338Z",
+      "budget": 68500
+    },
+    {
+      "id": "121",
+      "name": "Hakan Kösem",
+      "company": "Vatan Sanayi",
+      "email": "hakankosem@vatansanayi.com",
+      "phone": "+90 544 376 11 90",
+      "status": "active",
+      "createdAt": "2026-02-16T23:38:37.488Z",
+      "budget": 50000
+    },
+    {
+      "id": "122",
+      "name": "Cem Bulut",
+      "company": "Piksel Tasarım",
+      "email": "cembulut@pikseltasarim.com",
+      "phone": "+90 507 797 33 68",
+      "status": "active",
+      "createdAt": "2026-06-28T02:50:31.530Z",
+      "budget": 76000
+    },
+    {
+      "id": "123",
+      "name": "Murat Aydın",
+      "company": "Güneş İnşaat",
+      "email": "murataydin@gunesi̇nsaat.com",
+      "phone": "+90 535 555 70 14",
+      "status": "inactive",
+      "createdAt": "2026-02-22T10:04:33.785Z",
+      "budget": 16000
+    },
+    {
+      "id": "124",
+      "name": "Seda Yılmaz",
+      "company": "Anadolu Lojistik",
+      "email": "sedayilmaz@anadolulojistik.com",
+      "phone": "+90 543 614 70 18",
+      "status": "inactive",
+      "createdAt": "2026-03-12T06:03:47.595Z",
+      "budget": 10500
+    },
+    {
+      "id": "125",
+      "name": "Emine Demir",
+      "company": "Karadeniz Gıda",
+      "email": "eminedemir@karadenizgida.com",
+      "phone": "+90 543 778 53 48",
+      "status": "active",
+      "createdAt": "2026-06-02T05:01:33.357Z",
+      "budget": 23500
+    },
+    {
+      "id": "126",
+      "name": "Zeynep Coşkun",
+      "company": "Atlas İthalat",
+      "email": "zeynepcoskun@atlasi̇thalat.com",
+      "phone": "+90 506 286 48 76",
+      "status": "active",
+      "createdAt": "2026-02-10T10:30:21.234Z",
+      "budget": 64500
+    },
+    {
+      "id": "127",
+      "name": "Gökhan Avcı",
+      "company": "Beta Teknoloji",
+      "email": "gokhanavci@betateknoloji.com",
+      "phone": "+90 506 983 57 18",
+      "status": "active",
+      "createdAt": "2026-01-07T18:49:01.903Z",
+      "budget": 66500
+    },
+    {
+      "id": "128",
+      "name": "Fatma Kara",
+      "company": "Karadeniz Gıda",
+      "email": "fatmakara@karadenizgida.com",
+      "phone": "+90 544 377 03 75",
+      "status": "active",
+      "createdAt": "2026-03-05T11:56:35.541Z",
+      "budget": 39500
+    },
+    {
+      "id": "129",
+      "name": "Mehmet Demir",
+      "company": "Beta Teknoloji",
+      "email": "mehmetdemir@betateknoloji.com",
+      "phone": "+90 555 895 87 58",
+      "status": "active",
+      "createdAt": "2026-05-25T10:03:56.740Z",
+      "budget": 79500
+    },
+    {
+      "id": "130",
+      "name": "Hakan Yıldırım",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "hakanyildirim@esramimarlikvetasarim.com",
+      "phone": "+90 507 733 50 40",
+      "status": "active",
+      "createdAt": "2026-01-28T22:22:29.461Z",
+      "budget": 12500
+    },
+    {
+      "id": "131",
+      "name": "Fatma Yıldız",
+      "company": "Marmara Turizm",
+      "email": "fatmayildiz@marmaraturizm.com",
+      "phone": "+90 542 991 26 36",
+      "status": "active",
+      "createdAt": "2026-05-04T13:17:08.168Z",
+      "budget": 19500
+    },
+    {
+      "id": "132",
+      "name": "Kemal Kara",
+      "company": "Anadolu Lojistik",
+      "email": "kemalkara@anadolulojistik.com",
+      "phone": "+90 532 607 75 79",
+      "status": "active",
+      "createdAt": "2026-06-20T18:31:54.994Z",
+      "budget": 84500
+    },
+    {
+      "id": "133",
+      "name": "Hakan Koç",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "hakankoc@esramimarlikvetasarim.com",
+      "phone": "+90 505 677 89 69",
+      "status": "active",
+      "createdAt": "2026-04-17T22:31:13.146Z",
+      "budget": 47000
+    },
+    {
+      "id": "134",
+      "name": "Hüseyin Yalçın",
+      "company": "Karadeniz Gıda",
+      "email": "huseyinyalcin@karadenizgida.com",
+      "phone": "+90 542 626 26 20",
+      "status": "active",
+      "createdAt": "2026-04-05T17:00:29.386Z",
+      "budget": 71500
+    },
+    {
+      "id": "135",
+      "name": "Mustafa Demir",
+      "company": "Atlas İthalat",
+      "email": "mustafademir@atlasi̇thalat.com",
+      "phone": "+90 535 822 34 77",
+      "status": "active",
+      "createdAt": "2026-02-25T21:46:50.686Z",
+      "budget": 42000
+    },
+    {
+      "id": "136",
+      "name": "Seda Arslan",
+      "company": "Nova Finans",
+      "email": "sedaarslan@novafinans.com",
+      "phone": "+90 507 846 07 02",
+      "status": "active",
+      "createdAt": "2026-02-06T11:35:09.637Z",
+      "budget": 41000
+    },
+    {
+      "id": "137",
+      "name": "Esra Güler",
+      "company": "Kuzey Yazılım",
+      "email": "esraguler@kuzeyyazilim.com",
+      "phone": "+90 532 141 77 96",
+      "status": "active",
+      "createdAt": "2026-03-19T11:17:43.999Z",
+      "budget": 56000
+    },
+    {
+      "id": "138",
+      "name": "Ömer Doğan",
+      "company": "Güneş İnşaat",
+      "email": "omerdogan@gunesi̇nsaat.com",
+      "phone": "+90 507 348 16 51",
+      "status": "active",
+      "createdAt": "2026-02-27T17:48:06.778Z",
+      "budget": 92500
+    },
+    {
+      "id": "139",
+      "name": "Esra Yılmaz",
+      "company": "Marmara Turizm",
+      "email": "esrayilmaz@marmaraturizm.com",
+      "phone": "+90 535 379 44 63",
+      "status": "active",
+      "createdAt": "2026-06-23T10:15:53.012Z",
+      "budget": 61500
+    },
+    {
+      "id": "140",
+      "name": "Can Öztürk",
+      "company": "Piksel Tasarım",
+      "email": "canozturk@pikseltasarim.com",
+      "phone": "+90 535 803 85 12",
+      "status": "active",
+      "createdAt": "2026-06-15T15:21:18.368Z",
+      "budget": 84000
+    },
+    {
+      "id": "141",
+      "name": "Ahmet Yıldırım",
+      "company": "Alpha Danışmanlık",
+      "email": "ahmetyildirim@alphadanismanlik.com",
+      "phone": "+90 533 256 90 20",
+      "status": "active",
+      "createdAt": "2026-06-10T21:39:49.507Z",
+      "budget": 65000
+    },
+    {
+      "id": "142",
+      "name": "Hatice Yıldız",
+      "company": "Karadeniz Gıda",
+      "email": "haticeyildiz@karadenizgida.com",
+      "phone": "+90 505 759 42 40",
+      "status": "active",
+      "createdAt": "2026-03-31T04:02:43.893Z",
+      "budget": 40500
+    },
+    {
+      "id": "143",
+      "name": "Gökhan Kara",
+      "company": "Nova Finans",
+      "email": "gokhankara@novafinans.com",
+      "phone": "+90 507 510 04 67",
+      "status": "active",
+      "createdAt": "2026-04-25T16:40:52.401Z",
+      "budget": 39000
+    },
+    {
+      "id": "144",
+      "name": "Gökhan Sarı",
+      "company": "Ege Tekstil",
+      "email": "gokhansari@egetekstil.com",
+      "phone": "+90 555 903 81 92",
+      "status": "active",
+      "createdAt": "2026-03-01T20:45:31.991Z",
+      "budget": 55500
+    },
+    {
+      "id": "145",
+      "name": "Mustafa Coşkun",
+      "company": "Marmara Turizm",
+      "email": "mustafacoskun@marmaraturizm.com",
+      "phone": "+90 533 550 54 27",
+      "status": "inactive",
+      "createdAt": "2026-02-24T21:57:31.139Z",
+      "budget": 34000
+    },
+    {
+      "id": "146",
+      "name": "Büşra Kurt",
+      "company": "Toros Enerji",
+      "email": "busrakurt@torosenerji.com",
+      "phone": "+90 544 741 73 56",
+      "status": "active",
+      "createdAt": "2026-01-24T23:42:42.081Z",
+      "budget": 36500
+    },
+    {
+      "id": "147",
+      "name": "Ahmet Şen",
+      "company": "Toros Enerji",
+      "email": "ahmetsen@torosenerji.com",
+      "phone": "+90 555 804 09 79",
+      "status": "active",
+      "createdAt": "2026-01-19T10:15:30.011Z",
+      "budget": 65500
+    },
+    {
+      "id": "148",
+      "name": "Elif Çetin",
+      "company": "Güneş İnşaat",
+      "email": "elifcetin@gunesi̇nsaat.com",
+      "phone": "+90 533 915 47 71",
+      "status": "inactive",
+      "createdAt": "2026-01-09T01:27:52.862Z",
+      "budget": 7500
+    },
+    {
+      "id": "149",
+      "name": "Kemal Arslan",
+      "company": "Ege Tekstil",
+      "email": "kemalarslan@egetekstil.com",
+      "phone": "+90 535 406 94 49",
+      "status": "active",
+      "createdAt": "2026-05-04T14:21:24.495Z",
+      "budget": 8000
+    },
+    {
+      "id": "150",
+      "name": "Can Koç",
+      "company": "Vatan Sanayi",
+      "email": "cankoc@vatansanayi.com",
+      "phone": "+90 555 124 88 72",
+      "status": "inactive",
+      "createdAt": "2026-02-05T18:54:24.658Z",
+      "budget": 72000
+    },
+    {
+      "id": "151",
+      "name": "Elif Çetin",
+      "company": "Piksel Tasarım",
+      "email": "elifcetin@pikseltasarim.com",
+      "phone": "+90 506 781 39 98",
+      "status": "active",
+      "createdAt": "2026-03-08T06:33:29.947Z",
+      "budget": 61500
+    },
+    {
+      "id": "152",
+      "name": "Burak Aksoy",
+      "company": "Marmara Turizm",
+      "email": "burakaksoy@marmaraturizm.com",
+      "phone": "+90 507 282 48 49",
+      "status": "active",
+      "createdAt": "2026-05-21T01:04:24.531Z",
+      "budget": 13000
+    },
+    {
+      "id": "153",
+      "name": "Hüseyin Doğan",
+      "company": "Atlas İthalat",
+      "email": "huseyindogan@atlasi̇thalat.com",
+      "phone": "+90 505 420 74 58",
+      "status": "inactive",
+      "createdAt": "2026-03-29T13:28:37.977Z",
+      "budget": 69000
+    },
+    {
+      "id": "154",
+      "name": "Hasan Çelik",
+      "company": "Güneş İnşaat",
+      "email": "hasancelik@gunesi̇nsaat.com",
+      "phone": "+90 535 930 40 35",
+      "status": "active",
+      "createdAt": "2026-03-16T09:44:16.284Z",
+      "budget": 24500
+    },
+    {
+      "id": "155",
+      "name": "Can Demir",
+      "company": "Beta Teknoloji",
+      "email": "candemir@betateknoloji.com",
+      "phone": "+90 543 734 13 85",
+      "status": "active",
+      "createdAt": "2026-02-21T00:35:02.442Z",
+      "budget": 60500
+    },
+    {
+      "id": "156",
+      "name": "Osman Koç",
+      "company": "Nova Finans",
+      "email": "osmankoc@novafinans.com",
+      "phone": "+90 535 286 89 20",
+      "status": "active",
+      "createdAt": "2026-03-25T04:44:25.626Z",
+      "budget": 51000
+    },
+    {
+      "id": "157",
+      "name": "Cem Demir",
+      "company": "Atlas İthalat",
+      "email": "cemdemir@atlasi̇thalat.com",
+      "phone": "+90 506 274 47 88",
+      "status": "active",
+      "createdAt": "2026-01-19T23:23:38.099Z",
+      "budget": 62000
+    },
+    {
+      "id": "158",
+      "name": "Murat Kösem",
+      "company": "Beta Teknoloji",
+      "email": "muratkosem@betateknoloji.com",
+      "phone": "+90 532 845 54 90",
+      "status": "active",
+      "createdAt": "2026-07-01T06:31:12.640Z",
+      "budget": 8000
+    },
+    {
+      "id": "159",
+      "name": "Zeynep Koç",
+      "company": "Beta Teknoloji",
+      "email": "zeynepkoc@betateknoloji.com",
+      "phone": "+90 533 140 29 66",
+      "status": "active",
+      "createdAt": "2026-04-28T02:08:24.149Z",
+      "budget": 29500
+    },
+    {
+      "id": "160",
+      "name": "Mustafa Bulut",
+      "company": "Alpha Danışmanlık",
+      "email": "mustafabulut@alphadanismanlik.com",
+      "phone": "+90 555 630 37 83",
+      "status": "active",
+      "createdAt": "2026-04-26T17:31:37.523Z",
+      "budget": 53000
+    },
+    {
+      "id": "161",
+      "name": "Seda Öztürk",
+      "company": "Anadolu Lojistik",
+      "email": "sedaozturk@anadolulojistik.com",
+      "phone": "+90 535 403 10 98",
+      "status": "active",
+      "createdAt": "2026-04-28T20:44:10.090Z",
+      "budget": 31000
+    },
+    {
+      "id": "162",
+      "name": "Ömer Kara",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "omerkara@esramimarlikvetasarim.com",
+      "phone": "+90 544 695 19 58",
+      "status": "active",
+      "createdAt": "2026-05-22T09:02:14.861Z",
+      "budget": 17500
+    },
+    {
+      "id": "163",
+      "name": "Seda Kösem",
+      "company": "Beta Teknoloji",
+      "email": "sedakosem@betateknoloji.com",
+      "phone": "+90 505 994 09 97",
+      "status": "active",
+      "createdAt": "2026-06-16T01:41:29.009Z",
+      "budget": 69500
+    },
+    {
+      "id": "164",
+      "name": "Derya Kılıç",
+      "company": "Nova Finans",
+      "email": "deryakilic@novafinans.com",
+      "phone": "+90 506 264 07 29",
+      "status": "active",
+      "createdAt": "2026-03-27T18:38:01.940Z",
+      "budget": 24000
+    },
+    {
+      "id": "165",
+      "name": "Zeynep Sarı",
+      "company": "Beta Teknoloji",
+      "email": "zeynepsari@betateknoloji.com",
+      "phone": "+90 533 825 99 00",
+      "status": "active",
+      "createdAt": "2026-02-22T09:30:23.593Z",
+      "budget": 81000
+    },
+    {
+      "id": "166",
+      "name": "Hüseyin Özdemir",
+      "company": "Ege Tekstil",
+      "email": "huseyinozdemir@egetekstil.com",
+      "phone": "+90 533 321 39 41",
+      "status": "active",
+      "createdAt": "2026-04-29T10:13:19.074Z",
+      "budget": 32000
+    },
+    {
+      "id": "167",
+      "name": "Zeynep Çetin",
+      "company": "Güneş İnşaat",
+      "email": "zeynepcetin@gunesi̇nsaat.com",
+      "phone": "+90 544 116 77 87",
+      "status": "active",
+      "createdAt": "2026-04-17T04:03:11.897Z",
+      "budget": 59000
+    },
+    {
+      "id": "168",
+      "name": "Merve Kara",
+      "company": "Alpha Danışmanlık",
+      "email": "mervekara@alphadanismanlik.com",
+      "phone": "+90 505 824 57 72",
+      "status": "inactive",
+      "createdAt": "2026-02-26T23:34:55.849Z",
+      "budget": 52000
+    },
+    {
+      "id": "169",
+      "name": "Ahmet Bulut",
+      "company": "Piksel Tasarım",
+      "email": "ahmetbulut@pikseltasarim.com",
+      "phone": "+90 555 853 85 80",
+      "status": "inactive",
+      "createdAt": "2026-01-04T13:14:32.453Z",
+      "budget": 24500
+    },
+    {
+      "id": "170",
+      "name": "Can Kurt",
+      "company": "Atlas İthalat",
+      "email": "cankurt@atlasi̇thalat.com",
+      "phone": "+90 532 174 10 42",
+      "status": "active",
+      "createdAt": "2026-02-06T17:16:50.783Z",
+      "budget": 88000
+    },
+    {
+      "id": "171",
+      "name": "Ahmet Kurt",
+      "company": "Zirve Pazarlama",
+      "email": "ahmetkurt@zirvepazarlama.com",
+      "phone": "+90 543 649 91 95",
+      "status": "inactive",
+      "createdAt": "2026-03-29T03:37:47.790Z",
+      "budget": 48000
+    },
+    {
+      "id": "172",
+      "name": "Veli Aksoy",
+      "company": "Toros Enerji",
+      "email": "veliaksoy@torosenerji.com",
+      "phone": "+90 555 861 14 02",
+      "status": "active",
+      "createdAt": "2026-04-27T10:31:00.707Z",
+      "budget": 36000
+    },
+    {
+      "id": "173",
+      "name": "Hakan Yalçın",
+      "company": "Güneş İnşaat",
+      "email": "hakanyalcin@gunesi̇nsaat.com",
+      "phone": "+90 505 411 56 54",
+      "status": "active",
+      "createdAt": "2026-02-20T11:04:09.628Z",
+      "budget": 66500
+    },
+    {
+      "id": "174",
+      "name": "Fatma Erdoğan",
+      "company": "Zirve Pazarlama",
+      "email": "fatmaerdogan@zirvepazarlama.com",
+      "phone": "+90 542 204 68 08",
+      "status": "active",
+      "createdAt": "2026-02-10T03:12:50.987Z",
+      "budget": 16500
+    },
+    {
+      "id": "175",
+      "name": "Gökhan Aksoy",
+      "company": "Vatan Sanayi",
+      "email": "gokhanaksoy@vatansanayi.com",
+      "phone": "+90 555 579 16 56",
+      "status": "active",
+      "createdAt": "2026-01-23T06:59:35.964Z",
+      "budget": 81000
+    },
+    {
+      "id": "176",
+      "name": "Ali Yalçın",
+      "company": "Güneş İnşaat",
+      "email": "aliyalcin@gunesi̇nsaat.com",
+      "phone": "+90 542 763 53 12",
+      "status": "active",
+      "createdAt": "2026-03-02T11:22:03.897Z",
+      "budget": 89000
+    },
+    {
+      "id": "177",
+      "name": "Esra SAĞIN",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "esrasagin@esramimarlikvetasarim.com",
+      "phone": "+90 505 588 86 17",
+      "status": "active",
+      "createdAt": "2026-02-14T17:57:36.632Z",
+      "budget": 94000
+    },
+    {
+      "id": "178",
+      "name": "Murat Çelik",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "muratcelik@esramimarlikvetasarim.com",
+      "phone": "+90 543 585 17 44",
+      "status": "active",
+      "createdAt": "2026-04-11T09:44:15.153Z",
+      "budget": 34500
+    },
+    {
+      "id": "179",
+      "name": "Kemal Aslan",
+      "company": "Anadolu Lojistik",
+      "email": "kemalaslan@anadolulojistik.com",
+      "phone": "+90 505 101 33 72",
+      "status": "active",
+      "createdAt": "2026-04-06T13:29:06.618Z",
+      "budget": 64500
+    },
+    {
+      "id": "180",
+      "name": "Kemal Yalçın",
+      "company": "Kuzey Yazılım",
+      "email": "kemalyalcin@kuzeyyazilim.com",
+      "phone": "+90 543 472 61 32",
+      "status": "active",
+      "createdAt": "2026-06-18T06:00:14.035Z",
+      "budget": 79500
+    },
+    {
+      "id": "181",
+      "name": "Mustafa Demir",
+      "company": "Piksel Tasarım",
+      "email": "mustafademir@pikseltasarim.com",
+      "phone": "+90 543 977 87 60",
+      "status": "active",
+      "createdAt": "2026-04-23T03:29:28.954Z",
+      "budget": 74500
+    },
+    {
+      "id": "182",
+      "name": "Hakan Kılıç",
+      "company": "Beta Teknoloji",
+      "email": "hakankilic@betateknoloji.com",
+      "phone": "+90 505 124 08 33",
+      "status": "inactive",
+      "createdAt": "2026-05-30T20:21:31.246Z",
+      "budget": 27500
+    },
+    {
+      "id": "183",
+      "name": "Süleyman Kösem",
+      "company": "Marmara Turizm",
+      "email": "suleymankosem@marmaraturizm.com",
+      "phone": "+90 505 961 11 64",
+      "status": "inactive",
+      "createdAt": "2026-03-19T15:36:31.594Z",
+      "budget": 21000
+    },
+    {
+      "id": "184",
+      "name": "Zeynep Doğan",
+      "company": "Nova Finans",
+      "email": "zeynepdogan@novafinans.com",
+      "phone": "+90 507 220 42 63",
+      "status": "active",
+      "createdAt": "2026-05-14T14:38:12.540Z",
+      "budget": 53000
+    },
+    {
+      "id": "185",
+      "name": "Hüseyin Şahin",
+      "company": "Alpha Danışmanlık",
+      "email": "huseyinsahin@alphadanismanlik.com",
+      "phone": "+90 544 806 12 15",
+      "status": "active",
+      "createdAt": "2026-03-31T13:43:52.863Z",
+      "budget": 64000
+    },
+    {
+      "id": "186",
+      "name": "Deniz Soylu",
+      "company": "Vatan Sanayi",
+      "email": "denizsoylu@vatansanayi.com",
+      "phone": "+90 555 183 65 69",
+      "status": "active",
+      "createdAt": "2026-04-24T13:05:01.771Z",
+      "budget": 19000
+    },
+    {
+      "id": "187",
+      "name": "Gökhan Kaya",
+      "company": "Zirve Pazarlama",
+      "email": "gokhankaya@zirvepazarlama.com",
+      "phone": "+90 506 357 39 89",
+      "status": "active",
+      "createdAt": "2026-05-12T00:49:59.806Z",
+      "budget": 82500
+    },
+    {
+      "id": "188",
+      "name": "Mehmet Kaya",
+      "company": "Toros Enerji",
+      "email": "mehmetkaya@torosenerji.com",
+      "phone": "+90 543 498 60 12",
+      "status": "inactive",
+      "createdAt": "2026-06-30T07:59:48.362Z",
+      "budget": 92500
+    },
+    {
+      "id": "189",
+      "name": "Mehmet Demir",
+      "company": "Güneş İnşaat",
+      "email": "mehmetdemir@gunesi̇nsaat.com",
+      "phone": "+90 507 355 56 08",
+      "status": "inactive",
+      "createdAt": "2026-04-21T21:50:38.027Z",
+      "budget": 46000
+    },
+    {
+      "id": "190",
+      "name": "Emine Arslan",
+      "company": "Zirve Pazarlama",
+      "email": "eminearslan@zirvepazarlama.com",
+      "phone": "+90 506 570 84 65",
+      "status": "active",
+      "createdAt": "2026-02-24T11:17:40.175Z",
+      "budget": 77000
+    },
+    {
+      "id": "191",
+      "name": "Ömer Kılıç",
+      "company": "Kuzey Yazılım",
+      "email": "omerkilic@kuzeyyazilim.com",
+      "phone": "+90 506 487 38 87",
+      "status": "inactive",
+      "createdAt": "2026-06-09T21:32:29.753Z",
+      "budget": 91500
+    },
+    {
+      "id": "192",
+      "name": "Can Yıldız",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "canyildiz@esramimarlikvetasarim.com",
+      "phone": "+90 505 183 18 35",
+      "status": "inactive",
+      "createdAt": "2026-02-08T07:07:32.913Z",
+      "budget": 22000
+    },
+    {
+      "id": "193",
+      "name": "Gökhan Kösem",
+      "company": "Alpha Danışmanlık",
+      "email": "gokhankosem@alphadanismanlik.com",
+      "phone": "+90 532 307 93 58",
+      "status": "inactive",
+      "createdAt": "2026-01-26T12:21:57.818Z",
+      "budget": 74500
+    },
+    {
+      "id": "194",
+      "name": "Seda Aksoy",
+      "company": "Vatan Sanayi",
+      "email": "sedaaksoy@vatansanayi.com",
+      "phone": "+90 542 278 20 64",
+      "status": "active",
+      "createdAt": "2026-05-10T13:03:00.290Z",
+      "budget": 20000
+    },
+    {
+      "id": "195",
+      "name": "Elif Özdemir",
+      "company": "Piksel Tasarım",
+      "email": "elifozdemir@pikseltasarim.com",
+      "phone": "+90 544 166 02 97",
+      "status": "active",
+      "createdAt": "2026-01-10T00:16:59.212Z",
+      "budget": 14000
+    },
+    {
+      "id": "196",
+      "name": "Seda Soylu",
+      "company": "Nova Finans",
+      "email": "sedasoylu@novafinans.com",
+      "phone": "+90 543 266 15 63",
+      "status": "inactive",
+      "createdAt": "2026-06-22T17:28:43.430Z",
+      "budget": 66500
+    },
+    {
+      "id": "197",
+      "name": "Kemal Soylu",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "kemalsoylu@esramimarlikvetasarim.com",
+      "phone": "+90 544 127 30 11",
+      "status": "active",
+      "createdAt": "2026-04-09T08:00:00.772Z",
+      "budget": 84000
+    },
+    {
+      "id": "198",
+      "name": "Hakan Aydın",
+      "company": "Kuzey Yazılım",
+      "email": "hakanaydin@kuzeyyazilim.com",
+      "phone": "+90 507 581 33 11",
+      "status": "inactive",
+      "createdAt": "2026-06-15T20:41:28.589Z",
+      "budget": 15500
+    },
+    {
+      "id": "199",
+      "name": "Gökhan Çelik",
+      "company": "Alpha Danışmanlık",
+      "email": "gokhancelik@alphadanismanlik.com",
+      "phone": "+90 532 647 23 43",
+      "status": "active",
+      "createdAt": "2026-06-30T06:00:41.283Z",
+      "budget": 44500
+    },
+    {
+      "id": "200",
+      "name": "Selin Kurt",
+      "company": "Alpha Danışmanlık",
+      "email": "selinkurt@alphadanismanlik.com",
+      "phone": "+90 555 823 88 80",
+      "status": "active",
+      "createdAt": "2026-02-11T03:33:15.270Z",
+      "budget": 85500
+    },
+    {
+      "id": "201",
+      "name": "Hüseyin Doğan",
+      "company": "Zirve Pazarlama",
+      "email": "huseyindogan@zirvepazarlama.com",
+      "phone": "+90 544 948 29 54",
+      "status": "active",
+      "createdAt": "2026-06-15T04:28:56.017Z",
+      "budget": 48000
+    },
+    {
+      "id": "202",
+      "name": "Selin Demir",
+      "company": "Anadolu Lojistik",
+      "email": "selindemir@anadolulojistik.com",
+      "phone": "+90 542 245 52 68",
+      "status": "active",
+      "createdAt": "2026-06-15T14:56:29.175Z",
+      "budget": 32000
+    },
+    {
+      "id": "203",
+      "name": "Ayşe Aslan",
+      "company": "Karadeniz Gıda",
+      "email": "ayseaslan@karadenizgida.com",
+      "phone": "+90 543 224 82 49",
+      "status": "active",
+      "createdAt": "2026-04-29T04:05:50.779Z",
+      "budget": 6000
+    },
+    {
+      "id": "204",
+      "name": "Ayşe Kurt",
+      "company": "Nova Finans",
+      "email": "aysekurt@novafinans.com",
+      "phone": "+90 506 712 46 06",
+      "status": "inactive",
+      "createdAt": "2026-01-26T11:28:02.041Z",
+      "budget": 71500
+    },
+    {
+      "id": "205",
+      "name": "Murat Sarı",
+      "company": "Piksel Tasarım",
+      "email": "muratsari@pikseltasarim.com",
+      "phone": "+90 505 505 78 31",
+      "status": "inactive",
+      "createdAt": "2026-05-21T15:20:32.617Z",
+      "budget": 83000
+    },
+    {
+      "id": "206",
+      "name": "Ömer Coşkun",
+      "company": "Anadolu Lojistik",
+      "email": "omercoskun@anadolulojistik.com",
+      "phone": "+90 505 143 13 29",
+      "status": "active",
+      "createdAt": "2026-02-20T20:58:56.854Z",
+      "budget": 52000
+    },
+    {
+      "id": "207",
+      "name": "Derya Kaya",
+      "company": "Ege Tekstil",
+      "email": "deryakaya@egetekstil.com",
+      "phone": "+90 533 246 45 74",
+      "status": "active",
+      "createdAt": "2026-05-02T04:30:18.277Z",
+      "budget": 23500
+    },
+    {
+      "id": "208",
+      "name": "Fatma Yıldırım",
+      "company": "Beta Teknoloji",
+      "email": "fatmayildirim@betateknoloji.com",
+      "phone": "+90 505 670 17 56",
+      "status": "active",
+      "createdAt": "2026-02-24T22:07:30.380Z",
+      "budget": 65000
+    },
+    {
+      "id": "209",
+      "name": "Derya Kaya",
+      "company": "Karadeniz Gıda",
+      "email": "deryakaya@karadenizgida.com",
+      "phone": "+90 532 313 13 12",
+      "status": "inactive",
+      "createdAt": "2026-01-08T12:00:24.721Z",
+      "budget": 37500
+    },
+    {
+      "id": "210",
+      "name": "Gökhan Aslan",
+      "company": "Toros Enerji",
+      "email": "gokhanaslan@torosenerji.com",
+      "phone": "+90 533 726 51 00",
+      "status": "active",
+      "createdAt": "2026-04-10T13:56:32.625Z",
+      "budget": 56000
+    },
+    {
+      "id": "211",
+      "name": "Esra Şen",
+      "company": "Vatan Sanayi",
+      "email": "esrasen@vatansanayi.com",
+      "phone": "+90 507 636 59 97",
+      "status": "active",
+      "createdAt": "2026-06-03T10:14:55.746Z",
+      "budget": 9000
+    },
+    {
+      "id": "212",
+      "name": "Esra Yalçın",
+      "company": "Marmara Turizm",
+      "email": "esrayalcin@marmaraturizm.com",
+      "phone": "+90 555 413 65 62",
+      "status": "active",
+      "createdAt": "2026-01-28T06:52:50.363Z",
+      "budget": 49500
+    },
+    {
+      "id": "213",
+      "name": "Ali Özdemir",
+      "company": "Karadeniz Gıda",
+      "email": "aliozdemir@karadenizgida.com",
+      "phone": "+90 542 174 68 87",
+      "status": "active",
+      "createdAt": "2026-04-27T21:52:44.486Z",
+      "budget": 62500
+    },
+    {
+      "id": "214",
+      "name": "Büşra Coşkun",
+      "company": "Piksel Tasarım",
+      "email": "busracoskun@pikseltasarim.com",
+      "phone": "+90 533 744 28 15",
+      "status": "inactive",
+      "createdAt": "2026-06-08T10:54:44.765Z",
+      "budget": 74500
+    },
+    {
+      "id": "215",
+      "name": "Hüseyin Coşkun",
+      "company": "Alpha Danışmanlık",
+      "email": "huseyincoskun@alphadanismanlik.com",
+      "phone": "+90 542 533 17 70",
+      "status": "active",
+      "createdAt": "2026-03-01T15:29:24.946Z",
+      "budget": 87000
+    },
+    {
+      "id": "216",
+      "name": "Gökhan Yılmaz",
+      "company": "Güneş İnşaat",
+      "email": "gokhanyilmaz@gunesi̇nsaat.com",
+      "phone": "+90 542 384 20 03",
+      "status": "active",
+      "createdAt": "2026-02-24T17:31:58.341Z",
+      "budget": 82000
+    },
+    {
+      "id": "217",
+      "name": "Cem Koç",
+      "company": "Atlas İthalat",
+      "email": "cemkoc@atlasi̇thalat.com",
+      "phone": "+90 535 593 64 97",
+      "status": "inactive",
+      "createdAt": "2026-04-05T08:30:10.552Z",
+      "budget": 9000
+    },
+    {
+      "id": "218",
+      "name": "Burak Özdemir",
+      "company": "Kuzey Yazılım",
+      "email": "burakozdemir@kuzeyyazilim.com",
+      "phone": "+90 506 660 04 77",
+      "status": "active",
+      "createdAt": "2026-02-27T09:11:18.883Z",
+      "budget": 92000
+    },
+    {
+      "id": "219",
+      "name": "Hasan Kurt",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "hasankurt@esramimarlikvetasarim.com",
+      "phone": "+90 506 809 75 49",
+      "status": "inactive",
+      "createdAt": "2026-04-15T11:12:53.288Z",
+      "budget": 18500
+    },
+    {
+      "id": "220",
+      "name": "Ayşe Bulut",
+      "company": "Nova Finans",
+      "email": "aysebulut@novafinans.com",
+      "phone": "+90 555 553 04 33",
+      "status": "inactive",
+      "createdAt": "2026-02-02T10:35:29.704Z",
+      "budget": 88000
+    },
+    {
+      "id": "221",
+      "name": "Osman Demir",
+      "company": "Zirve Pazarlama",
+      "email": "osmandemir@zirvepazarlama.com",
+      "phone": "+90 507 117 67 07",
+      "status": "active",
+      "createdAt": "2026-06-13T17:30:07.214Z",
+      "budget": 64500
+    },
+    {
+      "id": "222",
+      "name": "Emine Sarı",
+      "company": "Güneş İnşaat",
+      "email": "eminesari@gunesi̇nsaat.com",
+      "phone": "+90 507 547 52 71",
+      "status": "active",
+      "createdAt": "2026-03-03T22:01:47.406Z",
+      "budget": 58000
+    },
+    {
+      "id": "223",
+      "name": "Osman Yıldız",
+      "company": "Atlas İthalat",
+      "email": "osmanyildiz@atlasi̇thalat.com",
+      "phone": "+90 506 173 77 45",
+      "status": "active",
+      "createdAt": "2026-02-11T21:03:02.214Z",
+      "budget": 9000
+    },
+    {
+      "id": "224",
+      "name": "Mustafa Erdoğan",
+      "company": "Vatan Sanayi",
+      "email": "mustafaerdogan@vatansanayi.com",
+      "phone": "+90 505 761 72 31",
+      "status": "inactive",
+      "createdAt": "2026-06-13T06:54:47.703Z",
+      "budget": 67000
+    },
+    {
+      "id": "225",
+      "name": "Elif Doğan",
+      "company": "Karadeniz Gıda",
+      "email": "elifdogan@karadenizgida.com",
+      "phone": "+90 533 634 06 89",
+      "status": "active",
+      "createdAt": "2026-03-01T04:33:00.126Z",
+      "budget": 76500
+    },
+    {
+      "id": "226",
+      "name": "Süleyman Arslan",
+      "company": "Güneş İnşaat",
+      "email": "suleymanarslan@gunesi̇nsaat.com",
+      "phone": "+90 505 887 64 21",
+      "status": "active",
+      "createdAt": "2026-06-21T22:44:32.881Z",
+      "budget": 74500
+    },
+    {
+      "id": "227",
+      "name": "Zeynep Yıldırım",
+      "company": "Karadeniz Gıda",
+      "email": "zeynepyildirim@karadenizgida.com",
+      "phone": "+90 535 434 41 22",
+      "status": "inactive",
+      "createdAt": "2026-06-19T18:21:59.557Z",
+      "budget": 61500
+    },
+    {
+      "id": "228",
+      "name": "Murat Şen",
+      "company": "Anadolu Lojistik",
+      "email": "muratsen@anadolulojistik.com",
+      "phone": "+90 535 287 79 79",
+      "status": "inactive",
+      "createdAt": "2026-04-12T06:04:48.542Z",
+      "budget": 16500
+    },
+    {
+      "id": "229",
+      "name": "Ahmet Aslan",
+      "company": "Piksel Tasarım",
+      "email": "ahmetaslan@pikseltasarim.com",
+      "phone": "+90 532 111 13 97",
+      "status": "inactive",
+      "createdAt": "2026-01-04T17:45:32.949Z",
+      "budget": 80000
+    },
+    {
+      "id": "230",
+      "name": "Büşra Aksoy",
+      "company": "Nova Finans",
+      "email": "busraaksoy@novafinans.com",
+      "phone": "+90 544 341 52 66",
+      "status": "inactive",
+      "createdAt": "2026-02-23T17:31:20.696Z",
+      "budget": 22500
+    },
+    {
+      "id": "231",
+      "name": "Ömer Soylu",
+      "company": "Vatan Sanayi",
+      "email": "omersoylu@vatansanayi.com",
+      "phone": "+90 506 806 32 43",
+      "status": "inactive",
+      "createdAt": "2026-06-13T11:08:15.840Z",
+      "budget": 62500
+    },
+    {
+      "id": "232",
+      "name": "Ayşe Koç",
+      "company": "Marmara Turizm",
+      "email": "aysekoc@marmaraturizm.com",
+      "phone": "+90 533 334 07 79",
+      "status": "inactive",
+      "createdAt": "2026-01-27T18:01:38.867Z",
+      "budget": 59500
+    },
+    {
+      "id": "233",
+      "name": "Hakan Aslan",
+      "company": "Nova Finans",
+      "email": "hakanaslan@novafinans.com",
+      "phone": "+90 543 109 43 71",
+      "status": "active",
+      "createdAt": "2026-03-12T18:53:12.477Z",
+      "budget": 76000
+    },
+    {
+      "id": "234",
+      "name": "Osman Koç",
+      "company": "Toros Enerji",
+      "email": "osmankoc@torosenerji.com",
+      "phone": "+90 532 106 42 65",
+      "status": "active",
+      "createdAt": "2026-01-06T15:23:31.459Z",
+      "budget": 88500
+    },
+    {
+      "id": "235",
+      "name": "Zeynep Yalçın",
+      "company": "Güneş İnşaat",
+      "email": "zeynepyalcin@gunesi̇nsaat.com",
+      "phone": "+90 543 768 85 16",
+      "status": "active",
+      "createdAt": "2026-01-30T22:06:28.053Z",
+      "budget": 64000
+    },
+    {
+      "id": "236",
+      "name": "Ömer Bulut",
+      "company": "Kuzey Yazılım",
+      "email": "omerbulut@kuzeyyazilim.com",
+      "phone": "+90 542 194 06 57",
+      "status": "active",
+      "createdAt": "2026-06-08T20:15:23.426Z",
+      "budget": 40500
+    },
+    {
+      "id": "237",
+      "name": "Elif Avcı",
+      "company": "Atlas İthalat",
+      "email": "elifavci@atlasi̇thalat.com",
+      "phone": "+90 544 968 03 50",
+      "status": "active",
+      "createdAt": "2026-03-12T05:27:49.895Z",
+      "budget": 40500
+    },
+    {
+      "id": "238",
+      "name": "Emine Bulut",
+      "company": "Nova Finans",
+      "email": "eminebulut@novafinans.com",
+      "phone": "+90 533 684 28 76",
+      "status": "active",
+      "createdAt": "2026-01-07T16:14:27.226Z",
+      "budget": 73000
+    },
+    {
+      "id": "239",
+      "name": "Mehmet Kaya",
+      "company": "Alpha Danışmanlık",
+      "email": "mehmetkaya@alphadanismanlik.com",
+      "phone": "+90 535 895 76 15",
+      "status": "active",
+      "createdAt": "2026-02-20T22:31:17.246Z",
+      "budget": 40500
+    },
+    {
+      "id": "240",
+      "name": "Merve Coşkun",
+      "company": "Kuzey Yazılım",
+      "email": "mervecoskun@kuzeyyazilim.com",
+      "phone": "+90 544 184 93 57",
+      "status": "active",
+      "createdAt": "2026-06-03T18:25:56.500Z",
+      "budget": 62500
+    },
+    {
+      "id": "241",
+      "name": "Osman Coşkun",
+      "company": "Ege Tekstil",
+      "email": "osmancoskun@egetekstil.com",
+      "phone": "+90 535 266 76 58",
+      "status": "active",
+      "createdAt": "2026-01-07T11:11:48.248Z",
+      "budget": 83500
+    },
+    {
+      "id": "242",
+      "name": "Ömer Demir",
+      "company": "Zirve Pazarlama",
+      "email": "omerdemir@zirvepazarlama.com",
+      "phone": "+90 542 701 94 39",
+      "status": "active",
+      "createdAt": "2026-03-25T20:35:23.654Z",
+      "budget": 53500
+    },
+    {
+      "id": "243",
+      "name": "Can Kılıç",
+      "company": "Vatan Sanayi",
+      "email": "cankilic@vatansanayi.com",
+      "phone": "+90 505 124 40 96",
+      "status": "inactive",
+      "createdAt": "2026-06-12T16:02:31.173Z",
+      "budget": 89500
+    },
+    {
+      "id": "244",
+      "name": "Süleyman Kaya",
+      "company": "Kuzey Yazılım",
+      "email": "suleymankaya@kuzeyyazilim.com",
+      "phone": "+90 506 178 23 20",
+      "status": "inactive",
+      "createdAt": "2026-06-17T00:13:16.713Z",
+      "budget": 72000
+    },
+    {
+      "id": "245",
+      "name": "Fatma Şahin",
+      "company": "Atlas İthalat",
+      "email": "fatmasahin@atlasi̇thalat.com",
+      "phone": "+90 507 708 97 46",
+      "status": "active",
+      "createdAt": "2026-05-17T15:01:14.884Z",
+      "budget": 25000
+    },
+    {
+      "id": "246",
+      "name": "Büşra Doğan",
+      "company": "Atlas İthalat",
+      "email": "busradogan@atlasi̇thalat.com",
+      "phone": "+90 532 960 11 49",
+      "status": "active",
+      "createdAt": "2026-06-09T03:56:40.603Z",
+      "budget": 84000
+    },
+    {
+      "id": "247",
+      "name": "Ali Çetin",
+      "company": "Nova Finans",
+      "email": "alicetin@novafinans.com",
+      "phone": "+90 506 974 60 16",
+      "status": "active",
+      "createdAt": "2026-05-16T04:41:29.507Z",
+      "budget": 73000
+    },
+    {
+      "id": "248",
+      "name": "Burak Arslan",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "burakarslan@esramimarlikvetasarim.com",
+      "phone": "+90 544 310 62 36",
+      "status": "active",
+      "createdAt": "2026-02-25T10:44:06.429Z",
+      "budget": 93000
+    },
+    {
+      "id": "249",
+      "name": "Hakan Öztürk",
+      "company": "Zirve Pazarlama",
+      "email": "hakanozturk@zirvepazarlama.com",
+      "phone": "+90 506 474 17 56",
+      "status": "active",
+      "createdAt": "2026-04-30T22:52:51.163Z",
+      "budget": 43000
+    },
+    {
+      "id": "250",
+      "name": "Gökhan Kaya",
+      "company": "Piksel Tasarım",
+      "email": "gokhankaya@pikseltasarim.com",
+      "phone": "+90 507 123 74 29",
+      "status": "inactive",
+      "createdAt": "2026-02-06T21:32:04.137Z",
+      "budget": 54500
+    },
+    {
+      "id": "251",
+      "name": "Cem Sarı",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "cemsari@esramimarlikvetasarim.com",
+      "phone": "+90 542 621 90 21",
+      "status": "inactive",
+      "createdAt": "2026-06-03T05:47:35.397Z",
+      "budget": 80500
+    },
+    {
+      "id": "252",
+      "name": "Ayşe Kılıç",
+      "company": "Karadeniz Gıda",
+      "email": "aysekilic@karadenizgida.com",
+      "phone": "+90 505 837 31 70",
+      "status": "active",
+      "createdAt": "2026-03-02T20:16:41.491Z",
+      "budget": 47000
+    },
+    {
+      "id": "253",
+      "name": "Kemal Çetin",
+      "company": "Kuzey Yazılım",
+      "email": "kemalcetin@kuzeyyazilim.com",
+      "phone": "+90 535 771 28 83",
+      "status": "inactive",
+      "createdAt": "2026-05-17T19:28:22.725Z",
+      "budget": 80500
+    },
+    {
+      "id": "254",
+      "name": "Mustafa Soylu",
+      "company": "Toros Enerji",
+      "email": "mustafasoylu@torosenerji.com",
+      "phone": "+90 533 134 65 22",
+      "status": "active",
+      "createdAt": "2026-04-02T21:54:18.306Z",
+      "budget": 42500
+    },
+    {
+      "id": "255",
+      "name": "Süleyman Özdemir",
+      "company": "Piksel Tasarım",
+      "email": "suleymanozdemir@pikseltasarim.com",
+      "phone": "+90 533 862 06 26",
+      "status": "inactive",
+      "createdAt": "2026-03-17T03:46:32.198Z",
+      "budget": 20500
+    },
+    {
+      "id": "256",
+      "name": "Mustafa Kaya",
+      "company": "Ege Tekstil",
+      "email": "mustafakaya@egetekstil.com",
+      "phone": "+90 555 365 85 82",
+      "status": "active",
+      "createdAt": "2026-02-05T06:02:43.314Z",
+      "budget": 10500
+    },
+    {
+      "id": "257",
+      "name": "Selin Yıldırım",
+      "company": "Ege Tekstil",
+      "email": "selinyildirim@egetekstil.com",
+      "phone": "+90 532 368 44 46",
+      "status": "active",
+      "createdAt": "2026-01-24T04:20:19.508Z",
+      "budget": 84000
+    },
+    {
+      "id": "258",
+      "name": "Hatice Yılmaz",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "haticeyilmaz@esramimarlikvetasarim.com",
+      "phone": "+90 532 455 27 61",
+      "status": "active",
+      "createdAt": "2026-05-27T18:35:49.218Z",
+      "budget": 32000
+    },
+    {
+      "id": "259",
+      "name": "Seda Avcı",
+      "company": "Marmara Turizm",
+      "email": "sedaavci@marmaraturizm.com",
+      "phone": "+90 533 272 73 60",
+      "status": "active",
+      "createdAt": "2026-03-17T14:38:53.536Z",
+      "budget": 59500
+    },
+    {
+      "id": "260",
+      "name": "Can Çelik",
+      "company": "Piksel Tasarım",
+      "email": "cancelik@pikseltasarim.com",
+      "phone": "+90 535 884 24 25",
+      "status": "active",
+      "createdAt": "2026-02-05T03:02:18.270Z",
+      "budget": 22500
+    },
+    {
+      "id": "261",
+      "name": "Mehmet Şahin",
+      "company": "Atlas İthalat",
+      "email": "mehmetsahin@atlasi̇thalat.com",
+      "phone": "+90 542 508 71 37",
+      "status": "active",
+      "createdAt": "2026-02-05T16:18:00.151Z",
+      "budget": 5500
+    },
+    {
+      "id": "262",
+      "name": "Zeynep Acar",
+      "company": "Karadeniz Gıda",
+      "email": "zeynepacar@karadenizgida.com",
+      "phone": "+90 533 980 48 62",
+      "status": "inactive",
+      "createdAt": "2026-05-03T11:34:22.660Z",
+      "budget": 76000
+    },
+    {
+      "id": "263",
+      "name": "Süleyman Acar",
+      "company": "Atlas İthalat",
+      "email": "suleymanacar@atlasi̇thalat.com",
+      "phone": "+90 533 913 88 85",
+      "status": "active",
+      "createdAt": "2026-01-03T17:03:54.381Z",
+      "budget": 77000
+    },
+    {
+      "id": "264",
+      "name": "Süleyman Yıldırım",
+      "company": "Kuzey Yazılım",
+      "email": "suleymanyildirim@kuzeyyazilim.com",
+      "phone": "+90 542 117 74 83",
+      "status": "active",
+      "createdAt": "2026-06-23T00:01:14.035Z",
+      "budget": 81500
+    },
+    {
+      "id": "265",
+      "name": "Derya Şahin",
+      "company": "Vatan Sanayi",
+      "email": "deryasahin@vatansanayi.com",
+      "phone": "+90 507 312 72 27",
+      "status": "active",
+      "createdAt": "2026-01-11T08:30:11.328Z",
+      "budget": 86500
+    },
+    {
+      "id": "266",
+      "name": "Osman Çetin",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "osmancetin@esramimarlikvetasarim.com",
+      "phone": "+90 543 107 55 98",
+      "status": "active",
+      "createdAt": "2026-03-12T00:11:10.667Z",
+      "budget": 82500
+    },
+    {
+      "id": "267",
+      "name": "Süleyman Acar",
+      "company": "Alpha Danışmanlık",
+      "email": "suleymanacar@alphadanismanlik.com",
+      "phone": "+90 544 417 92 91",
+      "status": "active",
+      "createdAt": "2026-03-17T06:11:21.546Z",
+      "budget": 31500
+    },
+    {
+      "id": "268",
+      "name": "Büşra Kurt",
+      "company": "Atlas İthalat",
+      "email": "busrakurt@atlasi̇thalat.com",
+      "phone": "+90 506 486 20 87",
+      "status": "active",
+      "createdAt": "2026-04-15T18:43:29.787Z",
+      "budget": 19000
+    },
+    {
+      "id": "269",
+      "name": "Büşra Öztürk",
+      "company": "Ege Tekstil",
+      "email": "busraozturk@egetekstil.com",
+      "phone": "+90 505 469 22 24",
+      "status": "active",
+      "createdAt": "2026-02-23T10:40:45.317Z",
+      "budget": 70000
+    },
+    {
+      "id": "270",
+      "name": "Selin Coşkun",
+      "company": "Zirve Pazarlama",
+      "email": "selincoskun@zirvepazarlama.com",
+      "phone": "+90 506 474 88 17",
+      "status": "active",
+      "createdAt": "2026-06-24T21:12:15.334Z",
+      "budget": 25500
+    },
+    {
+      "id": "271",
+      "name": "Hüseyin Yalçın",
+      "company": "Alpha Danışmanlık",
+      "email": "huseyinyalcin@alphadanismanlik.com",
+      "phone": "+90 542 652 75 32",
+      "status": "active",
+      "createdAt": "2026-05-09T14:59:46.499Z",
+      "budget": 80500
+    },
+    {
+      "id": "272",
+      "name": "Zeynep Avcı",
+      "company": "Zirve Pazarlama",
+      "email": "zeynepavci@zirvepazarlama.com",
+      "phone": "+90 505 513 64 57",
+      "status": "active",
+      "createdAt": "2026-06-01T15:33:41.572Z",
+      "budget": 64500
+    },
+    {
+      "id": "273",
+      "name": "Hüseyin Acar",
+      "company": "Alpha Danışmanlık",
+      "email": "huseyinacar@alphadanismanlik.com",
+      "phone": "+90 535 675 98 06",
+      "status": "active",
+      "createdAt": "2026-01-20T05:15:09.161Z",
+      "budget": 35000
+    },
+    {
+      "id": "274",
+      "name": "Hüseyin Sarı",
+      "company": "Kuzey Yazılım",
+      "email": "huseyinsari@kuzeyyazilim.com",
+      "phone": "+90 555 235 34 89",
+      "status": "inactive",
+      "createdAt": "2026-06-23T03:36:37.030Z",
+      "budget": 48500
+    },
+    {
+      "id": "275",
+      "name": "Mustafa Yalçın",
+      "company": "Karadeniz Gıda",
+      "email": "mustafayalcin@karadenizgida.com",
+      "phone": "+90 532 760 26 91",
+      "status": "active",
+      "createdAt": "2026-01-24T17:25:32.664Z",
+      "budget": 33500
+    },
+    {
+      "id": "276",
+      "name": "Büşra Demir",
+      "company": "Marmara Turizm",
+      "email": "busrademir@marmaraturizm.com",
+      "phone": "+90 532 673 79 71",
+      "status": "active",
+      "createdAt": "2026-02-21T06:52:48.876Z",
+      "budget": 48500
+    },
+    {
+      "id": "277",
+      "name": "Ahmet Çetin",
+      "company": "Kuzey Yazılım",
+      "email": "ahmetcetin@kuzeyyazilim.com",
+      "phone": "+90 507 852 03 61",
+      "status": "active",
+      "createdAt": "2026-06-19T22:53:30.738Z",
+      "budget": 18500
+    },
+    {
+      "id": "278",
+      "name": "Elif Güler",
+      "company": "Beta Teknoloji",
+      "email": "elifguler@betateknoloji.com",
+      "phone": "+90 544 195 45 81",
+      "status": "active",
+      "createdAt": "2026-01-12T11:49:56.522Z",
+      "budget": 48000
+    },
+    {
+      "id": "279",
+      "name": "Elif Çetin",
+      "company": "Zirve Pazarlama",
+      "email": "elifcetin@zirvepazarlama.com",
+      "phone": "+90 543 760 73 54",
+      "status": "inactive",
+      "createdAt": "2026-02-15T02:41:36.149Z",
+      "budget": 62000
+    },
+    {
+      "id": "280",
+      "name": "Büşra Yılmaz",
+      "company": "Beta Teknoloji",
+      "email": "busrayilmaz@betateknoloji.com",
+      "phone": "+90 543 291 91 52",
+      "status": "inactive",
+      "createdAt": "2026-02-26T20:38:29.630Z",
+      "budget": 41500
+    },
+    {
+      "id": "281",
+      "name": "Osman Aksoy",
+      "company": "Beta Teknoloji",
+      "email": "osmanaksoy@betateknoloji.com",
+      "phone": "+90 555 692 42 80",
+      "status": "inactive",
+      "createdAt": "2026-03-06T03:51:03.568Z",
+      "budget": 63000
+    },
+    {
+      "id": "282",
+      "name": "Seda Sarı",
+      "company": "Beta Teknoloji",
+      "email": "sedasari@betateknoloji.com",
+      "phone": "+90 533 668 49 36",
+      "status": "active",
+      "createdAt": "2026-03-22T08:06:37.447Z",
+      "budget": 13500
+    },
+    {
+      "id": "283",
+      "name": "Esra Sarı",
+      "company": "Beta Teknoloji",
+      "email": "esrasari@betateknoloji.com",
+      "phone": "+90 555 917 74 21",
+      "status": "active",
+      "createdAt": "2026-04-29T04:10:50.813Z",
+      "budget": 6500
+    },
+    {
+      "id": "284",
+      "name": "Merve Yılmaz",
+      "company": "Marmara Turizm",
+      "email": "merveyilmaz@marmaraturizm.com",
+      "phone": "+90 533 883 37 11",
+      "status": "active",
+      "createdAt": "2026-04-17T07:02:24.080Z",
+      "budget": 22000
+    },
+    {
+      "id": "285",
+      "name": "Zeynep Özdemir",
+      "company": "Kuzey Yazılım",
+      "email": "zeynepozdemir@kuzeyyazilim.com",
+      "phone": "+90 505 911 29 61",
+      "status": "active",
+      "createdAt": "2026-05-13T22:22:44.898Z",
+      "budget": 44500
+    },
+    {
+      "id": "286",
+      "name": "Zeynep Çetin",
+      "company": "Alpha Danışmanlık",
+      "email": "zeynepcetin@alphadanismanlik.com",
+      "phone": "+90 535 687 22 35",
+      "status": "active",
+      "createdAt": "2026-01-05T03:02:41.930Z",
+      "budget": 58500
+    },
+    {
+      "id": "287",
+      "name": "Hüseyin Soylu",
+      "company": "Nova Finans",
+      "email": "huseyinsoylu@novafinans.com",
+      "phone": "+90 505 323 31 88",
+      "status": "inactive",
+      "createdAt": "2026-02-26T22:50:49.072Z",
+      "budget": 65500
+    },
+    {
+      "id": "288",
+      "name": "Mustafa Yalçın",
+      "company": "Zirve Pazarlama",
+      "email": "mustafayalcin@zirvepazarlama.com",
+      "phone": "+90 555 846 45 78",
+      "status": "active",
+      "createdAt": "2026-01-08T21:42:07.101Z",
+      "budget": 17500
+    },
+    {
+      "id": "289",
+      "name": "Derya Özdemir",
+      "company": "Piksel Tasarım",
+      "email": "deryaozdemir@pikseltasarim.com",
+      "phone": "+90 544 909 27 45",
+      "status": "active",
+      "createdAt": "2026-02-09T14:55:33.471Z",
+      "budget": 79000
+    },
+    {
+      "id": "290",
+      "name": "Ömer Güler",
+      "company": "Alpha Danışmanlık",
+      "email": "omerguler@alphadanismanlik.com",
+      "phone": "+90 542 873 90 63",
+      "status": "active",
+      "createdAt": "2026-02-18T05:51:56.244Z",
+      "budget": 45000
+    },
+    {
+      "id": "291",
+      "name": "Burak Acar",
+      "company": "Kuzey Yazılım",
+      "email": "burakacar@kuzeyyazilim.com",
+      "phone": "+90 506 289 21 07",
+      "status": "active",
+      "createdAt": "2026-06-15T09:47:07.095Z",
+      "budget": 36500
+    },
+    {
+      "id": "292",
+      "name": "Elif Güler",
+      "company": "Güneş İnşaat",
+      "email": "elifguler@gunesi̇nsaat.com",
+      "phone": "+90 542 107 98 50",
+      "status": "inactive",
+      "createdAt": "2026-04-19T10:35:48.552Z",
+      "budget": 24500
+    },
+    {
+      "id": "293",
+      "name": "Burak Aydın",
+      "company": "Ege Tekstil",
+      "email": "burakaydin@egetekstil.com",
+      "phone": "+90 505 484 49 73",
+      "status": "active",
+      "createdAt": "2026-04-30T23:47:21.463Z",
+      "budget": 32500
+    },
+    {
+      "id": "294",
+      "name": "Mehmet Yılmaz",
+      "company": "Anadolu Lojistik",
+      "email": "mehmetyilmaz@anadolulojistik.com",
+      "phone": "+90 532 120 03 64",
+      "status": "active",
+      "createdAt": "2026-02-20T16:41:06.674Z",
+      "budget": 6500
+    },
+    {
+      "id": "295",
+      "name": "Can Soylu",
+      "company": "Kuzey Yazılım",
+      "email": "cansoylu@kuzeyyazilim.com",
+      "phone": "+90 507 796 15 97",
+      "status": "active",
+      "createdAt": "2026-01-04T08:40:47.343Z",
+      "budget": 39500
+    },
+    {
+      "id": "296",
+      "name": "Ayşe Yalçın",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "ayseyalcin@esramimarlikvetasarim.com",
+      "phone": "+90 544 401 27 26",
+      "status": "inactive",
+      "createdAt": "2026-04-20T23:17:53.584Z",
+      "budget": 62000
+    },
+    {
+      "id": "297",
+      "name": "Veli Sarı",
+      "company": "Toros Enerji",
+      "email": "velisari@torosenerji.com",
+      "phone": "+90 535 574 77 96",
+      "status": "inactive",
+      "createdAt": "2026-06-27T01:16:53.128Z",
+      "budget": 48500
+    },
+    {
+      "id": "298",
+      "name": "Mehmet Kaya",
+      "company": "Güneş İnşaat",
+      "email": "mehmetkaya@gunesi̇nsaat.com",
+      "phone": "+90 543 419 92 40",
+      "status": "active",
+      "createdAt": "2026-03-02T08:56:41.675Z",
+      "budget": 75000
+    },
+    {
+      "id": "299",
+      "name": "Hatice Arslan",
+      "company": "Vatan Sanayi",
+      "email": "haticearslan@vatansanayi.com",
+      "phone": "+90 543 139 75 44",
+      "status": "active",
+      "createdAt": "2026-02-08T13:26:23.893Z",
+      "budget": 19000
+    },
+    {
+      "id": "300",
+      "name": "Murat Kılıç",
+      "company": "Kuzey Yazılım",
+      "email": "muratkilic@kuzeyyazilim.com",
+      "phone": "+90 505 500 86 01",
+      "status": "active",
+      "createdAt": "2026-01-02T10:42:34.314Z",
+      "budget": 60000
+    },
+    {
+      "id": "301",
+      "name": "Süleyman Koç",
+      "company": "Marmara Turizm",
+      "email": "suleymankoc@marmaraturizm.com",
+      "phone": "+90 506 280 52 00",
+      "status": "active",
+      "createdAt": "2026-06-20T17:44:00.238Z",
+      "budget": 14500
+    },
+    {
+      "id": "302",
+      "name": "Hatice Yalçın",
+      "company": "Zirve Pazarlama",
+      "email": "haticeyalcin@zirvepazarlama.com",
+      "phone": "+90 507 862 22 23",
+      "status": "inactive",
+      "createdAt": "2026-02-01T00:37:47.706Z",
+      "budget": 62500
+    },
+    {
+      "id": "303",
+      "name": "Burak Coşkun",
+      "company": "Kuzey Yazılım",
+      "email": "burakcoskun@kuzeyyazilim.com",
+      "phone": "+90 535 530 41 50",
+      "status": "active",
+      "createdAt": "2026-02-10T11:12:29.577Z",
+      "budget": 38000
+    },
+    {
+      "id": "304",
+      "name": "Hüseyin Aksoy",
+      "company": "Güneş İnşaat",
+      "email": "huseyinaksoy@gunesi̇nsaat.com",
+      "phone": "+90 543 375 59 39",
+      "status": "inactive",
+      "createdAt": "2026-03-09T00:34:31.416Z",
+      "budget": 36500
+    },
+    {
+      "id": "305",
+      "name": "Selin Güler",
+      "company": "Güneş İnşaat",
+      "email": "selinguler@gunesi̇nsaat.com",
+      "phone": "+90 544 976 57 02",
+      "status": "inactive",
+      "createdAt": "2026-04-03T22:40:55.105Z",
+      "budget": 84000
+    },
+    {
+      "id": "306",
+      "name": "Selin Çelik",
+      "company": "Nova Finans",
+      "email": "selincelik@novafinans.com",
+      "phone": "+90 505 745 25 86",
+      "status": "active",
+      "createdAt": "2026-04-14T11:10:01.123Z",
+      "budget": 52000
+    },
+    {
+      "id": "307",
+      "name": "Hasan Kurt",
+      "company": "Zirve Pazarlama",
+      "email": "hasankurt@zirvepazarlama.com",
+      "phone": "+90 544 588 64 13",
+      "status": "active",
+      "createdAt": "2026-05-22T10:42:45.330Z",
+      "budget": 9500
+    },
+    {
+      "id": "308",
+      "name": "Hatice Yıldız",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "haticeyildiz@esramimarlikvetasarim.com",
+      "phone": "+90 507 328 37 62",
+      "status": "inactive",
+      "createdAt": "2026-03-11T01:53:16.852Z",
+      "budget": 34500
+    },
+    {
+      "id": "309",
+      "name": "Mustafa Acar",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "mustafaacar@esramimarlikvetasarim.com",
+      "phone": "+90 532 160 83 30",
+      "status": "inactive",
+      "createdAt": "2026-05-11T15:38:44.847Z",
+      "budget": 33500
+    },
+    {
+      "id": "310",
+      "name": "Hasan Aydın",
+      "company": "Karadeniz Gıda",
+      "email": "hasanaydin@karadenizgida.com",
+      "phone": "+90 505 382 58 96",
+      "status": "inactive",
+      "createdAt": "2026-06-03T07:10:57.135Z",
+      "budget": 92500
+    },
+    {
+      "id": "311",
+      "name": "Can Bulut",
+      "company": "Anadolu Lojistik",
+      "email": "canbulut@anadolulojistik.com",
+      "phone": "+90 532 536 73 02",
+      "status": "active",
+      "createdAt": "2026-03-27T02:29:40.191Z",
+      "budget": 65500
+    },
+    {
+      "id": "312",
+      "name": "Hüseyin Çetin",
+      "company": "Kuzey Yazılım",
+      "email": "huseyincetin@kuzeyyazilim.com",
+      "phone": "+90 555 814 10 19",
+      "status": "inactive",
+      "createdAt": "2026-01-03T11:10:23.351Z",
+      "budget": 92500
+    },
+    {
+      "id": "313",
+      "name": "Ahmet Soylu",
+      "company": "Kuzey Yazılım",
+      "email": "ahmetsoylu@kuzeyyazilim.com",
+      "phone": "+90 532 882 40 08",
+      "status": "active",
+      "createdAt": "2026-06-30T11:23:55.305Z",
+      "budget": 46000
+    },
+    {
+      "id": "314",
+      "name": "Zeynep Arslan",
+      "company": "Güneş İnşaat",
+      "email": "zeyneparslan@gunesi̇nsaat.com",
+      "phone": "+90 533 913 18 23",
+      "status": "inactive",
+      "createdAt": "2026-03-13T19:08:59.161Z",
+      "budget": 94000
+    },
+    {
+      "id": "315",
+      "name": "Emine Özdemir",
+      "company": "Kuzey Yazılım",
+      "email": "emineozdemir@kuzeyyazilim.com",
+      "phone": "+90 506 343 83 69",
+      "status": "active",
+      "createdAt": "2026-03-30T15:17:08.325Z",
+      "budget": 66500
+    },
+    {
+      "id": "316",
+      "name": "Elif Çelik",
+      "company": "Beta Teknoloji",
+      "email": "elifcelik@betateknoloji.com",
+      "phone": "+90 505 906 47 66",
+      "status": "active",
+      "createdAt": "2026-02-23T15:36:49.739Z",
+      "budget": 26000
+    },
+    {
+      "id": "317",
+      "name": "Deniz Öztürk",
+      "company": "Piksel Tasarım",
+      "email": "denizozturk@pikseltasarim.com",
+      "phone": "+90 533 853 19 96",
+      "status": "active",
+      "createdAt": "2026-03-16T12:31:28.449Z",
+      "budget": 56500
+    },
+    {
+      "id": "318",
+      "name": "Kemal Sarı",
+      "company": "Ege Tekstil",
+      "email": "kemalsari@egetekstil.com",
+      "phone": "+90 555 209 47 61",
+      "status": "active",
+      "createdAt": "2026-01-27T13:02:52.896Z",
+      "budget": 73000
+    },
+    {
+      "id": "319",
+      "name": "Derya Aslan",
+      "company": "Karadeniz Gıda",
+      "email": "deryaaslan@karadenizgida.com",
+      "phone": "+90 533 486 48 69",
+      "status": "active",
+      "createdAt": "2026-04-18T00:45:21.346Z",
+      "budget": 34000
+    },
+    {
+      "id": "320",
+      "name": "Derya Avcı",
+      "company": "Beta Teknoloji",
+      "email": "deryaavci@betateknoloji.com",
+      "phone": "+90 543 533 15 44",
+      "status": "active",
+      "createdAt": "2026-02-01T12:34:53.250Z",
+      "budget": 92000
+    },
+    {
+      "id": "321",
+      "name": "Veli Kurt",
+      "company": "Atlas İthalat",
+      "email": "velikurt@atlasi̇thalat.com",
+      "phone": "+90 535 731 38 27",
+      "status": "inactive",
+      "createdAt": "2026-01-13T09:56:20.231Z",
+      "budget": 39500
+    },
+    {
+      "id": "322",
+      "name": "Merve Demir",
+      "company": "Anadolu Lojistik",
+      "email": "mervedemir@anadolulojistik.com",
+      "phone": "+90 532 448 55 05",
+      "status": "inactive",
+      "createdAt": "2026-06-11T21:18:38.321Z",
+      "budget": 31000
+    },
+    {
+      "id": "323",
+      "name": "Merve Acar",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "merveacar@esramimarlikvetasarim.com",
+      "phone": "+90 542 491 76 26",
+      "status": "active",
+      "createdAt": "2026-02-02T04:14:50.772Z",
+      "budget": 42500
+    },
+    {
+      "id": "324",
+      "name": "Ali Şahin",
+      "company": "Nova Finans",
+      "email": "alisahin@novafinans.com",
+      "phone": "+90 542 950 69 75",
+      "status": "inactive",
+      "createdAt": "2026-03-28T00:26:12.912Z",
+      "budget": 65500
+    },
+    {
+      "id": "325",
+      "name": "Hüseyin Erdoğan",
+      "company": "Vatan Sanayi",
+      "email": "huseyinerdogan@vatansanayi.com",
+      "phone": "+90 532 182 90 24",
+      "status": "active",
+      "createdAt": "2026-06-01T23:25:20.363Z",
+      "budget": 30500
+    },
+    {
+      "id": "326",
+      "name": "Cem Kösem",
+      "company": "Vatan Sanayi",
+      "email": "cemkosem@vatansanayi.com",
+      "phone": "+90 505 805 42 74",
+      "status": "active",
+      "createdAt": "2026-03-10T06:59:10.754Z",
+      "budget": 87000
+    },
+    {
+      "id": "327",
+      "name": "Murat Kılıç",
+      "company": "Marmara Turizm",
+      "email": "muratkilic@marmaraturizm.com",
+      "phone": "+90 532 469 88 95",
+      "status": "inactive",
+      "createdAt": "2026-04-13T16:24:09.664Z",
+      "budget": 74500
+    },
+    {
+      "id": "328",
+      "name": "Ahmet Acar",
+      "company": "Ege Tekstil",
+      "email": "ahmetacar@egetekstil.com",
+      "phone": "+90 543 620 51 60",
+      "status": "active",
+      "createdAt": "2026-06-08T12:00:19.483Z",
+      "budget": 78500
+    },
+    {
+      "id": "329",
+      "name": "Mehmet Kılıç",
+      "company": "Piksel Tasarım",
+      "email": "mehmetkilic@pikseltasarim.com",
+      "phone": "+90 535 722 19 78",
+      "status": "active",
+      "createdAt": "2026-03-21T13:52:24.826Z",
+      "budget": 9500
+    },
+    {
+      "id": "330",
+      "name": "Derya Şen",
+      "company": "Vatan Sanayi",
+      "email": "deryasen@vatansanayi.com",
+      "phone": "+90 533 812 54 85",
+      "status": "active",
+      "createdAt": "2026-01-21T22:15:37.901Z",
+      "budget": 80500
+    },
+    {
+      "id": "331",
+      "name": "Veli Demir",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "velidemir@esramimarlikvetasarim.com",
+      "phone": "+90 555 650 80 94",
+      "status": "inactive",
+      "createdAt": "2026-02-11T19:14:18.332Z",
+      "budget": 25500
+    },
+    {
+      "id": "332",
+      "name": "Süleyman Şen",
+      "company": "Anadolu Lojistik",
+      "email": "suleymansen@anadolulojistik.com",
+      "phone": "+90 543 619 32 62",
+      "status": "inactive",
+      "createdAt": "2026-02-03T11:22:55.207Z",
+      "budget": 25500
+    },
+    {
+      "id": "333",
+      "name": "Gökhan Arslan",
+      "company": "Kuzey Yazılım",
+      "email": "gokhanarslan@kuzeyyazilim.com",
+      "phone": "+90 542 494 88 49",
+      "status": "active",
+      "createdAt": "2026-01-19T20:40:46.160Z",
+      "budget": 14000
+    },
+    {
+      "id": "334",
+      "name": "Zeynep Kara",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "zeynepkara@esramimarlikvetasarim.com",
+      "phone": "+90 507 496 97 43",
+      "status": "inactive",
+      "createdAt": "2026-04-17T06:47:39.473Z",
+      "budget": 10000
+    },
+    {
+      "id": "335",
+      "name": "Kemal Kurt",
+      "company": "Zirve Pazarlama",
+      "email": "kemalkurt@zirvepazarlama.com",
+      "phone": "+90 544 540 10 98",
+      "status": "inactive",
+      "createdAt": "2026-02-02T12:36:02.665Z",
+      "budget": 17500
+    },
+    {
+      "id": "336",
+      "name": "Osman Kösem",
+      "company": "Nova Finans",
+      "email": "osmankosem@novafinans.com",
+      "phone": "+90 507 877 76 10",
+      "status": "active",
+      "createdAt": "2026-04-26T11:29:15.685Z",
+      "budget": 62500
+    },
+    {
+      "id": "337",
+      "name": "Hüseyin Koç",
+      "company": "Güneş İnşaat",
+      "email": "huseyinkoc@gunesi̇nsaat.com",
+      "phone": "+90 535 601 98 62",
+      "status": "active",
+      "createdAt": "2026-03-05T20:21:56.412Z",
+      "budget": 50500
+    },
+    {
+      "id": "338",
+      "name": "Osman Aslan",
+      "company": "Nova Finans",
+      "email": "osmanaslan@novafinans.com",
+      "phone": "+90 532 491 79 77",
+      "status": "active",
+      "createdAt": "2026-02-17T06:43:13.132Z",
+      "budget": 37500
+    },
+    {
+      "id": "339",
+      "name": "Gökhan Kaya",
+      "company": "Marmara Turizm",
+      "email": "gokhankaya@marmaraturizm.com",
+      "phone": "+90 542 656 52 25",
+      "status": "active",
+      "createdAt": "2026-03-31T14:59:56.826Z",
+      "budget": 56500
+    },
+    {
+      "id": "340",
+      "name": "Süleyman Yıldırım",
+      "company": "Atlas İthalat",
+      "email": "suleymanyildirim@atlasi̇thalat.com",
+      "phone": "+90 555 593 14 23",
+      "status": "active",
+      "createdAt": "2026-03-13T17:08:56.237Z",
+      "budget": 20500
+    },
+    {
+      "id": "341",
+      "name": "Emine Yılmaz",
+      "company": "Kuzey Yazılım",
+      "email": "emineyilmaz@kuzeyyazilim.com",
+      "phone": "+90 555 266 17 23",
+      "status": "active",
+      "createdAt": "2026-04-13T06:19:05.098Z",
+      "budget": 84000
+    },
+    {
+      "id": "342",
+      "name": "Elif Aydın",
+      "company": "Vatan Sanayi",
+      "email": "elifaydin@vatansanayi.com",
+      "phone": "+90 542 234 07 53",
+      "status": "active",
+      "createdAt": "2026-06-23T14:50:06.999Z",
+      "budget": 34000
+    },
+    {
+      "id": "343",
+      "name": "Ali Kılıç",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "alikilic@esramimarlikvetasarim.com",
+      "phone": "+90 544 805 12 66",
+      "status": "active",
+      "createdAt": "2026-02-08T22:12:48.142Z",
+      "budget": 12000
+    },
+    {
+      "id": "344",
+      "name": "Kemal Acar",
+      "company": "Atlas İthalat",
+      "email": "kemalacar@atlasi̇thalat.com",
+      "phone": "+90 535 236 83 18",
+      "status": "inactive",
+      "createdAt": "2026-06-10T10:58:10.229Z",
+      "budget": 46500
+    },
+    {
+      "id": "345",
+      "name": "Veli Aksoy",
+      "company": "Kuzey Yazılım",
+      "email": "veliaksoy@kuzeyyazilim.com",
+      "phone": "+90 542 849 36 02",
+      "status": "active",
+      "createdAt": "2026-01-11T15:18:06.871Z",
+      "budget": 85500
+    },
+    {
+      "id": "346",
+      "name": "Fatma Kösem",
+      "company": "Kuzey Yazılım",
+      "email": "fatmakosem@kuzeyyazilim.com",
+      "phone": "+90 544 672 17 64",
+      "status": "active",
+      "createdAt": "2026-04-13T04:50:54.032Z",
+      "budget": 10500
+    },
+    {
+      "id": "347",
+      "name": "Gökhan Yalçın",
+      "company": "Kuzey Yazılım",
+      "email": "gokhanyalcin@kuzeyyazilim.com",
+      "phone": "+90 532 355 01 14",
+      "status": "active",
+      "createdAt": "2026-02-12T07:00:09.981Z",
+      "budget": 65500
+    },
+    {
+      "id": "348",
+      "name": "Hüseyin Coşkun",
+      "company": "Beta Teknoloji",
+      "email": "huseyincoskun@betateknoloji.com",
+      "phone": "+90 507 550 38 07",
+      "status": "inactive",
+      "createdAt": "2026-01-27T20:02:15.256Z",
+      "budget": 87500
+    },
+    {
+      "id": "349",
+      "name": "Burak Soylu",
+      "company": "Kuzey Yazılım",
+      "email": "buraksoylu@kuzeyyazilim.com",
+      "phone": "+90 544 517 24 12",
+      "status": "active",
+      "createdAt": "2026-04-10T02:39:40.334Z",
+      "budget": 74500
+    },
+    {
+      "id": "350",
+      "name": "Emine Doğan",
+      "company": "Beta Teknoloji",
+      "email": "eminedogan@betateknoloji.com",
+      "phone": "+90 533 372 88 65",
+      "status": "active",
+      "createdAt": "2026-04-15T17:10:55.954Z",
+      "budget": 6000
+    },
+    {
+      "id": "351",
+      "name": "Zeynep Coşkun",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "zeynepcoskun@esramimarlikvetasarim.com",
+      "phone": "+90 533 988 45 16",
+      "status": "active",
+      "createdAt": "2026-01-16T20:06:55.739Z",
+      "budget": 65500
+    },
+    {
+      "id": "352",
+      "name": "Deniz Soylu",
+      "company": "Karadeniz Gıda",
+      "email": "denizsoylu@karadenizgida.com",
+      "phone": "+90 542 272 47 24",
+      "status": "active",
+      "createdAt": "2026-04-28T14:29:29.172Z",
+      "budget": 15000
+    },
+    {
+      "id": "353",
+      "name": "Seda Şen",
+      "company": "Toros Enerji",
+      "email": "sedasen@torosenerji.com",
+      "phone": "+90 542 871 43 68",
+      "status": "inactive",
+      "createdAt": "2026-06-07T20:00:33.487Z",
+      "budget": 65000
+    },
+    {
+      "id": "354",
+      "name": "Hatice Kılıç",
+      "company": "Alpha Danışmanlık",
+      "email": "haticekilic@alphadanismanlik.com",
+      "phone": "+90 535 168 09 32",
+      "status": "inactive",
+      "createdAt": "2026-02-20T12:20:47.831Z",
+      "budget": 39000
+    },
+    {
+      "id": "355",
+      "name": "Deniz Güler",
+      "company": "Atlas İthalat",
+      "email": "denizguler@atlasi̇thalat.com",
+      "phone": "+90 532 884 54 35",
+      "status": "active",
+      "createdAt": "2026-03-05T10:29:29.057Z",
+      "budget": 63000
+    },
+    {
+      "id": "356",
+      "name": "Ali Aksoy",
+      "company": "Alpha Danışmanlık",
+      "email": "aliaksoy@alphadanismanlik.com",
+      "phone": "+90 507 336 52 45",
+      "status": "active",
+      "createdAt": "2026-01-27T04:16:42.535Z",
+      "budget": 8500
+    },
+    {
+      "id": "357",
+      "name": "Hasan Bulut",
+      "company": "Beta Teknoloji",
+      "email": "hasanbulut@betateknoloji.com",
+      "phone": "+90 555 869 17 47",
+      "status": "active",
+      "createdAt": "2026-06-07T19:04:42.657Z",
+      "budget": 14500
+    },
+    {
+      "id": "358",
+      "name": "Elif Avcı",
+      "company": "Karadeniz Gıda",
+      "email": "elifavci@karadenizgida.com",
+      "phone": "+90 532 345 19 39",
+      "status": "active",
+      "createdAt": "2026-01-24T17:26:23.062Z",
+      "budget": 40500
+    },
+    {
+      "id": "359",
+      "name": "Derya Bulut",
+      "company": "Toros Enerji",
+      "email": "deryabulut@torosenerji.com",
+      "phone": "+90 542 258 73 89",
+      "status": "inactive",
+      "createdAt": "2026-01-25T17:00:08.090Z",
+      "budget": 73500
+    },
+    {
+      "id": "360",
+      "name": "Kemal Kaya",
+      "company": "Kuzey Yazılım",
+      "email": "kemalkaya@kuzeyyazilim.com",
+      "phone": "+90 542 361 59 99",
+      "status": "active",
+      "createdAt": "2026-06-07T18:40:53.045Z",
+      "budget": 80000
+    },
+    {
+      "id": "361",
+      "name": "Selin Kösem",
+      "company": "Alpha Danışmanlık",
+      "email": "selinkosem@alphadanismanlik.com",
+      "phone": "+90 543 323 17 06",
+      "status": "active",
+      "createdAt": "2026-04-04T00:40:19.916Z",
+      "budget": 77000
+    },
+    {
+      "id": "362",
+      "name": "Deniz Aslan",
+      "company": "Vatan Sanayi",
+      "email": "denizaslan@vatansanayi.com",
+      "phone": "+90 533 792 44 61",
+      "status": "active",
+      "createdAt": "2026-05-31T21:08:00.822Z",
+      "budget": 47500
+    },
+    {
+      "id": "363",
+      "name": "Hasan Avcı",
+      "company": "Vatan Sanayi",
+      "email": "hasanavci@vatansanayi.com",
+      "phone": "+90 544 335 64 90",
+      "status": "inactive",
+      "createdAt": "2026-05-04T18:31:15.463Z",
+      "budget": 76500
+    },
+    {
+      "id": "364",
+      "name": "Selin Özdemir",
+      "company": "Vatan Sanayi",
+      "email": "selinozdemir@vatansanayi.com",
+      "phone": "+90 544 848 41 40",
+      "status": "active",
+      "createdAt": "2026-04-30T00:37:28.294Z",
+      "budget": 74500
+    },
+    {
+      "id": "365",
+      "name": "Emine Erdoğan",
+      "company": "Zirve Pazarlama",
+      "email": "emineerdogan@zirvepazarlama.com",
+      "phone": "+90 505 440 41 44",
+      "status": "active",
+      "createdAt": "2026-02-24T10:27:04.821Z",
+      "budget": 40000
+    },
+    {
+      "id": "366",
+      "name": "Cem Yıldız",
+      "company": "Anadolu Lojistik",
+      "email": "cemyildiz@anadolulojistik.com",
+      "phone": "+90 542 469 30 92",
+      "status": "active",
+      "createdAt": "2026-05-17T21:29:30.415Z",
+      "budget": 6000
+    },
+    {
+      "id": "367",
+      "name": "Gökhan Şen",
+      "company": "Anadolu Lojistik",
+      "email": "gokhansen@anadolulojistik.com",
+      "phone": "+90 542 464 71 97",
+      "status": "inactive",
+      "createdAt": "2026-03-08T12:03:46.773Z",
+      "budget": 14000
+    },
+    {
+      "id": "368",
+      "name": "Mehmet Çelik",
+      "company": "Beta Teknoloji",
+      "email": "mehmetcelik@betateknoloji.com",
+      "phone": "+90 555 195 83 10",
+      "status": "active",
+      "createdAt": "2026-03-04T10:15:14.338Z",
+      "budget": 31500
+    },
+    {
+      "id": "369",
+      "name": "Murat Yalçın",
+      "company": "Anadolu Lojistik",
+      "email": "muratyalcin@anadolulojistik.com",
+      "phone": "+90 535 361 77 04",
+      "status": "active",
+      "createdAt": "2026-05-04T04:00:27.750Z",
+      "budget": 23000
+    },
+    {
+      "id": "370",
+      "name": "Büşra Koç",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "busrakoc@esramimarlikvetasarim.com",
+      "phone": "+90 507 490 26 92",
+      "status": "active",
+      "createdAt": "2026-05-11T14:40:14.638Z",
+      "budget": 10000
+    },
+    {
+      "id": "371",
+      "name": "Mustafa Kösem",
+      "company": "Anadolu Lojistik",
+      "email": "mustafakosem@anadolulojistik.com",
+      "phone": "+90 555 885 86 96",
+      "status": "active",
+      "createdAt": "2026-01-15T12:42:23.313Z",
+      "budget": 59500
+    },
+    {
+      "id": "372",
+      "name": "Murat Şahin",
+      "company": "Piksel Tasarım",
+      "email": "muratsahin@pikseltasarim.com",
+      "phone": "+90 507 732 90 60",
+      "status": "active",
+      "createdAt": "2026-06-19T05:59:31.451Z",
+      "budget": 7500
+    },
+    {
+      "id": "373",
+      "name": "Zeynep Arslan",
+      "company": "Güneş İnşaat",
+      "email": "zeyneparslan@gunesi̇nsaat.com",
+      "phone": "+90 532 904 02 70",
+      "status": "inactive",
+      "createdAt": "2026-04-27T13:09:14.631Z",
+      "budget": 67500
+    },
+    {
+      "id": "374",
+      "name": "Kemal Kara",
+      "company": "Kuzey Yazılım",
+      "email": "kemalkara@kuzeyyazilim.com",
+      "phone": "+90 506 757 73 10",
+      "status": "active",
+      "createdAt": "2026-06-24T03:14:22.130Z",
+      "budget": 8500
+    },
+    {
+      "id": "375",
+      "name": "Selin Yılmaz",
+      "company": "Toros Enerji",
+      "email": "selinyilmaz@torosenerji.com",
+      "phone": "+90 532 257 23 32",
+      "status": "active",
+      "createdAt": "2026-02-11T19:54:31.082Z",
+      "budget": 11500
+    },
+    {
+      "id": "376",
+      "name": "Hasan Koç",
+      "company": "Karadeniz Gıda",
+      "email": "hasankoc@karadenizgida.com",
+      "phone": "+90 535 400 26 99",
+      "status": "inactive",
+      "createdAt": "2026-01-12T16:07:01.149Z",
+      "budget": 68000
+    },
+    {
+      "id": "377",
+      "name": "Seda Şahin",
+      "company": "Anadolu Lojistik",
+      "email": "sedasahin@anadolulojistik.com",
+      "phone": "+90 505 315 95 97",
+      "status": "inactive",
+      "createdAt": "2026-03-01T23:09:04.522Z",
+      "budget": 78500
+    },
+    {
+      "id": "378",
+      "name": "Ali Coşkun",
+      "company": "Karadeniz Gıda",
+      "email": "alicoskun@karadenizgida.com",
+      "phone": "+90 505 649 97 89",
+      "status": "active",
+      "createdAt": "2026-03-14T02:32:52.951Z",
+      "budget": 33000
+    },
+    {
+      "id": "379",
+      "name": "Ahmet Soylu",
+      "company": "Nova Finans",
+      "email": "ahmetsoylu@novafinans.com",
+      "phone": "+90 535 188 83 47",
+      "status": "active",
+      "createdAt": "2026-04-18T03:20:31.947Z",
+      "budget": 9000
+    },
+    {
+      "id": "380",
+      "name": "Mustafa Kurt",
+      "company": "Vatan Sanayi",
+      "email": "mustafakurt@vatansanayi.com",
+      "phone": "+90 542 843 66 10",
+      "status": "active",
+      "createdAt": "2026-02-14T05:43:20.759Z",
+      "budget": 64000
+    },
+    {
+      "id": "381",
+      "name": "Ömer Aksoy",
+      "company": "Karadeniz Gıda",
+      "email": "omeraksoy@karadenizgida.com",
+      "phone": "+90 533 296 81 78",
+      "status": "active",
+      "createdAt": "2026-01-29T07:08:23.476Z",
+      "budget": 12000
+    },
+    {
+      "id": "382",
+      "name": "Merve Kılıç",
+      "company": "Zirve Pazarlama",
+      "email": "mervekilic@zirvepazarlama.com",
+      "phone": "+90 533 803 80 79",
+      "status": "active",
+      "createdAt": "2026-03-27T20:54:32.692Z",
+      "budget": 51000
+    },
+    {
+      "id": "383",
+      "name": "Ali Aslan",
+      "company": "Karadeniz Gıda",
+      "email": "aliaslan@karadenizgida.com",
+      "phone": "+90 507 674 30 04",
+      "status": "active",
+      "createdAt": "2026-03-12T08:14:26.040Z",
+      "budget": 76500
+    },
+    {
+      "id": "384",
+      "name": "Esra Acar",
+      "company": "Beta Teknoloji",
+      "email": "esraacar@betateknoloji.com",
+      "phone": "+90 533 486 84 77",
+      "status": "inactive",
+      "createdAt": "2026-03-14T17:15:36.230Z",
+      "budget": 34000
+    },
+    {
+      "id": "385",
+      "name": "Ali Sarı",
+      "company": "Toros Enerji",
+      "email": "alisari@torosenerji.com",
+      "phone": "+90 506 975 51 19",
+      "status": "inactive",
+      "createdAt": "2026-02-18T17:29:42.669Z",
+      "budget": 70500
+    },
+    {
+      "id": "386",
+      "name": "Hakan Doğan",
+      "company": "Güneş İnşaat",
+      "email": "hakandogan@gunesi̇nsaat.com",
+      "phone": "+90 542 993 09 63",
+      "status": "active",
+      "createdAt": "2026-03-20T23:39:48.407Z",
+      "budget": 60500
+    },
+    {
+      "id": "387",
+      "name": "Burak Doğan",
+      "company": "Karadeniz Gıda",
+      "email": "burakdogan@karadenizgida.com",
+      "phone": "+90 535 622 26 09",
+      "status": "inactive",
+      "createdAt": "2026-01-15T11:43:53.351Z",
+      "budget": 69000
+    },
+    {
+      "id": "388",
+      "name": "Deniz Sarı",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "denizsari@esramimarlikvetasarim.com",
+      "phone": "+90 555 474 03 38",
+      "status": "active",
+      "createdAt": "2026-03-10T05:30:01.702Z",
+      "budget": 6000
+    },
+    {
+      "id": "389",
+      "name": "Cem Avcı",
+      "company": "Karadeniz Gıda",
+      "email": "cemavci@karadenizgida.com",
+      "phone": "+90 544 480 19 11",
+      "status": "active",
+      "createdAt": "2026-04-04T07:23:19.905Z",
+      "budget": 59000
+    },
+    {
+      "id": "390",
+      "name": "Fatma Şahin",
+      "company": "Vatan Sanayi",
+      "email": "fatmasahin@vatansanayi.com",
+      "phone": "+90 533 116 11 30",
+      "status": "inactive",
+      "createdAt": "2026-05-12T16:39:45.995Z",
+      "budget": 5500
+    },
+    {
+      "id": "391",
+      "name": "Cem Aydın",
+      "company": "Zirve Pazarlama",
+      "email": "cemaydin@zirvepazarlama.com",
+      "phone": "+90 507 480 33 44",
+      "status": "active",
+      "createdAt": "2026-06-28T23:21:23.639Z",
+      "budget": 35500
+    },
+    {
+      "id": "392",
+      "name": "Ahmet Yıldırım",
+      "company": "Alpha Danışmanlık",
+      "email": "ahmetyildirim@alphadanismanlik.com",
+      "phone": "+90 507 206 35 83",
+      "status": "active",
+      "createdAt": "2026-04-09T04:28:42.161Z",
+      "budget": 10500
+    },
+    {
+      "id": "393",
+      "name": "Gökhan Kara",
+      "company": "Zirve Pazarlama",
+      "email": "gokhankara@zirvepazarlama.com",
+      "phone": "+90 555 795 98 22",
+      "status": "inactive",
+      "createdAt": "2026-04-26T22:12:46.035Z",
+      "budget": 53500
+    },
+    {
+      "id": "394",
+      "name": "Burak Yıldız",
+      "company": "Ege Tekstil",
+      "email": "burakyildiz@egetekstil.com",
+      "phone": "+90 533 418 83 19",
+      "status": "active",
+      "createdAt": "2026-04-06T13:51:35.891Z",
+      "budget": 59000
+    },
+    {
+      "id": "395",
+      "name": "Mehmet Erdoğan",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "mehmeterdogan@esramimarlikvetasarim.com",
+      "phone": "+90 535 940 50 52",
+      "status": "active",
+      "createdAt": "2026-04-01T02:28:44.884Z",
+      "budget": 30500
+    },
+    {
+      "id": "396",
+      "name": "Esra Şahin",
+      "company": "Güneş İnşaat",
+      "email": "esrasahin@gunesi̇nsaat.com",
+      "phone": "+90 555 140 98 06",
+      "status": "active",
+      "createdAt": "2026-04-05T21:41:32.836Z",
+      "budget": 64500
+    },
+    {
+      "id": "397",
+      "name": "Murat Doğan",
+      "company": "Toros Enerji",
+      "email": "muratdogan@torosenerji.com",
+      "phone": "+90 543 207 93 46",
+      "status": "inactive",
+      "createdAt": "2026-01-09T19:52:37.347Z",
+      "budget": 17500
+    },
+    {
+      "id": "398",
+      "name": "Murat Bulut",
+      "company": "Toros Enerji",
+      "email": "muratbulut@torosenerji.com",
+      "phone": "+90 555 947 90 96",
+      "status": "active",
+      "createdAt": "2026-01-21T13:20:31.737Z",
+      "budget": 20500
+    },
+    {
+      "id": "399",
+      "name": "Zeynep Güler",
+      "company": "Alpha Danışmanlık",
+      "email": "zeynepguler@alphadanismanlik.com",
+      "phone": "+90 544 515 80 27",
+      "status": "active",
+      "createdAt": "2026-06-18T16:18:04.712Z",
+      "budget": 45000
+    },
+    {
+      "id": "400",
+      "name": "Ahmet Koç",
+      "company": "Marmara Turizm",
+      "email": "ahmetkoc@marmaraturizm.com",
+      "phone": "+90 532 215 32 15",
+      "status": "active",
+      "createdAt": "2026-01-08T00:16:58.688Z",
+      "budget": 48000
+    },
+    {
+      "id": "401",
+      "name": "Ahmet Aksoy",
+      "company": "Ege Tekstil",
+      "email": "ahmetaksoy@egetekstil.com",
+      "phone": "+90 544 462 51 04",
+      "status": "active",
+      "createdAt": "2026-03-15T00:22:00.207Z",
+      "budget": 58000
+    },
+    {
+      "id": "402",
+      "name": "Emine Coşkun",
+      "company": "Zirve Pazarlama",
+      "email": "eminecoskun@zirvepazarlama.com",
+      "phone": "+90 506 240 81 24",
+      "status": "active",
+      "createdAt": "2026-06-11T11:53:30.365Z",
+      "budget": 30500
+    },
+    {
+      "id": "403",
+      "name": "Selin Coşkun",
+      "company": "Beta Teknoloji",
+      "email": "selincoskun@betateknoloji.com",
+      "phone": "+90 532 297 92 57",
+      "status": "active",
+      "createdAt": "2026-04-14T11:12:14.904Z",
+      "budget": 37500
+    },
+    {
+      "id": "404",
+      "name": "Hüseyin Kara",
+      "company": "Atlas İthalat",
+      "email": "huseyinkara@atlasi̇thalat.com",
+      "phone": "+90 535 777 60 43",
+      "status": "active",
+      "createdAt": "2026-01-22T04:33:08.699Z",
+      "budget": 62000
+    },
+    {
+      "id": "405",
+      "name": "Gökhan Kaya",
+      "company": "Güneş İnşaat",
+      "email": "gokhankaya@gunesi̇nsaat.com",
+      "phone": "+90 507 379 34 90",
+      "status": "inactive",
+      "createdAt": "2026-05-07T05:25:07.556Z",
+      "budget": 39500
+    },
+    {
+      "id": "406",
+      "name": "Gökhan Demir",
+      "company": "Kuzey Yazılım",
+      "email": "gokhandemir@kuzeyyazilim.com",
+      "phone": "+90 544 954 56 96",
+      "status": "active",
+      "createdAt": "2026-06-28T11:41:38.377Z",
+      "budget": 45000
+    },
+    {
+      "id": "407",
+      "name": "Fatma Şen",
+      "company": "Ege Tekstil",
+      "email": "fatmasen@egetekstil.com",
+      "phone": "+90 544 107 15 66",
+      "status": "active",
+      "createdAt": "2026-02-16T09:15:14.345Z",
+      "budget": 70000
+    },
+    {
+      "id": "408",
+      "name": "Osman Avcı",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "osmanavci@esramimarlikvetasarim.com",
+      "phone": "+90 532 464 88 45",
+      "status": "active",
+      "createdAt": "2026-02-16T07:24:08.678Z",
+      "budget": 12000
+    },
+    {
+      "id": "409",
+      "name": "Zeynep Acar",
+      "company": "Anadolu Lojistik",
+      "email": "zeynepacar@anadolulojistik.com",
+      "phone": "+90 542 748 84 58",
+      "status": "inactive",
+      "createdAt": "2026-05-19T20:24:54.124Z",
+      "budget": 82500
+    },
+    {
+      "id": "410",
+      "name": "Esra Yalçın",
+      "company": "Nova Finans",
+      "email": "esrayalcin@novafinans.com",
+      "phone": "+90 535 919 64 88",
+      "status": "active",
+      "createdAt": "2026-05-14T13:40:06.515Z",
+      "budget": 26000
+    },
+    {
+      "id": "411",
+      "name": "Emine Öztürk",
+      "company": "Ege Tekstil",
+      "email": "emineozturk@egetekstil.com",
+      "phone": "+90 544 230 41 85",
+      "status": "active",
+      "createdAt": "2026-03-17T12:45:12.391Z",
+      "budget": 77500
+    },
+    {
+      "id": "412",
+      "name": "Esra Kösem",
+      "company": "Marmara Turizm",
+      "email": "esrakosem@marmaraturizm.com",
+      "phone": "+90 532 945 93 81",
+      "status": "inactive",
+      "createdAt": "2026-03-19T16:36:20.663Z",
+      "budget": 51500
+    },
+    {
+      "id": "413",
+      "name": "Büşra Kösem",
+      "company": "Nova Finans",
+      "email": "busrakosem@novafinans.com",
+      "phone": "+90 506 234 60 84",
+      "status": "active",
+      "createdAt": "2026-03-08T03:09:08.107Z",
+      "budget": 41500
+    },
+    {
+      "id": "414",
+      "name": "Elif Aksoy",
+      "company": "Atlas İthalat",
+      "email": "elifaksoy@atlasi̇thalat.com",
+      "phone": "+90 535 339 92 29",
+      "status": "active",
+      "createdAt": "2026-03-01T23:31:31.971Z",
+      "budget": 57500
+    },
+    {
+      "id": "415",
+      "name": "Hüseyin Aydın",
+      "company": "Marmara Turizm",
+      "email": "huseyinaydin@marmaraturizm.com",
+      "phone": "+90 505 709 62 38",
+      "status": "active",
+      "createdAt": "2026-06-18T22:38:25.745Z",
+      "budget": 26000
+    },
+    {
+      "id": "416",
+      "name": "Veli Bulut",
+      "company": "Toros Enerji",
+      "email": "velibulut@torosenerji.com",
+      "phone": "+90 555 543 30 66",
+      "status": "active",
+      "createdAt": "2026-03-22T15:01:10.681Z",
+      "budget": 23000
+    },
+    {
+      "id": "417",
+      "name": "Mehmet Kurt",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "mehmetkurt@esramimarlikvetasarim.com",
+      "phone": "+90 555 768 71 28",
+      "status": "active",
+      "createdAt": "2026-03-06T04:02:59.065Z",
+      "budget": 65500
+    },
+    {
+      "id": "418",
+      "name": "Ömer Avcı",
+      "company": "Kuzey Yazılım",
+      "email": "omeravci@kuzeyyazilim.com",
+      "phone": "+90 543 551 14 70",
+      "status": "active",
+      "createdAt": "2026-04-06T21:31:11.407Z",
+      "budget": 42500
+    },
+    {
+      "id": "419",
+      "name": "Ahmet Demir",
+      "company": "Anadolu Lojistik",
+      "email": "ahmetdemir@anadolulojistik.com",
+      "phone": "+90 505 476 89 77",
+      "status": "active",
+      "createdAt": "2026-03-27T05:39:09.285Z",
+      "budget": 65000
+    },
+    {
+      "id": "420",
+      "name": "Emine Öztürk",
+      "company": "Güneş İnşaat",
+      "email": "emineozturk@gunesi̇nsaat.com",
+      "phone": "+90 535 735 58 41",
+      "status": "inactive",
+      "createdAt": "2026-05-29T00:37:56.017Z",
+      "budget": 38000
+    },
+    {
+      "id": "421",
+      "name": "Hatice Öztürk",
+      "company": "Marmara Turizm",
+      "email": "haticeozturk@marmaraturizm.com",
+      "phone": "+90 505 226 45 49",
+      "status": "active",
+      "createdAt": "2026-04-04T00:49:28.547Z",
+      "budget": 89500
+    },
+    {
+      "id": "422",
+      "name": "Esra Sarı",
+      "company": "Ege Tekstil",
+      "email": "esrasari@egetekstil.com",
+      "phone": "+90 555 333 40 59",
+      "status": "active",
+      "createdAt": "2026-04-27T09:45:21.682Z",
+      "budget": 21000
+    },
+    {
+      "id": "423",
+      "name": "Mehmet Kılıç",
+      "company": "Atlas İthalat",
+      "email": "mehmetkilic@atlasi̇thalat.com",
+      "phone": "+90 555 298 17 95",
+      "status": "active",
+      "createdAt": "2026-06-23T15:46:58.158Z",
+      "budget": 20500
+    },
+    {
+      "id": "424",
+      "name": "Esra Kösem",
+      "company": "Alpha Danışmanlık",
+      "email": "esrakosem@alphadanismanlik.com",
+      "phone": "+90 542 970 40 95",
+      "status": "inactive",
+      "createdAt": "2026-03-14T22:38:41.228Z",
+      "budget": 89500
+    },
+    {
+      "id": "425",
+      "name": "Deniz Şen",
+      "company": "Piksel Tasarım",
+      "email": "denizsen@pikseltasarim.com",
+      "phone": "+90 533 951 80 19",
+      "status": "inactive",
+      "createdAt": "2026-01-23T21:28:58.003Z",
+      "budget": 74000
+    },
+    {
+      "id": "426",
+      "name": "Burak Yıldırım",
+      "company": "Piksel Tasarım",
+      "email": "burakyildirim@pikseltasarim.com",
+      "phone": "+90 543 760 79 25",
+      "status": "inactive",
+      "createdAt": "2026-02-02T19:15:04.879Z",
+      "budget": 25500
+    },
+    {
+      "id": "427",
+      "name": "Ahmet Sarı",
+      "company": "Toros Enerji",
+      "email": "ahmetsari@torosenerji.com",
+      "phone": "+90 544 101 64 01",
+      "status": "active",
+      "createdAt": "2026-05-10T02:46:14.266Z",
+      "budget": 5500
+    },
+    {
+      "id": "428",
+      "name": "Hatice Yılmaz",
+      "company": "Kuzey Yazılım",
+      "email": "haticeyilmaz@kuzeyyazilim.com",
+      "phone": "+90 535 789 11 95",
+      "status": "inactive",
+      "createdAt": "2026-05-20T03:00:02.520Z",
+      "budget": 26500
+    },
+    {
+      "id": "429",
+      "name": "Selin Çetin",
+      "company": "Toros Enerji",
+      "email": "selincetin@torosenerji.com",
+      "phone": "+90 535 660 38 05",
+      "status": "active",
+      "createdAt": "2026-04-30T15:17:23.134Z",
+      "budget": 19500
+    },
+    {
+      "id": "430",
+      "name": "Ayşe Aydın",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "ayseaydin@esramimarlikvetasarim.com",
+      "phone": "+90 533 282 83 38",
+      "status": "inactive",
+      "createdAt": "2026-03-29T10:32:45.635Z",
+      "budget": 62500
+    },
+    {
+      "id": "431",
+      "name": "Deniz Kaya",
+      "company": "Nova Finans",
+      "email": "denizkaya@novafinans.com",
+      "phone": "+90 543 522 39 23",
+      "status": "inactive",
+      "createdAt": "2026-06-30T06:15:26.035Z",
+      "budget": 44500
+    },
+    {
+      "id": "432",
+      "name": "Merve Aslan",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "merveaslan@esramimarlikvetasarim.com",
+      "phone": "+90 505 326 91 01",
+      "status": "active",
+      "createdAt": "2026-01-22T08:31:42.985Z",
+      "budget": 75500
+    },
+    {
+      "id": "433",
+      "name": "Murat Avcı",
+      "company": "Vatan Sanayi",
+      "email": "muratavci@vatansanayi.com",
+      "phone": "+90 507 389 63 26",
+      "status": "inactive",
+      "createdAt": "2026-06-24T13:27:04.715Z",
+      "budget": 41500
+    },
+    {
+      "id": "434",
+      "name": "Can Soylu",
+      "company": "Beta Teknoloji",
+      "email": "cansoylu@betateknoloji.com",
+      "phone": "+90 542 194 59 27",
+      "status": "active",
+      "createdAt": "2026-01-26T11:31:03.391Z",
+      "budget": 52000
+    },
+    {
+      "id": "435",
+      "name": "Zeynep Yalçın",
+      "company": "Zirve Pazarlama",
+      "email": "zeynepyalcin@zirvepazarlama.com",
+      "phone": "+90 544 558 11 47",
+      "status": "active",
+      "createdAt": "2026-01-11T09:40:15.047Z",
+      "budget": 92500
+    },
+    {
+      "id": "436",
+      "name": "Osman Kösem",
+      "company": "Karadeniz Gıda",
+      "email": "osmankosem@karadenizgida.com",
+      "phone": "+90 506 998 15 73",
+      "status": "active",
+      "createdAt": "2026-04-16T19:26:59.389Z",
+      "budget": 40500
+    },
+    {
+      "id": "437",
+      "name": "Merve Yılmaz",
+      "company": "Karadeniz Gıda",
+      "email": "merveyilmaz@karadenizgida.com",
+      "phone": "+90 544 949 03 91",
+      "status": "active",
+      "createdAt": "2026-02-05T17:05:28.072Z",
+      "budget": 47000
+    },
+    {
+      "id": "438",
+      "name": "Hasan Öztürk",
+      "company": "Nova Finans",
+      "email": "hasanozturk@novafinans.com",
+      "phone": "+90 544 243 88 17",
+      "status": "active",
+      "createdAt": "2026-04-23T22:55:15.500Z",
+      "budget": 59500
+    },
+    {
+      "id": "439",
+      "name": "Ali Çetin",
+      "company": "Beta Teknoloji",
+      "email": "alicetin@betateknoloji.com",
+      "phone": "+90 533 923 12 79",
+      "status": "active",
+      "createdAt": "2026-01-27T11:14:33.962Z",
+      "budget": 17500
+    },
+    {
+      "id": "440",
+      "name": "Elif Arslan",
+      "company": "Alpha Danışmanlık",
+      "email": "elifarslan@alphadanismanlik.com",
+      "phone": "+90 533 858 36 19",
+      "status": "active",
+      "createdAt": "2026-04-05T18:28:10.764Z",
+      "budget": 37000
+    },
+    {
+      "id": "441",
+      "name": "Ayşe Çetin",
+      "company": "Toros Enerji",
+      "email": "aysecetin@torosenerji.com",
+      "phone": "+90 532 628 81 36",
+      "status": "inactive",
+      "createdAt": "2026-06-23T17:07:32.548Z",
+      "budget": 44000
+    },
+    {
+      "id": "442",
+      "name": "Osman Doğan",
+      "company": "Vatan Sanayi",
+      "email": "osmandogan@vatansanayi.com",
+      "phone": "+90 542 483 47 36",
+      "status": "inactive",
+      "createdAt": "2026-06-15T22:08:49.220Z",
+      "budget": 15500
+    },
+    {
+      "id": "443",
+      "name": "Derya Kösem",
+      "company": "Marmara Turizm",
+      "email": "deryakosem@marmaraturizm.com",
+      "phone": "+90 555 498 69 57",
+      "status": "active",
+      "createdAt": "2026-06-24T10:12:37.399Z",
+      "budget": 76000
+    },
+    {
+      "id": "444",
+      "name": "Gökhan Soylu",
+      "company": "Kuzey Yazılım",
+      "email": "gokhansoylu@kuzeyyazilim.com",
+      "phone": "+90 532 622 36 52",
+      "status": "active",
+      "createdAt": "2026-05-18T08:46:25.557Z",
+      "budget": 81500
+    },
+    {
+      "id": "445",
+      "name": "Selin Avcı",
+      "company": "Beta Teknoloji",
+      "email": "selinavci@betateknoloji.com",
+      "phone": "+90 505 435 25 30",
+      "status": "inactive",
+      "createdAt": "2026-05-01T19:26:35.459Z",
+      "budget": 55000
+    },
+    {
+      "id": "446",
+      "name": "Zeynep Koç",
+      "company": "Anadolu Lojistik",
+      "email": "zeynepkoc@anadolulojistik.com",
+      "phone": "+90 507 851 27 02",
+      "status": "inactive",
+      "createdAt": "2026-04-19T16:27:07.389Z",
+      "budget": 23500
+    },
+    {
+      "id": "447",
+      "name": "Ali Acar",
+      "company": "Ege Tekstil",
+      "email": "aliacar@egetekstil.com",
+      "phone": "+90 533 422 75 33",
+      "status": "active",
+      "createdAt": "2026-06-14T15:17:01.497Z",
+      "budget": 93500
+    },
+    {
+      "id": "448",
+      "name": "Ahmet Şahin",
+      "company": "Atlas İthalat",
+      "email": "ahmetsahin@atlasi̇thalat.com",
+      "phone": "+90 544 774 64 00",
+      "status": "inactive",
+      "createdAt": "2026-01-16T05:31:49.287Z",
+      "budget": 62500
+    },
+    {
+      "id": "449",
+      "name": "Hatice Özdemir",
+      "company": "Karadeniz Gıda",
+      "email": "haticeozdemir@karadenizgida.com",
+      "phone": "+90 505 226 81 28",
+      "status": "inactive",
+      "createdAt": "2026-01-12T20:25:24.620Z",
+      "budget": 70500
+    },
+    {
+      "id": "450",
+      "name": "Ayşe Sarı",
+      "company": "Zirve Pazarlama",
+      "email": "aysesari@zirvepazarlama.com",
+      "phone": "+90 533 284 22 55",
+      "status": "active",
+      "createdAt": "2026-05-03T09:07:59.568Z",
+      "budget": 66000
+    },
+    {
+      "id": "451",
+      "name": "Zeynep Yılmaz",
+      "company": "Marmara Turizm",
+      "email": "zeynepyilmaz@marmaraturizm.com",
+      "phone": "+90 555 495 39 09",
+      "status": "active",
+      "createdAt": "2026-03-18T00:38:37.272Z",
+      "budget": 15000
+    },
+    {
+      "id": "452",
+      "name": "Selin Koç",
+      "company": "Atlas İthalat",
+      "email": "selinkoc@atlasi̇thalat.com",
+      "phone": "+90 535 412 76 92",
+      "status": "active",
+      "createdAt": "2026-06-16T14:20:12.356Z",
+      "budget": 88500
+    },
+    {
+      "id": "453",
+      "name": "Deniz Çelik",
+      "company": "Kuzey Yazılım",
+      "email": "denizcelik@kuzeyyazilim.com",
+      "phone": "+90 532 205 31 05",
+      "status": "active",
+      "createdAt": "2026-02-01T01:43:55.102Z",
+      "budget": 77000
+    },
+    {
+      "id": "454",
+      "name": "Zeynep Aydın",
+      "company": "Esra Mimarlık ve Tasarım",
+      "email": "zeynepaydin@esramimarlikvetasarim.com",
+      "phone": "+90 533 721 15 11",
+      "status": "inactive",
+      "createdAt": "2026-04-17T04:27:50.945Z",
+      "budget": 56500
+    },
+    {
+      "id": "455",
+      "name": "Gökhan Coşkun",
+      "company": "Güneş İnşaat",
+      "email": "gokhancoskun@gunesi̇nsaat.com",
+      "phone": "+90 535 713 80 41",
+      "status": "active",
+      "createdAt": "2026-02-21T11:18:45.500Z",
+      "budget": 53500
+    },
+    {
+      "id": "456",
+      "name": "Büşra Kösem",
+      "company": "Nova Finans",
+      "email": "busrakosem@novafinans.com",
+      "phone": "+90 506 337 84 43",
+      "status": "active",
+      "createdAt": "2026-02-07T07:23:19.981Z",
+      "budget": 70000
+    },
+    {
+      "id": "457",
+      "name": "Fatma Yılmaz",
+      "company": "Zirve Pazarlama",
+      "email": "fatmayilmaz@zirvepazarlama.com",
+      "phone": "+90 507 102 18 55",
+      "status": "active",
+      "createdAt": "2026-06-14T21:20:52.860Z",
+      "budget": 21000
+    },
+    {
+      "id": "458",
+      "name": "Deniz Bulut",
+      "company": "Kuzey Yazılım",
+      "email": "denizbulut@kuzeyyazilim.com",
+      "phone": "+90 544 215 75 74",
+      "status": "active",
+      "createdAt": "2026-02-10T08:07:29.696Z",
+      "budget": 73500
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
