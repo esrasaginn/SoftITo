@@ -13,14 +13,14 @@ export default function Home() {
     }
   }, [projectsStatus, dispatch]);
 
-  // Select our 4 generated project items to form the grid
+  // Izgarayı oluşturmak için üretilen 4 proje öğesini seç
   const featured = projects.filter(p => p.image);
 
   return (
     <div className="pb-0">
-      {/* 1. Large Hero Visual Section */}
+      {/* 1. Geniş Karşılama (Hero) Görsel Alanı */}
       <section className="position-relative py-0 overflow-hidden" style={{ minHeight: '85vh', display: 'flex', alignItems: 'center' }}>
-        {/* Visual background matching the dusk architectural house layout */}
+        {/* Tasarıma uyumlu gün batımı mimari villa arka plan görseli */}
         <div className="position-absolute top-0 start-0 w-100 h-100 z-0" 
              style={{ 
                backgroundImage: 'linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(/assets/luxury_villa_dusk.png)',
@@ -96,7 +96,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. Seçilmiş Eserler Grid Layout */}
+      {/* 3. Seçilmiş Eserler Izgara Düzeni */}
       <section className="py-5 bg-light bg-opacity-50">
         <div className="container">
           <div className="row mb-5">
@@ -119,7 +119,7 @@ export default function Home() {
                       backgroundImage: `url(${project.image})`, 
                       backgroundSize: 'cover', 
                       backgroundPosition: 'center', 
-                      height: idx % 2 === 0 ? '450px' : '360px' // Asymmetrical heights matching reference layout!
+                      height: idx % 2 === 0 ? '450px' : '360px' // Şablonla uyumlu asimetrik yükseklikler!
                     }}
                     className="border"
                   ></div>
@@ -145,7 +145,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Full-width Black CTA Banner Block */}
+      {/* 4. Tam Genişlikte Siyah Ortaklık/CTA Bandı */}
       <section className="black-cta-banner py-5 text-center border-top border-bottom">
         <div className="container py-5">
           <div className="row justify-content-center">

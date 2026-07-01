@@ -17,7 +17,7 @@ export default function About() {
   return (
     <div className="pb-0">
       <div className="container py-5">
-        {/* 1. Hero Section (Hakkımızda) */}
+        {/* 1. Giriş Alanı (Hakkımızda) */}
         <section className="mb-5 py-4">
           <div className="row g-5 align-items-center">
             <div className="col-lg-6">
@@ -28,7 +28,7 @@ export default function About() {
                 Mimari Vizyonun Sessiz Otoritesi.
               </h1>
               
-              {/* Portrait visual representation of abstract geometry */}
+              {/* Soyut geometriyi temsil eden dikey görsel */}
               <div 
                 className="border overflow-hidden mb-4 mb-lg-0" 
                 style={{ 
@@ -55,7 +55,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* 2. Stats / Milestones Grid */}
+        {/* 2. İstatistikler / Kilometre Taşları Izgarası */}
         <section className="py-5 my-4 border-top border-bottom">
           <div className="row g-4 text-center">
             <div className="col-md-4">
@@ -73,7 +73,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* 3. Team & Collaborators Grid */}
+        {/* 3. Ekip ve Çözüm Ortakları Izgarası */}
         <section className="py-5 mb-5">
           <div className="row mb-5">
             <div className="col-12 text-center">
@@ -111,7 +111,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* ISTON */}
+            {/* İSTON */}
             <div className="col-md-4">
               <div className="card bg-glass border p-4 text-center">
                 <div className="bg-light d-inline-flex align-items-center justify-content-center mx-auto mb-3" style={{ width: '100px', height: '100px', filter: 'grayscale(100%)' }}>
@@ -125,7 +125,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* 4. Timelines (CV / Chronology) */}
+        {/* 4. Zaman Çizelgesi (Özgeçmiş / Kronoloji) */}
         <section className="py-4 border-top">
           <div className="row mb-5">
             <div className="col-12 text-center text-md-start">
@@ -133,7 +133,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* Loading States */}
+          {/* Yükleme Durumları */}
           {status === 'loading' && (
             <div className="d-flex justify-content-center my-5 py-5">
               <div className="spinner-border text-secondary" role="status" style={{ borderRightColor: 'var(--color-terracotta)' }}>
@@ -153,7 +153,7 @@ export default function About() {
 
           {status === 'succeeded' && (
             <div className="row g-5">
-              {/* Experiences */}
+              {/* Deneyimler */}
               <div className="col-lg-6">
                 <h4 className="fw-bold text-uppercase fs-6 font-monospace mb-4 pb-2 border-bottom text-secondary">
                   [ MESLEKİ DENEYİM ]
@@ -170,7 +170,7 @@ export default function About() {
                 ))}
               </div>
 
-              {/* Education */}
+              {/* Eğitim */}
               <div className="col-lg-6">
                 <h4 className="fw-bold text-uppercase fs-6 font-monospace mb-4 pb-2 border-bottom text-secondary">
                   [ AKADEMİK EĞİTİM ]
@@ -190,7 +190,7 @@ export default function About() {
         </section>
       </div>
 
-      {/* 5. Full-width Black CTA Banner Block */}
+      {/* 5. Tam Genişlikte Siyah Eylem (CTA) Bandı */}
       <section className="black-cta-banner py-5 text-center border-top">
         <div className="container py-5">
           <div className="row justify-content-center">

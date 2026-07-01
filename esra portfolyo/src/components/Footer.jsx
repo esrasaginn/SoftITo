@@ -7,9 +7,9 @@ export default function Footer() {
   return (
     <footer className="footer-custom pt-5 pb-4">
       <div className="container">
-        {/* Main Footer Content */}
+        {/* Ana Altbilgi İçeriği */}
         <div className="row g-4 mb-5 text-start">
-          {/* Column 1: Brand Logo & Tagline */}
+          {/* 1. Kolon: Marka Logosu & Slogan */}
           <div className="col-lg-4 col-md-6">
             <h3 className="text-white text-uppercase tracking-widest fw-bold mb-3 fs-5" style={{ fontFamily: "'Playfair Display', serif" }}>
               ESTRUCTURA
@@ -19,7 +19,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Column 2: Navigation Links */}
+          {/* 2. Kolon: Hızlı Gezinti Bağlantıları */}
           <div className="col-lg-2 col-md-6">
             <h4 className="text-white font-monospace text-uppercase fs-8 tracking-widest mb-3">[ KEŞFET ]</h4>
             <ul className="list-unstyled p-0 m-0 fs-7" style={{ lineHeight: '2.0' }}>
@@ -41,7 +41,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Contact Information */}
+          {/* 3. Kolon: İletişim Bilgileri */}
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white font-monospace text-uppercase fs-8 tracking-widest mb-3">[ İLETİŞİM ]</h4>
             <ul className="list-unstyled p-0 m-0 fs-7 text-secondary" style={{ lineHeight: '1.8' }}>
@@ -60,7 +60,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Social Networks */}
+          {/* 4. Kolon: Sosyal Ağ Bağlantıları */}
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white font-monospace text-uppercase fs-8 tracking-widest mb-3">[ TAKİP ET ]</h4>
             <ul className="list-unstyled p-0 m-0 fs-7" style={{ lineHeight: '2.0' }}>
@@ -96,7 +96,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Footer Bottom Row */}
+        {/* Altbilgi Alt Satırı */}
         <div className="row pt-4 border-top border-secondary border-opacity-25 align-items-center">
           <div className="col-md-6 text-center text-md-start mb-2 mb-md-0">
             <span className="text-secondary fs-8 text-uppercase tracking-wider">
@@ -111,7 +111,7 @@ export default function Footer() {
         </div>
       </div>
       
-      {/* Inline styles for custom hover links inside footer */}
+      {/* Altbilgi içindeki özel hover stilleri */}
       <style>{`
         .hover-white {
           transition: color 0.15s ease;

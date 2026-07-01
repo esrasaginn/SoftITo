@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function ProjectCard({ project }) {
-  // Generate a distinct geometric/blueprint design based on category to make it look premium
+  // Prestijli görünmesi için kategoriye göre farklı bir geometrik/blueprint tasarımı oluştur
   const getCategoryHeaderStyle = (category) => {
     let backgroundStyle = '';
     
@@ -70,14 +70,14 @@ export default function ProjectCard({ project }) {
   return (
     <div className="col">
       <div className="card h-100 bg-glass scale-hover border-0">
-        {/* Dynamic Architect Graphics Header */}
+        {/* Dinamik Mimari Grafik Başlığı */}
         <div style={getHeaderStyle()} className="d-flex align-items-center justify-content-center">
           <div className="position-absolute bottom-0 start-0 p-2">
             <span className="badge text-uppercase tracking-widest text-white" style={{ backgroundColor: 'var(--color-terracotta)', fontSize: '0.65rem', fontWeight: 700 }}>
               {project.category}
             </span>
           </div>
-          {/* Faint crosshair to represent CAD lines - only show if no image background */}
+          {/* CAD çizgilerini temsil eden hafif artı işareti - yalnızca görsel yoksa gösterilir */}
           {!project.image && (
             <div className="text-secondary opacity-50 fw-light select-none text-center px-3" style={{ fontSize: '0.75rem', fontFamily: 'monospace' }}>
               [ SCALE 1:10 / {project.details?.year || '2025'} ]
@@ -115,7 +115,7 @@ export default function ProjectCard({ project }) {
         </div>
       </div>
       
-      {/* Inline styles for line truncations */}
+      {/* Satır kısaltmalarını destekleyen yerleşik stiller */}
       <style>{`
         .text-truncate-3 {
           display: -webkit-box;

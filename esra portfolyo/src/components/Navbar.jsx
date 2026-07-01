@@ -17,7 +17,7 @@ export default function Navbar() {
     localStorage.setItem('color-scheme', theme);
   }, [theme]);
 
-  // Listen to OS system theme changes
+  // İşletim sisteminin tema değişikliklerini dinle
   useEffect(() => {
     if (theme !== 'system') return;
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -55,7 +55,7 @@ export default function Navbar() {
         </Link>
         
         <div className="d-flex align-items-center order-lg-last ms-2">
-          {/* Theme Toggle Button */}
+          {/* Tema Değiştirme Butonu */}
           <button 
             onClick={toggleTheme}
             className="btn btn-link nav-link p-2 text-decoration-none border-0" 

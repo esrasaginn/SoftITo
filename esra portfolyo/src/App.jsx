@@ -18,7 +18,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDetail />} />
-          <Route path="/experience" element={<About />} /> {/* backward compatibility fallback */}
+          <Route path="/experience" element={<About />} /> {/* geriye dönük uyumluluk yedeği */}
           <Route path="/about" element={<About />} />
           <Route path="/quote" element={<Quote />} />
           <Route path="/contact" element={<Contact />} />

@@ -21,12 +21,12 @@ export default function Projects() {
     ? projects
     : projects.filter(p => p.category === activeCategory);
 
-  // Large spotlight project at the bottom (e.g. Levh-i Mahfuz)
+  // En alttaki geniş öne çıkan proje (Örn: Levh-i Mahfuz)
   const spotlightProject = projects.find(p => p.id === "1");
 
   return (
     <div className="container py-5" style={{ minHeight: '80vh' }}>
-      {/* Page Header */}
+      {/* Sayfa Başlığı */}
       <div className="row mb-4">
         <div className="col-12 text-center">
           <span className="text-uppercase font-monospace tracking-widest text-secondary fs-8">
@@ -41,7 +41,7 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* Category Filter - Inline Editorial Text Style */}
+      {/* Kategori Filtresi - Satır İçi Editöryal Yazı Stili */}
       <div className="row mb-5 justify-content-center">
         <div className="col-auto">
           <div className="d-flex flex-wrap gap-3 gap-md-4 justify-content-center font-monospace uppercase fs-8">
@@ -65,7 +65,7 @@ export default function Projects() {
         </div>
       </div>
 
-      {/* Loading & Error States */}
+      {/* Yükleme ve Hata Durumları */}
       {status === 'loading' && (
         <div className="d-flex justify-content-center my-5 py-5">
           <div className="spinner-border text-secondary" role="status" style={{ borderRightColor: 'var(--color-terracotta)' }}>
@@ -83,7 +83,7 @@ export default function Projects() {
         </div>
       )}
 
-      {/* Asymmetrical Masonry-style Grid */}
+      {/* Asimetrik Duvar (Masonry) Stili Izgara */}
       {status === 'succeeded' && (
         <>
           {filteredProjects.length === 0 ? (
@@ -101,7 +101,7 @@ export default function Projects() {
             </div>
           )}
 
-          {/* Full-width visual banner at the bottom (representing the 3rd mockup column wide visual) */}
+          {/* En alttaki tam genişlikte görsel afiş (Şemadaki 3. sütundaki geniş görseli temsil eder) */}
           {spotlightProject && activeCategory === 'Hepsi' && (
             <div className="row mt-5 pt-4">
               <div className="col-12">

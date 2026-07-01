@@ -29,7 +29,7 @@ export default function Contact() {
 
   return (
     <div className="pb-5">
-      {/* 1. Full-width Grayscale Map Banner Placeholder */}
+      {/* 1. Tam Genişlikte Siyah-Beyaz Harita Görseli */}
       <section className="bg-light border-bottom overflow-hidden position-relative" style={{ height: '240px' }}>
         <div className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
              style={{ 
@@ -46,10 +46,10 @@ export default function Contact() {
       </section>
 
       <div className="container py-5">
-        {/* 2. Contact Split Columns Section */}
+        {/* 2. İletişim İki Sütunlu Bölüm */}
         <section className="mb-5 py-4">
           <div className="row g-5">
-            {/* Left Column: Contact Info */}
+            {/* Sol Sütun: İletişim Bilgisi */}
             <div className="col-lg-5">
               <span className="text-uppercase font-monospace tracking-widest text-secondary fs-8">
                 [ İLETİŞİM ]
@@ -83,7 +83,7 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Right Column: Quick Form */}
+            {/* Sağ Sütun: Hızlı İletişim Formu */}
             <div className="col-lg-7">
               <div className="card bg-glass border-0 p-4 p-md-5">
                 <h4 className="fw-bold text-uppercase font-monospace fs-6 mb-4 pb-2 border-bottom text-secondary">
@@ -101,7 +101,7 @@ export default function Contact() {
                 ) : (
                   <form onSubmit={handleSubmit} noValidate className={`needs-validation ${validated ? 'was-validated' : ''}`}>
                     <div className="row g-4">
-                      {/* Name */}
+                      {/* İsim */}
                       <div className="col-md-6">
                         <label htmlFor="nameInput" className="form-label font-monospace text-uppercase fs-8 text-secondary">Ad Soyad *</label>
                         <input
@@ -117,7 +117,7 @@ export default function Contact() {
                         <div className="invalid-feedback font-monospace fs-8">Lütfen adınızı giriniz.</div>
                       </div>
 
-                      {/* Email */}
+                      {/* E-Posta */}
                       <div className="col-md-6">
                         <label htmlFor="emailInput" className="form-label font-monospace text-uppercase fs-8 text-secondary">E-Posta Adresi *</label>
                         <input
@@ -133,7 +133,7 @@ export default function Contact() {
                         <div className="invalid-feedback font-monospace fs-8">Lütfen geçerli bir e-posta giriniz.</div>
                       </div>
 
-                      {/* Message */}
+                      {/* Mesaj */}
                       <div className="col-12">
                         <label htmlFor="messageInput" className="form-label font-monospace text-uppercase fs-8 text-secondary">Mesajınız *</label>
                         <textarea
@@ -162,7 +162,7 @@ export default function Contact() {
           </div>
         </section>
 
-        {/* 3. Bottom Showcase (3 portrait cards side by side matching page 5 bottom mockup) */}
+        {/* 3. Alt Görsel Galeri Şeridi (Şemadaki 5. sayfa altındaki 3 dikey görseli temsil eder) */}
         <section className="py-4 border-top">
           <div className="row g-4">
             <div className="col-md-4">

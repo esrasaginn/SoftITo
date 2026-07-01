@@ -17,14 +17,14 @@ export default function ProjectDetail() {
 
   return (
     <div className="container py-5" style={{ minHeight: '80vh' }}>
-      {/* Back Button */}
+      {/* Geri Dön Butonu */}
       <div className="mb-4">
         <Link to="/projects" className="text-decoration-none text-secondary hover-terracotta font-monospace fs-7 text-uppercase tracking-wider">
           <i className="bi bi-chevron-left me-1"></i> [ Galeriye Dön ]
         </Link>
       </div>
 
-      {/* Loading States */}
+      {/* Yükleme ve Hata Durumları */}
       {status === 'loading' && (
         <div className="d-flex justify-content-center my-5 py-5">
           <div className="spinner-border text-secondary" role="status" style={{ borderRightColor: 'var(--color-terracotta)' }}>
@@ -44,7 +44,7 @@ export default function ProjectDetail() {
 
       {status === 'succeeded' && project && (
         <div className="row g-5">
-          {/* Main info */}
+          {/* Ana Bilgiler */}
           <div className="col-lg-7">
             <div className="d-flex align-items-center gap-2 mb-3">
               <span className="badge text-uppercase tracking-widest text-dark py-1.5 px-3" style={{ backgroundColor: 'var(--color-terracotta)', fontSize: '0.7rem', fontWeight: 700 }}>
@@ -78,7 +78,7 @@ export default function ProjectDetail() {
             )}
           </div>
 
-          {/* Specifications Table (Blueprints Sheet) */}
+          {/* Teknik Özellikler Tablosu (Blueprint Detayları) */}
           <div className="col-lg-5">
             <div className="card bg-glass border-0 p-4 shadow-md">
               <h4 className="fw-bold text-uppercase font-monospace fs-6 mb-4 pb-2 border-bottom text-secondary">
@@ -132,7 +132,7 @@ export default function ProjectDetail() {
         </div>
       )}
       
-      {/* Mini Inline CSS to support hover link color */}
+      {/* Hover bağlantı rengini destekleyen yerleşik stil */}
       <style>{`
         .hover-terracotta:hover {
           color: var(--color-terracotta) !important;

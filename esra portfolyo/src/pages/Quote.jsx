@@ -48,7 +48,7 @@ export default function Quote() {
 
   return (
     <div className="container py-5" style={{ minHeight: '80vh' }}>
-      {/* Header */}
+      {/* Sayfa Başlığı */}
       <div className="row mb-5">
         <div className="col-12 text-center text-md-start">
           <span className="text-uppercase font-monospace tracking-widest text-secondary fs-8">
@@ -83,7 +83,7 @@ export default function Quote() {
       ) : (
         <form onSubmit={handleSubmit} noValidate className={`needs-validation ${validated ? 'was-validated' : ''}`}>
           <div className="row g-5">
-            {/* Left Column: Form */}
+            {/* Sol Sütun: Form */}
             <div className="col-lg-7">
               <div className="card bg-glass border-0 p-4 p-md-5">
                 <h4 className="fw-bold text-uppercase font-monospace fs-6 mb-4 pb-2 border-bottom text-secondary">
@@ -91,7 +91,7 @@ export default function Quote() {
                 </h4>
                 
                 <div className="row g-4">
-                  {/* Name */}
+                  {/* İsim */}
                   <div className="col-md-6">
                     <label htmlFor="nameInput" className="form-label font-monospace text-uppercase fs-8 text-secondary">
                       Ad Soyad *
@@ -111,7 +111,7 @@ export default function Quote() {
                     </div>
                   </div>
 
-                  {/* Company */}
+                  {/* Firma */}
                   <div className="col-md-6">
                     <label htmlFor="companyInput" className="form-label font-monospace text-uppercase fs-8 text-secondary">
                       Firma Adı
@@ -127,7 +127,7 @@ export default function Quote() {
                     />
                   </div>
 
-                  {/* Email */}
+                  {/* E-Posta */}
                   <div className="col-md-6">
                     <label htmlFor="emailInput" className="form-label font-monospace text-uppercase fs-8 text-secondary">
                       E-Posta Adresi *
@@ -147,7 +147,7 @@ export default function Quote() {
                     </div>
                   </div>
 
-                  {/* Phone */}
+                  {/* Telefon */}
                   <div className="col-md-6">
                     <label htmlFor="phoneInput" className="form-label font-monospace text-uppercase fs-8 text-secondary">
                       Telefon Numarası *
@@ -167,7 +167,7 @@ export default function Quote() {
                     </div>
                   </div>
 
-                  {/* Project Type */}
+                  {/* Proje Türü */}
                   <div className="col-md-6">
                     <label htmlFor="projectTypeSelect" className="form-label font-monospace text-uppercase fs-8 text-secondary">
                       Proje Kategorisi *
@@ -187,7 +187,7 @@ export default function Quote() {
                     </select>
                   </div>
 
-                  {/* Budget */}
+                  {/* Bütçe */}
                   <div className="col-md-6">
                     <label htmlFor="budgetRangeSelect" className="form-label font-monospace text-uppercase fs-8 text-secondary">
                       Öngörülen Bütçe *
@@ -206,7 +206,7 @@ export default function Quote() {
                     </select>
                   </div>
 
-                  {/* Details */}
+                  {/* Detaylar */}
                   <div className="col-12">
                     <label htmlFor="scopeInput" className="form-label font-monospace text-uppercase fs-8 text-secondary">
                       Proje Kapsamı ve Detayları *
@@ -235,10 +235,10 @@ export default function Quote() {
               </div>
             </div>
 
-            {/* Right Column: Visual Block */}
+            {/* Sağ Sütun: Görsel Blok */}
             <div className="col-lg-5">
               <div className="card border-0 bg-transparent h-100 d-flex flex-column justify-content-between">
-                {/* Visual card displaying interior room matching the 4th column visual */}
+                {/* 4. sütundaki görsel şemayla eşleşen iç mekânı gösteren görsel kart */}
                 <div 
                   className="border mb-4" 
                   style={{ 

@@ -42,7 +42,7 @@ const portfolioSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      // fetchProjects
+      // projeleri getir
       .addCase(fetchProjects.pending, (state) => {
         state.status = 'loading';
       })
@@ -54,7 +54,7 @@ const portfolioSlice = createSlice({
         state.status = 'failed';
         state.error = action.payload;
       })
-      // fetchProjectById
+      // id ile proje getir
       .addCase(fetchProjectById.pending, (state) => {
         state.status = 'loading';
       })

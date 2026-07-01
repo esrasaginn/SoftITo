@@ -3,7 +3,7 @@ import React from 'react';
 export default function TimelineItem({ title, subtitle, period, description, details, tags }) {
   return (
     <div className="position-relative mb-5 timeline-container">
-      {/* Node indicator */}
+      {/* Nokta göstergesi */}
       <div className="timeline-node"></div>
       
       <div className="card bg-glass border-0 p-4 shadow-sm">
