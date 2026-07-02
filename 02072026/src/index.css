@@ -1,0 +1,311 @@
+/* Custom Theme Styles for FoodFlow */
+
+:root {
+  --primary-color: #ba181b;
+  --primary-hover: #a61215;
+  --secondary-color: #FF6F00;
+  --secondary-hover: #e65c00;
+  
+  --bg-color: #F8F9FA;
+  --card-bg: #ffffff;
+  --text-color: #212529;
+  --text-muted: #6c757d;
+  --border-color: #dee2e6;
+  
+  /* Bootstrap Override variables for custom use */
+  --nav-bg: #ba181b;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #E9ECEF;
+  --text-muted: #a0a0a0;
+  --border-color: #2b2b2b;
+  --nav-bg: #1f1f1f;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Theme sensitive card and table styles */
+.card {
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-color) !important;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.table {
+  color: var(--text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+.table th, .table td {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+.form-control, .form-select {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 0.25rem rgba(186, 24, 27, 0.25) !important;
+}
+
+/* Custom classes for the brand colors */
+.bg-brand-primary {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.bg-brand-secondary {
+  background-color: var(--secondary-color) !important;
+  color: white !important;
+}
+
+.text-brand-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-brand-secondary {
+  color: var(--secondary-color) !important;
+}
+
+.btn-brand-primary {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.btn-brand-primary:hover {
+  background-color: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+  color: white !important;
+}
+
+.btn-brand-secondary {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+  color: white !important;
+}
+
+.btn-brand-secondary:hover {
+  background-color: var(--secondary-hover) !important;
+  border-color: var(--secondary-hover) !important;
+  color: white !important;
+}
+
+/* Custom Navbar styling */
+.custom-navbar {
+  background-color: var(--nav-bg) !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effects */
+.scale-hover {
+  transition: transform 0.2s ease-in-out;
+}
+
+.scale-hover:hover {
+  transform: scale(1.02);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(186, 24, 27, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(186, 24, 27, 0.4);
+}
+
+/* Modern native <dialog> styling and top-layer transitions */
+dialog {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  max-width: 500px;
+  width: 90%;
+  padding: 0;
+  
+  opacity: 0;
+  transform: scale(0.95);
+  transition-property: opacity, transform, display, overlay;
+  transition-duration: 0.25s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-behavior: allow-discrete;
+}
+
+dialog[open] {
+  opacity: 1;
+  transform: scale(1);
+
+  @starting-style {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0);
+  transition:
+    display 0.25s allow-discrete,
+    overlay 0.25s allow-discrete,
+    background-color 0.25s ease-out;
+}
+
+dialog[open]::backdrop {
+  background-color: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+
+  @starting-style {
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  dialog {
+    transform: none !important;
+    transition-duration: 0.1s !important;
+  }
+  dialog[open] {
+    @starting-style {
+      transform: none !important;
+    }
+  }
+}
+
+/* 3D Flipping Card Styles */
+.credit-card-container {
+  width: 100%;
+  max-width: 320px;
+  height: 190px;
+  perspective: 1000px;
+  margin: 0 auto 20px auto;
+}
+
+.credit-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.credit-card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.credit-card-front, .credit-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  color: white;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+}
+
+.credit-card-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(135deg, #2c3e50 0%, #000000 100%);
+  padding: 0;
+  justify-content: start;
+}
+
+.card-strip {
+  width: 100%;
+  height: 38px;
+  background-color: #111;
+  margin-top: 20px;
+}
+
+.card-signature-cvv {
+  margin: 15px 15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-signature-bar {
+  width: 70%;
+  height: 30px;
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 3px;
+}
+
+.card-cvv-text {
+  color: #111;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.card-chip {
+  width: 36px;
+  height: 26px;
+  background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%);
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 2px rgba(255,255,255,0.5);
+}
+
+.card-logo {
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.card-number-display {
+  font-family: monospace;
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+  margin: 12px 0;
+}
+
+.card-holder-display {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  max-width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-expiry-display {
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+

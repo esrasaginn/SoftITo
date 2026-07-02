@@ -1,0 +1,2082 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Can Yılmaz",
+      "email": "can@mail.com",
+      "role": "customer"
+    },
+    {
+      "id": "2",
+      "name": "Gazi Kebap Salonu",
+      "email": "gazi@kebap.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "3",
+      "name": "Esra Admin",
+      "email": "admin@foodflow.com",
+      "role": "admin"
+    },
+    {
+      "id": "4",
+      "name": "Burger Station",
+      "email": "burger@station.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "5",
+      "name": "Bella Pizza",
+      "email": "bella@pizza.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "6",
+      "name": "Merve Demir",
+      "email": "merve@mail.com",
+      "role": "customer"
+    },
+    {
+      "id": "7",
+      "name": "Ali Kaya",
+      "email": "ali@mail.com",
+      "role": "customer"
+    },
+    {
+      "id": "8",
+      "name": "Fatma Aksoy",
+      "email": "fatma@mail.com",
+      "role": "customer"
+    },
+    {
+      "id": "9",
+      "name": "Hacıoğlu Lahmacun",
+      "email": "hacioglu@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "10",
+      "name": "Crunch Chicken",
+      "email": "crunch@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "11",
+      "name": "Napoli Wood Fired Pizza",
+      "email": "napoli@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "12",
+      "name": "Sweet Dreams Waffle",
+      "email": "sweet@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "13",
+      "name": "Kahve Dünyası",
+      "email": "kahve@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "14",
+      "name": "Tokyo Sushi",
+      "email": "tokyo@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "15",
+      "name": "Sultanahmet Köftecisi",
+      "email": "sultanahmet@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "16",
+      "name": "Hatay Dürüm Dünyası",
+      "email": "hatay@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "17",
+      "name": "Burger Lab",
+      "email": "lab@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "18",
+      "name": "Hot Wings Chicken",
+      "email": "wings@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "19",
+      "name": "Pizza Loca",
+      "email": "loca@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "20",
+      "name": "Pizzeria Il Caminetto",
+      "email": "caminetto@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "21",
+      "name": "Baklavacı Güllüoğlu",
+      "email": "gulluoglu@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "22",
+      "name": "Sushi Express",
+      "email": "sushiexpress@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "23",
+      "name": "Wok & Walk",
+      "email": "wokwalk@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "24",
+      "name": "Lezzet Burgerhouse Şişli",
+      "email": "lezzetburgerhouseili@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "25",
+      "name": "Meşhur Tandır Levent",
+      "email": "mehurtandrlevent@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "26",
+      "name": "Gurme Sushi Bar Maltepe",
+      "email": "gurmesushibarmaltepe@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "27",
+      "name": "Hakiki Burgerhouse Maltepe",
+      "email": "hakikiburgerhousemaltepe@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "28",
+      "name": "Şehir Dragon Maltepe",
+      "email": "ehirdragonmaltepe@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "29",
+      "name": "Gurme Chocolatier Üsküdar",
+      "email": "gurmechocolatierskdar@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "30",
+      "name": "Gurme Dragon Levent",
+      "email": "gurmedragonlevent@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "31",
+      "name": "Saray Dürüm Evi Maltepe",
+      "email": "saraydrmevimaltepe@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "32",
+      "name": "Şehir Fryer Kadıköy",
+      "email": "ehirfryerkadky@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "33",
+      "name": "Öz Zen Maltepe",
+      "email": "zzenmaltepe@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "34",
+      "name": "Saray Tandır Bakırköy",
+      "email": "saraytandrbakrky@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "35",
+      "name": "Meşhur Joint Maltepe",
+      "email": "mehurjointmaltepe@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "36",
+      "name": "Hakiki Dragon Üsküdar",
+      "email": "hakikidragonskdar@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "37",
+      "name": "Şehir Slice Levent",
+      "email": "ehirslicelevent@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "38",
+      "name": "Gurme Dürüm Evi Bakırköy",
+      "email": "gurmedrmevibakrky@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "39",
+      "name": "Şehir Kahvecisi Şişli",
+      "email": "ehirkahvecisiili@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "40",
+      "name": "Kral Dinner Kadıköy",
+      "email": "kraldinnerkadky@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "41",
+      "name": "Saray Trattoria Kadıköy",
+      "email": "saraytrattoriakadky@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "42",
+      "name": "Tarihi Waffle Bar Bakırköy",
+      "email": "tarihiwafflebarbakrky@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "43",
+      "name": "Şehir Sofrası Maltepe",
+      "email": "ehirsofrasmaltepe@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "44",
+      "name": "Şehir Wok Levent",
+      "email": "ehirwoklevent@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "45",
+      "name": "Şehir Burgerhouse Maltepe",
+      "email": "ehirburgerhousemaltepe@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "46",
+      "name": "Tarihi Sushi Bar Bakırköy",
+      "email": "tarihisushibarbakrky@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "47",
+      "name": "Has Zen Maltepe",
+      "email": "haszenmaltepe@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "48",
+      "name": "Kral Fryer Maltepe",
+      "email": "kralfryermaltepe@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "49",
+      "name": "Hakiki Kebapçı Beşiktaş",
+      "email": "hakikikebapbeikta@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "50",
+      "name": "Öz Bite Levent",
+      "email": "zbitelevent@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "51",
+      "name": "Tarihi Chocolatier Maltepe",
+      "email": "tarihichocolatiermaltepe@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "52",
+      "name": "Lezzet Dragon Maltepe",
+      "email": "lezzetdragonmaltepe@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "53",
+      "name": "Tarihi Trattoria Şişli",
+      "email": "tarihitrattoriaili@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "54",
+      "name": "Gurme Waffle Bar Levent",
+      "email": "gurmewafflebarlevent@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "55",
+      "name": "Öz Slice Beşiktaş",
+      "email": "zslicebeikta@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "56",
+      "name": "Saray Tandır Bakırköy",
+      "email": "saraytandrbakrky@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "57",
+      "name": "Saray Fırını Levent",
+      "email": "sarayfrnlevent@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "58",
+      "name": "Gurme Joint Şişli",
+      "email": "gurmejointili@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "59",
+      "name": "Hakiki Zen Beylikdüzü",
+      "email": "hakikizenbeylikdz@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "60",
+      "name": "Saray Trattoria Beylikdüzü",
+      "email": "saraytrattoriabeylikdz@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "61",
+      "name": "Lezzet Pizzeria Beşiktaş",
+      "email": "lezzetpizzeriabeikta@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "62",
+      "name": "Lezzet Dragon Beşiktaş",
+      "email": "lezzetdragonbeikta@mail.com",
+      "role": "restaurant"
+    },
+    {
+      "id": "63",
+      "name": "Gurme Sushi Bar Şişli",
+      "email": "gurmesushibarili@mail.com",
+      "role": "restaurant"
+    }
+  ],
+  "restaurants": [
+    {
+      "id": "r101",
+      "userId": "2",
+      "name": "Gazi Kebap Salonu",
+      "cuisine": "Kebap & Türk Mutfağı",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r102",
+      "userId": "4",
+      "name": "Burger Station",
+      "cuisine": "Burger & Fast Food",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r103",
+      "userId": "5",
+      "name": "Bella Pizza",
+      "cuisine": "İtalyan & Pizza",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r104",
+      "userId": "9",
+      "name": "Hacıoğlu Lahmacun",
+      "cuisine": "Kebap & Türk Mutfağı",
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r105",
+      "userId": "10",
+      "name": "Crunch Chicken",
+      "cuisine": "Hatay Mutfağı",
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r106",
+      "userId": "11",
+      "name": "Napoli Wood Fired Pizza",
+      "cuisine": "İtalyan & Pizza",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r107",
+      "userId": "12",
+      "name": "Sweet Dreams Waffle",
+      "cuisine": "Tatlı & Kahve",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r108",
+      "userId": "13",
+      "name": "Kahve Dünyası",
+      "cuisine": "Tatlı & Kahve",
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r109",
+      "userId": "14",
+      "name": "Tokyo Sushi",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r110",
+      "userId": "15",
+      "name": "Sultanahmet Köftecisi",
+      "cuisine": "Kebap & Türk Mutfağı",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r111",
+      "userId": "16",
+      "name": "Hatay Dürüm Dünyası",
+      "cuisine": "Kebap & Türk Mutfağı",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r112",
+      "userId": "17",
+      "name": "Burger Lab",
+      "cuisine": "Burger & Fast Food",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r113",
+      "userId": "18",
+      "name": "Hot Wings Chicken",
+      "cuisine": "Burger & Fast Food",
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r114",
+      "userId": "19",
+      "name": "Pizza Loca",
+      "cuisine": "İtalyan & Pizza",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r115",
+      "userId": "20",
+      "name": "Pizzeria Il Caminetto",
+      "cuisine": "İtalyan & Pizza",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r116",
+      "userId": "21",
+      "name": "Baklavacı Güllüoğlu",
+      "cuisine": "Tatlı & Kahve",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r117",
+      "userId": "22",
+      "name": "Sushi Express",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r118",
+      "userId": "23",
+      "name": "Wok & Walk",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r119",
+      "userId": "24",
+      "name": "Lezzet Burgerhouse Şişli",
+      "cuisine": "Burger & Fast Food",
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r120",
+      "userId": "25",
+      "name": "Meşhur Tandır Levent",
+      "cuisine": "Kebap & Türk Mutfağı",
+      "rating": 4.1,
+      "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r121",
+      "userId": "26",
+      "name": "Gurme Sushi Bar Maltepe",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r122",
+      "userId": "27",
+      "name": "Hakiki Burgerhouse Maltepe",
+      "cuisine": "Burger & Fast Food",
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r123",
+      "userId": "28",
+      "name": "Şehir Dragon Maltepe",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r124",
+      "userId": "29",
+      "name": "Gurme Chocolatier Üsküdar",
+      "cuisine": "Tatlı & Kahve",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r125",
+      "userId": "30",
+      "name": "Gurme Dragon Levent",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r126",
+      "userId": "31",
+      "name": "Saray Dürüm Evi Maltepe",
+      "cuisine": "Kebap & Türk Mutfağı",
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": false
+    },
+    {
+      "id": "r127",
+      "userId": "32",
+      "name": "Şehir Fryer Kadıköy",
+      "cuisine": "Burger & Fast Food",
+      "rating": 4.1,
+      "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r128",
+      "userId": "33",
+      "name": "Öz Zen Maltepe",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r129",
+      "userId": "34",
+      "name": "Saray Tandır Bakırköy",
+      "cuisine": "Kebap & Türk Mutfağı",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r130",
+      "userId": "35",
+      "name": "Meşhur Joint Maltepe",
+      "cuisine": "Burger & Fast Food",
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r131",
+      "userId": "36",
+      "name": "Hakiki Dragon Üsküdar",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r132",
+      "userId": "37",
+      "name": "Şehir Slice Levent",
+      "cuisine": "İtalyan & Pizza",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r133",
+      "userId": "38",
+      "name": "Gurme Dürüm Evi Bakırköy",
+      "cuisine": "Kebap & Türk Mutfağı",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1561651823-34feb02250e4?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": false
+    },
+    {
+      "id": "r134",
+      "userId": "39",
+      "name": "Şehir Kahvecisi Şişli",
+      "cuisine": "Tatlı & Kahve",
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r135",
+      "userId": "40",
+      "name": "Kral Dinner Kadıköy",
+      "cuisine": "Burger & Fast Food",
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r136",
+      "userId": "41",
+      "name": "Saray Trattoria Kadıköy",
+      "cuisine": "İtalyan & Pizza",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": false
+    },
+    {
+      "id": "r137",
+      "userId": "42",
+      "name": "Tarihi Waffle Bar Bakırköy",
+      "cuisine": "Tatlı & Kahve",
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r138",
+      "userId": "43",
+      "name": "Şehir Sofrası Maltepe",
+      "cuisine": "Kebap & Türk Mutfağı",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r139",
+      "userId": "44",
+      "name": "Şehir Wok Levent",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r140",
+      "userId": "45",
+      "name": "Şehir Burgerhouse Maltepe",
+      "cuisine": "Burger & Fast Food",
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r141",
+      "userId": "46",
+      "name": "Tarihi Sushi Bar Bakırköy",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r142",
+      "userId": "47",
+      "name": "Has Zen Maltepe",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r143",
+      "userId": "48",
+      "name": "Kral Fryer Maltepe",
+      "cuisine": "Burger & Fast Food",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r144",
+      "userId": "49",
+      "name": "Hakiki Kebapçı Beşiktaş",
+      "cuisine": "Kebap & Türk Mutfağı",
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r145",
+      "userId": "50",
+      "name": "Öz Bite Levent",
+      "cuisine": "Burger & Fast Food",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r146",
+      "userId": "51",
+      "name": "Tarihi Chocolatier Maltepe",
+      "cuisine": "Tatlı & Kahve",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r147",
+      "userId": "52",
+      "name": "Lezzet Dragon Maltepe",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r148",
+      "userId": "53",
+      "name": "Tarihi Trattoria Şişli",
+      "cuisine": "İtalyan & Pizza",
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r149",
+      "userId": "54",
+      "name": "Gurme Waffle Bar Levent",
+      "cuisine": "Tatlı & Kahve",
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r150",
+      "userId": "55",
+      "name": "Öz Slice Beşiktaş",
+      "cuisine": "İtalyan & Pizza",
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": false
+    },
+    {
+      "id": "r151",
+      "userId": "56",
+      "name": "Saray Tandır Bakırköy",
+      "cuisine": "Kebap & Türk Mutfağı",
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r152",
+      "userId": "57",
+      "name": "Saray Fırını Levent",
+      "cuisine": "Tatlı & Kahve",
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r153",
+      "userId": "58",
+      "name": "Gurme Joint Şişli",
+      "cuisine": "Burger & Fast Food",
+      "rating": 4.1,
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r154",
+      "userId": "59",
+      "name": "Hakiki Zen Beylikdüzü",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.1,
+      "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": false
+    },
+    {
+      "id": "r155",
+      "userId": "60",
+      "name": "Saray Trattoria Beylikdüzü",
+      "cuisine": "İtalyan & Pizza",
+      "rating": 4.2,
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": false
+    },
+    {
+      "id": "r156",
+      "userId": "61",
+      "name": "Lezzet Pizzeria Beşiktaş",
+      "cuisine": "İtalyan & Pizza",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    },
+    {
+      "id": "r157",
+      "userId": "62",
+      "name": "Lezzet Dragon Beşiktaş",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": false
+    },
+    {
+      "id": "r158",
+      "userId": "63",
+      "name": "Gurme Sushi Bar Şişli",
+      "cuisine": "Uzak Doğu & Sushi",
+      "rating": 4,
+      "image": "https://images.unsplash.com/photo-1611143669185-af224c5e3252?auto=format&fit=crop&w=600&h=400&q=80",
+      "isActive": true
+    }
+  ],
+  "menuItems": [
+    {
+      "id": "m1",
+      "restaurantId": "r101",
+      "name": "Adana Dürüm",
+      "price": 180,
+      "description": "Zırh kıyması, közlenmiş biber ve yeşillik ile"
+    },
+    {
+      "id": "m2",
+      "restaurantId": "r101",
+      "name": "Urfa Kebap",
+      "price": 190,
+      "description": "Közlenmiş domates ve biber ile servis edilir"
+    },
+    {
+      "id": "m3",
+      "restaurantId": "r101",
+      "name": "Künefe",
+      "price": 110,
+      "description": "Antep fıstıklı, şerbetli sıcak tatlı"
+    },
+    {
+      "id": "m4",
+      "restaurantId": "r102",
+      "name": "Classic Burger",
+      "price": 160,
+      "description": "150gr köfte, marul, domates, turşu ve özel sos"
+    },
+    {
+      "id": "m5",
+      "restaurantId": "r102",
+      "name": "Cheeseburger",
+      "price": 175,
+      "description": "150gr köfte, cheddar peyniri, karamelize soğan ve sos"
+    },
+    {
+      "id": "m6",
+      "restaurantId": "r102",
+      "name": "Patates Kızartması",
+      "price": 60,
+      "description": "Baharatlı çıtır patates dilimleri"
+    },
+    {
+      "id": "m7",
+      "restaurantId": "r103",
+      "name": "Margherita Pizza",
+      "price": 210,
+      "description": "Özel domates sosu, mozzarella peyniri ve taze fesleğen"
+    },
+    {
+      "id": "m8",
+      "restaurantId": "r103",
+      "name": "Pepperoni Pizza",
+      "price": 240,
+      "description": "Mozzarella peyniri, dana pepperoni ve acı yağ"
+    },
+    {
+      "id": "m9",
+      "restaurantId": "r104",
+      "name": "Antep Lahmacun",
+      "price": 65,
+      "description": "Sarımsaklı zırh kıyması, maydanoz ve baharatlar ile çıtır hamur"
+    },
+    {
+      "id": "m10",
+      "restaurantId": "r104",
+      "name": "Beyti Kebap",
+      "price": 260,
+      "description": "Yufkaya sarılı kebap dilimleri, yoğurt ve tereyağı sosu ile"
+    },
+    {
+      "id": "m11",
+      "restaurantId": "r105",
+      "name": "Çıtır Tavuk Kovası",
+      "price": 195,
+      "description": "8 adet çıtır tavuk fileto, patates kızartması ve soslar"
+    },
+    {
+      "id": "m12",
+      "restaurantId": "r105",
+      "name": "Tavuklu Burger",
+      "price": 140,
+      "description": "Çıtır tavuk göğsü, marul, mayonez ve hamburger ekmeği"
+    },
+    {
+      "id": "m13",
+      "restaurantId": "r106",
+      "name": "Quattro Formaggi",
+      "price": 260,
+      "description": "Mozzarella, parmesan, gorgonzola ve keçi peyniri ile"
+    },
+    {
+      "id": "m14",
+      "restaurantId": "r107",
+      "name": "Klasik Waffle",
+      "price": 120,
+      "description": "Çikolata sosu, çilek, muz, kivi ve fındık parçacıkları"
+    },
+    {
+      "id": "m15",
+      "restaurantId": "r107",
+      "name": "Fıstık Rüyası",
+      "price": 135,
+      "description": "Antep fıstığı kreması, fıstık ezmesi ve muz dilimleri"
+    },
+    {
+      "id": "m16",
+      "restaurantId": "r108",
+      "name": "Latte",
+      "price": 75,
+      "description": "Özel espresso çekirdekleri ve taze süt köpüğü ile"
+    },
+    {
+      "id": "m17",
+      "restaurantId": "r108",
+      "name": "Çikolatalı Brownie",
+      "price": 95,
+      "description": "Sıcak çikolata sosu ve vanilyalı dondurma ile servis edilir"
+    },
+    {
+      "id": "m18",
+      "restaurantId": "r109",
+      "name": "California Roll (8 Adet)",
+      "price": 220,
+      "description": "Yengeç eti, avokado, salatalık, mayonez ve tobiko"
+    },
+    {
+      "id": "m19",
+      "restaurantId": "r109",
+      "name": "Tavuklu Noodle",
+      "price": 185,
+      "description": "Wok tavada sotelenmiş tavuk dilimleri, sebzeler ve noodle"
+    },
+    {
+      "id": "m20",
+      "restaurantId": "r110",
+      "name": "Sultanahmet Porsiyon Köfte",
+      "price": 170,
+      "description": "6 adet ızgara köfte, közlenmiş biber ve pilav ile"
+    },
+    {
+      "id": "m21",
+      "restaurantId": "r110",
+      "name": "Piyaz",
+      "price": 70,
+      "description": "Tahinli sos, soğan, maydanoz ve haşlanmış yumurta ile"
+    },
+    {
+      "id": "m22",
+      "restaurantId": "r111",
+      "name": "Hatay Dürüm",
+      "price": 140,
+      "description": "Özel domates sosu, mayonez, patates ve turşulu çıtır lavaş dürüm"
+    },
+    {
+      "id": "m23",
+      "restaurantId": "r112",
+      "name": "Mantar & Trüf Burger",
+      "price": 220,
+      "description": "180gr dana köfte, karamelize mantarlar ve trüf mayonez"
+    },
+    {
+      "id": "m24",
+      "restaurantId": "r113",
+      "name": "Acılı Kanat Kovası",
+      "price": 180,
+      "description": "12 adet acılı çıtır tavuk kanadı ve barbekü sos"
+    },
+    {
+      "id": "m25",
+      "restaurantId": "r114",
+      "name": "Pizza Fungi",
+      "price": 210,
+      "description": "Domates sosu, mozzarella ve taze kültür mantarları"
+    },
+    {
+      "id": "m26",
+      "restaurantId": "r115",
+      "name": "Napolitana Pizza",
+      "price": 250,
+      "description": "Manda mozzarellası, domates sosu, ançüez ve kapari"
+    },
+    {
+      "id": "m27",
+      "restaurantId": "r116",
+      "name": "Fıstıklı Baklava (Porsiyon)",
+      "price": 130,
+      "description": "4 adet bol Antep fıstıklı çıtır baklava dilimi"
+    },
+    {
+      "id": "m28",
+      "restaurantId": "r117",
+      "name": "Salmon Maki (6 Adet)",
+      "price": 190,
+      "description": "Taze somon balığı ve nori yosununa sarılı sushi"
+    },
+    {
+      "id": "m29",
+      "restaurantId": "r119",
+      "name": "Double Cheeseburger",
+      "price": 230,
+      "description": "Çift köfte, çift cheddar, turşu"
+    },
+    {
+      "id": "m30",
+      "restaurantId": "r119",
+      "name": "Onion Rings",
+      "price": 65,
+      "description": "10 adet çıtır soğan halkası ve sos"
+    },
+    {
+      "id": "m31",
+      "restaurantId": "r119",
+      "name": "Barbekü Tavuk Burger",
+      "price": 160,
+      "description": "Çıtır fileto ve barbekü soslu"
+    },
+    {
+      "id": "m32",
+      "restaurantId": "r120",
+      "name": "Adana Kebap",
+      "price": 195,
+      "description": "Zırh kıyması ve közlenmiş sebzelerle"
+    },
+    {
+      "id": "m33",
+      "restaurantId": "r120",
+      "name": "Urfa Dürüm",
+      "price": 165,
+      "description": "Lavaş arası Urfa kebabı ve yeşillik"
+    },
+    {
+      "id": "m34",
+      "restaurantId": "r120",
+      "name": "Çöp Şiş",
+      "price": 210,
+      "description": "Közlenmiş domates ve pilav eşliğinde"
+    },
+    {
+      "id": "m35",
+      "restaurantId": "r121",
+      "name": "Veggie Roll (8 Adet)",
+      "price": 180,
+      "description": "Avokado, havuç, salatalık ve susamlı roll"
+    },
+    {
+      "id": "m36",
+      "restaurantId": "r121",
+      "name": "Acılı Tavuklu Wok",
+      "price": 195,
+      "description": "Sebzeli, acılı tavuklu pirinç wok"
+    },
+    {
+      "id": "m37",
+      "restaurantId": "r121",
+      "name": "Karidesli Noodle",
+      "price": 220,
+      "description": "Jumbo karidesli ve soya soslu Noodle"
+    },
+    {
+      "id": "m38",
+      "restaurantId": "r122",
+      "name": "Double Cheeseburger",
+      "price": 230,
+      "description": "Çift köfte, çift cheddar, turşu"
+    },
+    {
+      "id": "m39",
+      "restaurantId": "r122",
+      "name": "Onion Rings",
+      "price": 65,
+      "description": "10 adet çıtır soğan halkası ve sos"
+    },
+    {
+      "id": "m40",
+      "restaurantId": "r122",
+      "name": "Barbekü Tavuk Burger",
+      "price": 160,
+      "description": "Çıtır fileto ve barbekü soslu"
+    },
+    {
+      "id": "m41",
+      "restaurantId": "r123",
+      "name": "Veggie Roll (8 Adet)",
+      "price": 180,
+      "description": "Avokado, havuç, salatalık ve susamlı roll"
+    },
+    {
+      "id": "m42",
+      "restaurantId": "r123",
+      "name": "Acılı Tavuklu Wok",
+      "price": 195,
+      "description": "Sebzeli, acılı tavuklu pirinç wok"
+    },
+    {
+      "id": "m43",
+      "restaurantId": "r123",
+      "name": "Karidesli Noodle",
+      "price": 220,
+      "description": "Jumbo karidesli ve soya soslu Noodle"
+    },
+    {
+      "id": "m44",
+      "restaurantId": "r124",
+      "name": "Fıstıklı Katmer",
+      "price": 140,
+      "description": "Kuru kaymaklı, Antep fıstıklı sıcak çıtır katmer"
+    },
+    {
+      "id": "m45",
+      "restaurantId": "r124",
+      "name": "Americano",
+      "price": 65,
+      "description": "Sıcak veya buzlu taze demlenmiş kahve"
+    },
+    {
+      "id": "m46",
+      "restaurantId": "r124",
+      "name": "Mocha",
+      "price": 80,
+      "description": "Çikolatalı ve süt köpüklü espresso"
+    },
+    {
+      "id": "m47",
+      "restaurantId": "r125",
+      "name": "Veggie Roll (8 Adet)",
+      "price": 180,
+      "description": "Avokado, havuç, salatalık ve susamlı roll"
+    },
+    {
+      "id": "m48",
+      "restaurantId": "r125",
+      "name": "Acılı Tavuklu Wok",
+      "price": 195,
+      "description": "Sebzeli, acılı tavuklu pirinç wok"
+    },
+    {
+      "id": "m49",
+      "restaurantId": "r125",
+      "name": "Karidesli Noodle",
+      "price": 220,
+      "description": "Jumbo karidesli ve soya soslu Noodle"
+    },
+    {
+      "id": "m50",
+      "restaurantId": "r126",
+      "name": "Adana Kebap",
+      "price": 195,
+      "description": "Zırh kıyması ve közlenmiş sebzelerle"
+    },
+    {
+      "id": "m51",
+      "restaurantId": "r126",
+      "name": "Urfa Dürüm",
+      "price": 165,
+      "description": "Lavaş arası Urfa kebabı ve yeşillik"
+    },
+    {
+      "id": "m52",
+      "restaurantId": "r126",
+      "name": "Çöp Şiş",
+      "price": 210,
+      "description": "Közlenmiş domates ve pilav eşliğinde"
+    },
+    {
+      "id": "m53",
+      "restaurantId": "r127",
+      "name": "Double Cheeseburger",
+      "price": 230,
+      "description": "Çift köfte, çift cheddar, turşu"
+    },
+    {
+      "id": "m54",
+      "restaurantId": "r127",
+      "name": "Onion Rings",
+      "price": 65,
+      "description": "10 adet çıtır soğan halkası ve sos"
+    },
+    {
+      "id": "m55",
+      "restaurantId": "r127",
+      "name": "Barbekü Tavuk Burger",
+      "price": 160,
+      "description": "Çıtır fileto ve barbekü soslu"
+    },
+    {
+      "id": "m56",
+      "restaurantId": "r128",
+      "name": "Veggie Roll (8 Adet)",
+      "price": 180,
+      "description": "Avokado, havuç, salatalık ve susamlı roll"
+    },
+    {
+      "id": "m57",
+      "restaurantId": "r128",
+      "name": "Acılı Tavuklu Wok",
+      "price": 195,
+      "description": "Sebzeli, acılı tavuklu pirinç wok"
+    },
+    {
+      "id": "m58",
+      "restaurantId": "r128",
+      "name": "Karidesli Noodle",
+      "price": 220,
+      "description": "Jumbo karidesli ve soya soslu Noodle"
+    },
+    {
+      "id": "m59",
+      "restaurantId": "r129",
+      "name": "Adana Kebap",
+      "price": 195,
+      "description": "Zırh kıyması ve közlenmiş sebzelerle"
+    },
+    {
+      "id": "m60",
+      "restaurantId": "r129",
+      "name": "Urfa Dürüm",
+      "price": 165,
+      "description": "Lavaş arası Urfa kebabı ve yeşillik"
+    },
+    {
+      "id": "m61",
+      "restaurantId": "r129",
+      "name": "Çöp Şiş",
+      "price": 210,
+      "description": "Közlenmiş domates ve pilav eşliğinde"
+    },
+    {
+      "id": "m62",
+      "restaurantId": "r130",
+      "name": "Double Cheeseburger",
+      "price": 230,
+      "description": "Çift köfte, çift cheddar, turşu"
+    },
+    {
+      "id": "m63",
+      "restaurantId": "r130",
+      "name": "Onion Rings",
+      "price": 65,
+      "description": "10 adet çıtır soğan halkası ve sos"
+    },
+    {
+      "id": "m64",
+      "restaurantId": "r130",
+      "name": "Barbekü Tavuk Burger",
+      "price": 160,
+      "description": "Çıtır fileto ve barbekü soslu"
+    },
+    {
+      "id": "m65",
+      "restaurantId": "r131",
+      "name": "Veggie Roll (8 Adet)",
+      "price": 180,
+      "description": "Avokado, havuç, salatalık ve susamlı roll"
+    },
+    {
+      "id": "m66",
+      "restaurantId": "r131",
+      "name": "Acılı Tavuklu Wok",
+      "price": 195,
+      "description": "Sebzeli, acılı tavuklu pirinç wok"
+    },
+    {
+      "id": "m67",
+      "restaurantId": "r131",
+      "name": "Karidesli Noodle",
+      "price": 220,
+      "description": "Jumbo karidesli ve soya soslu Noodle"
+    },
+    {
+      "id": "m68",
+      "restaurantId": "r132",
+      "name": "Pizza Turco",
+      "price": 240,
+      "description": "Sucuk, mantar, mısır ve mozzarella"
+    },
+    {
+      "id": "m69",
+      "restaurantId": "r132",
+      "name": "Spaghetti Bolognese",
+      "price": 180,
+      "description": "Kıymalı bolonez soslu İtalyan makarnası"
+    },
+    {
+      "id": "m70",
+      "restaurantId": "r132",
+      "name": "Tiramisu",
+      "price": 95,
+      "description": "Espresso ve mascarpone peynirli orijinal tatlı"
+    },
+    {
+      "id": "m71",
+      "restaurantId": "r133",
+      "name": "Adana Kebap",
+      "price": 195,
+      "description": "Zırh kıyması ve közlenmiş sebzelerle"
+    },
+    {
+      "id": "m72",
+      "restaurantId": "r133",
+      "name": "Urfa Dürüm",
+      "price": 165,
+      "description": "Lavaş arası Urfa kebabı ve yeşillik"
+    },
+    {
+      "id": "m73",
+      "restaurantId": "r133",
+      "name": "Çöp Şiş",
+      "price": 210,
+      "description": "Közlenmiş domates ve pilav eşliğinde"
+    },
+    {
+      "id": "m74",
+      "restaurantId": "r134",
+      "name": "Fıstıklı Katmer",
+      "price": 140,
+      "description": "Kuru kaymaklı, Antep fıstıklı sıcak çıtır katmer"
+    },
+    {
+      "id": "m75",
+      "restaurantId": "r134",
+      "name": "Americano",
+      "price": 65,
+      "description": "Sıcak veya buzlu taze demlenmiş kahve"
+    },
+    {
+      "id": "m76",
+      "restaurantId": "r134",
+      "name": "Mocha",
+      "price": 80,
+      "description": "Çikolatalı ve süt köpüklü espresso"
+    },
+    {
+      "id": "m77",
+      "restaurantId": "r135",
+      "name": "Double Cheeseburger",
+      "price": 230,
+      "description": "Çift köfte, çift cheddar, turşu"
+    },
+    {
+      "id": "m78",
+      "restaurantId": "r135",
+      "name": "Onion Rings",
+      "price": 65,
+      "description": "10 adet çıtır soğan halkası ve sos"
+    },
+    {
+      "id": "m79",
+      "restaurantId": "r135",
+      "name": "Barbekü Tavuk Burger",
+      "price": 160,
+      "description": "Çıtır fileto ve barbekü soslu"
+    },
+    {
+      "id": "m80",
+      "restaurantId": "r136",
+      "name": "Pizza Turco",
+      "price": 240,
+      "description": "Sucuk, mantar, mısır ve mozzarella"
+    },
+    {
+      "id": "m81",
+      "restaurantId": "r136",
+      "name": "Spaghetti Bolognese",
+      "price": 180,
+      "description": "Kıymalı bolonez soslu İtalyan makarnası"
+    },
+    {
+      "id": "m82",
+      "restaurantId": "r136",
+      "name": "Tiramisu",
+      "price": 95,
+      "description": "Espresso ve mascarpone peynirli orijinal tatlı"
+    },
+    {
+      "id": "m83",
+      "restaurantId": "r137",
+      "name": "Fıstıklı Katmer",
+      "price": 140,
+      "description": "Kuru kaymaklı, Antep fıstıklı sıcak çıtır katmer"
+    },
+    {
+      "id": "m84",
+      "restaurantId": "r137",
+      "name": "Americano",
+      "price": 65,
+      "description": "Sıcak veya buzlu taze demlenmiş kahve"
+    },
+    {
+      "id": "m85",
+      "restaurantId": "r137",
+      "name": "Mocha",
+      "price": 80,
+      "description": "Çikolatalı ve süt köpüklü espresso"
+    },
+    {
+      "id": "m86",
+      "restaurantId": "r138",
+      "name": "Adana Kebap",
+      "price": 195,
+      "description": "Zırh kıyması ve közlenmiş sebzelerle"
+    },
+    {
+      "id": "m87",
+      "restaurantId": "r138",
+      "name": "Urfa Dürüm",
+      "price": 165,
+      "description": "Lavaş arası Urfa kebabı ve yeşillik"
+    },
+    {
+      "id": "m88",
+      "restaurantId": "r138",
+      "name": "Çöp Şiş",
+      "price": 210,
+      "description": "Közlenmiş domates ve pilav eşliğinde"
+    },
+    {
+      "id": "m89",
+      "restaurantId": "r139",
+      "name": "Veggie Roll (8 Adet)",
+      "price": 180,
+      "description": "Avokado, havuç, salatalık ve susamlı roll"
+    },
+    {
+      "id": "m90",
+      "restaurantId": "r139",
+      "name": "Acılı Tavuklu Wok",
+      "price": 195,
+      "description": "Sebzeli, acılı tavuklu pirinç wok"
+    },
+    {
+      "id": "m91",
+      "restaurantId": "r139",
+      "name": "Karidesli Noodle",
+      "price": 220,
+      "description": "Jumbo karidesli ve soya soslu Noodle"
+    },
+    {
+      "id": "m92",
+      "restaurantId": "r140",
+      "name": "Double Cheeseburger",
+      "price": 230,
+      "description": "Çift köfte, çift cheddar, turşu"
+    },
+    {
+      "id": "m93",
+      "restaurantId": "r140",
+      "name": "Onion Rings",
+      "price": 65,
+      "description": "10 adet çıtır soğan halkası ve sos"
+    },
+    {
+      "id": "m94",
+      "restaurantId": "r140",
+      "name": "Barbekü Tavuk Burger",
+      "price": 160,
+      "description": "Çıtır fileto ve barbekü soslu"
+    },
+    {
+      "id": "m95",
+      "restaurantId": "r141",
+      "name": "Veggie Roll (8 Adet)",
+      "price": 180,
+      "description": "Avokado, havuç, salatalık ve susamlı roll"
+    },
+    {
+      "id": "m96",
+      "restaurantId": "r141",
+      "name": "Acılı Tavuklu Wok",
+      "price": 195,
+      "description": "Sebzeli, acılı tavuklu pirinç wok"
+    },
+    {
+      "id": "m97",
+      "restaurantId": "r141",
+      "name": "Karidesli Noodle",
+      "price": 220,
+      "description": "Jumbo karidesli ve soya soslu Noodle"
+    },
+    {
+      "id": "m98",
+      "restaurantId": "r142",
+      "name": "Veggie Roll (8 Adet)",
+      "price": 180,
+      "description": "Avokado, havuç, salatalık ve susamlı roll"
+    },
+    {
+      "id": "m99",
+      "restaurantId": "r142",
+      "name": "Acılı Tavuklu Wok",
+      "price": 195,
+      "description": "Sebzeli, acılı tavuklu pirinç wok"
+    },
+    {
+      "id": "m100",
+      "restaurantId": "r142",
+      "name": "Karidesli Noodle",
+      "price": 220,
+      "description": "Jumbo karidesli ve soya soslu Noodle"
+    },
+    {
+      "id": "m101",
+      "restaurantId": "r143",
+      "name": "Double Cheeseburger",
+      "price": 230,
+      "description": "Çift köfte, çift cheddar, turşu"
+    },
+    {
+      "id": "m102",
+      "restaurantId": "r143",
+      "name": "Onion Rings",
+      "price": 65,
+      "description": "10 adet çıtır soğan halkası ve sos"
+    },
+    {
+      "id": "m103",
+      "restaurantId": "r143",
+      "name": "Barbekü Tavuk Burger",
+      "price": 160,
+      "description": "Çıtır fileto ve barbekü soslu"
+    },
+    {
+      "id": "m104",
+      "restaurantId": "r144",
+      "name": "Adana Kebap",
+      "price": 195,
+      "description": "Zırh kıyması ve közlenmiş sebzelerle"
+    },
+    {
+      "id": "m105",
+      "restaurantId": "r144",
+      "name": "Urfa Dürüm",
+      "price": 165,
+      "description": "Lavaş arası Urfa kebabı ve yeşillik"
+    },
+    {
+      "id": "m106",
+      "restaurantId": "r144",
+      "name": "Çöp Şiş",
+      "price": 210,
+      "description": "Közlenmiş domates ve pilav eşliğinde"
+    },
+    {
+      "id": "m107",
+      "restaurantId": "r145",
+      "name": "Double Cheeseburger",
+      "price": 230,
+      "description": "Çift köfte, çift cheddar, turşu"
+    },
+    {
+      "id": "m108",
+      "restaurantId": "r145",
+      "name": "Onion Rings",
+      "price": 65,
+      "description": "10 adet çıtır soğan halkası ve sos"
+    },
+    {
+      "id": "m109",
+      "restaurantId": "r145",
+      "name": "Barbekü Tavuk Burger",
+      "price": 160,
+      "description": "Çıtır fileto ve barbekü soslu"
+    },
+    {
+      "id": "m110",
+      "restaurantId": "r146",
+      "name": "Fıstıklı Katmer",
+      "price": 140,
+      "description": "Kuru kaymaklı, Antep fıstıklı sıcak çıtır katmer"
+    },
+    {
+      "id": "m111",
+      "restaurantId": "r146",
+      "name": "Americano",
+      "price": 65,
+      "description": "Sıcak veya buzlu taze demlenmiş kahve"
+    },
+    {
+      "id": "m112",
+      "restaurantId": "r146",
+      "name": "Mocha",
+      "price": 80,
+      "description": "Çikolatalı ve süt köpüklü espresso"
+    },
+    {
+      "id": "m113",
+      "restaurantId": "r147",
+      "name": "Veggie Roll (8 Adet)",
+      "price": 180,
+      "description": "Avokado, havuç, salatalık ve susamlı roll"
+    },
+    {
+      "id": "m114",
+      "restaurantId": "r147",
+      "name": "Acılı Tavuklu Wok",
+      "price": 195,
+      "description": "Sebzeli, acılı tavuklu pirinç wok"
+    },
+    {
+      "id": "m115",
+      "restaurantId": "r147",
+      "name": "Karidesli Noodle",
+      "price": 220,
+      "description": "Jumbo karidesli ve soya soslu Noodle"
+    },
+    {
+      "id": "m116",
+      "restaurantId": "r148",
+      "name": "Pizza Turco",
+      "price": 240,
+      "description": "Sucuk, mantar, mısır ve mozzarella"
+    },
+    {
+      "id": "m117",
+      "restaurantId": "r148",
+      "name": "Spaghetti Bolognese",
+      "price": 180,
+      "description": "Kıymalı bolonez soslu İtalyan makarnası"
+    },
+    {
+      "id": "m118",
+      "restaurantId": "r148",
+      "name": "Tiramisu",
+      "price": 95,
+      "description": "Espresso ve mascarpone peynirli orijinal tatlı"
+    },
+    {
+      "id": "m119",
+      "restaurantId": "r149",
+      "name": "Fıstıklı Katmer",
+      "price": 140,
+      "description": "Kuru kaymaklı, Antep fıstıklı sıcak çıtır katmer"
+    },
+    {
+      "id": "m120",
+      "restaurantId": "r149",
+      "name": "Americano",
+      "price": 65,
+      "description": "Sıcak veya buzlu taze demlenmiş kahve"
+    },
+    {
+      "id": "m121",
+      "restaurantId": "r149",
+      "name": "Mocha",
+      "price": 80,
+      "description": "Çikolatalı ve süt köpüklü espresso"
+    },
+    {
+      "id": "m122",
+      "restaurantId": "r150",
+      "name": "Pizza Turco",
+      "price": 240,
+      "description": "Sucuk, mantar, mısır ve mozzarella"
+    },
+    {
+      "id": "m123",
+      "restaurantId": "r150",
+      "name": "Spaghetti Bolognese",
+      "price": 180,
+      "description": "Kıymalı bolonez soslu İtalyan makarnası"
+    },
+    {
+      "id": "m124",
+      "restaurantId": "r150",
+      "name": "Tiramisu",
+      "price": 95,
+      "description": "Espresso ve mascarpone peynirli orijinal tatlı"
+    },
+    {
+      "id": "m125",
+      "restaurantId": "r151",
+      "name": "Adana Kebap",
+      "price": 195,
+      "description": "Zırh kıyması ve közlenmiş sebzelerle"
+    },
+    {
+      "id": "m126",
+      "restaurantId": "r151",
+      "name": "Urfa Dürüm",
+      "price": 165,
+      "description": "Lavaş arası Urfa kebabı ve yeşillik"
+    },
+    {
+      "id": "m127",
+      "restaurantId": "r151",
+      "name": "Çöp Şiş",
+      "price": 210,
+      "description": "Közlenmiş domates ve pilav eşliğinde"
+    },
+    {
+      "id": "m128",
+      "restaurantId": "r152",
+      "name": "Fıstıklı Katmer",
+      "price": 140,
+      "description": "Kuru kaymaklı, Antep fıstıklı sıcak çıtır katmer"
+    },
+    {
+      "id": "m129",
+      "restaurantId": "r152",
+      "name": "Americano",
+      "price": 65,
+      "description": "Sıcak veya buzlu taze demlenmiş kahve"
+    },
+    {
+      "id": "m130",
+      "restaurantId": "r152",
+      "name": "Mocha",
+      "price": 80,
+      "description": "Çikolatalı ve süt köpüklü espresso"
+    },
+    {
+      "id": "m131",
+      "restaurantId": "r153",
+      "name": "Double Cheeseburger",
+      "price": 230,
+      "description": "Çift köfte, çift cheddar, turşu"
+    },
+    {
+      "id": "m132",
+      "restaurantId": "r153",
+      "name": "Onion Rings",
+      "price": 65,
+      "description": "10 adet çıtır soğan halkası ve sos"
+    },
+    {
+      "id": "m133",
+      "restaurantId": "r153",
+      "name": "Barbekü Tavuk Burger",
+      "price": 160,
+      "description": "Çıtır fileto ve barbekü soslu"
+    },
+    {
+      "id": "m134",
+      "restaurantId": "r154",
+      "name": "Veggie Roll (8 Adet)",
+      "price": 180,
+      "description": "Avokado, havuç, salatalık ve susamlı roll"
+    },
+    {
+      "id": "m135",
+      "restaurantId": "r154",
+      "name": "Acılı Tavuklu Wok",
+      "price": 195,
+      "description": "Sebzeli, acılı tavuklu pirinç wok"
+    },
+    {
+      "id": "m136",
+      "restaurantId": "r154",
+      "name": "Karidesli Noodle",
+      "price": 220,
+      "description": "Jumbo karidesli ve soya soslu Noodle"
+    },
+    {
+      "id": "m137",
+      "restaurantId": "r155",
+      "name": "Pizza Turco",
+      "price": 240,
+      "description": "Sucuk, mantar, mısır ve mozzarella"
+    },
+    {
+      "id": "m138",
+      "restaurantId": "r155",
+      "name": "Spaghetti Bolognese",
+      "price": 180,
+      "description": "Kıymalı bolonez soslu İtalyan makarnası"
+    },
+    {
+      "id": "m139",
+      "restaurantId": "r155",
+      "name": "Tiramisu",
+      "price": 95,
+      "description": "Espresso ve mascarpone peynirli orijinal tatlı"
+    },
+    {
+      "id": "m140",
+      "restaurantId": "r156",
+      "name": "Pizza Turco",
+      "price": 240,
+      "description": "Sucuk, mantar, mısır ve mozzarella"
+    },
+    {
+      "id": "m141",
+      "restaurantId": "r156",
+      "name": "Spaghetti Bolognese",
+      "price": 180,
+      "description": "Kıymalı bolonez soslu İtalyan makarnası"
+    },
+    {
+      "id": "m142",
+      "restaurantId": "r156",
+      "name": "Tiramisu",
+      "price": 95,
+      "description": "Espresso ve mascarpone peynirli orijinal tatlı"
+    },
+    {
+      "id": "m143",
+      "restaurantId": "r157",
+      "name": "Veggie Roll (8 Adet)",
+      "price": 180,
+      "description": "Avokado, havuç, salatalık ve susamlı roll"
+    },
+    {
+      "id": "m144",
+      "restaurantId": "r157",
+      "name": "Acılı Tavuklu Wok",
+      "price": 195,
+      "description": "Sebzeli, acılı tavuklu pirinç wok"
+    },
+    {
+      "id": "m145",
+      "restaurantId": "r157",
+      "name": "Karidesli Noodle",
+      "price": 220,
+      "description": "Jumbo karidesli ve soya soslu Noodle"
+    },
+    {
+      "id": "m146",
+      "restaurantId": "r158",
+      "name": "Veggie Roll (8 Adet)",
+      "price": 180,
+      "description": "Avokado, havuç, salatalık ve susamlı roll"
+    },
+    {
+      "id": "m147",
+      "restaurantId": "r158",
+      "name": "Acılı Tavuklu Wok",
+      "price": 195,
+      "description": "Sebzeli, acılı tavuklu pirinç wok"
+    },
+    {
+      "id": "m148",
+      "restaurantId": "r158",
+      "name": "Karidesli Noodle",
+      "price": 220,
+      "description": "Jumbo karidesli ve soya soslu Noodle"
+    }
+  ],
+  "orders": [
+    {
+      "id": "o501",
+      "customerId": "1",
+      "restaurantId": "r101",
+      "items": [
+        {
+          "menuItemId": "m1",
+          "name": "Adana Dürüm",
+          "quantity": 2,
+          "price": 180,
+          "customizations": {
+            "removedIngredients": [
+              "Soğan"
+            ],
+            "note": "Lütfen soğansız olsun."
+          }
+        }
+      ],
+      "totalPrice": 360,
+      "status": "delivered",
+      "date": "2026-07-02"
+    },
+    {
+      "id": "o502",
+      "customerId": "1",
+      "restaurantId": "r102",
+      "items": [
+        {
+          "menuItemId": "m4",
+          "name": "Classic Burger",
+          "quantity": 1,
+          "price": 160
+        },
+        {
+          "menuItemId": "m6",
+          "name": "Patates Kızartması",
+          "quantity": 1,
+          "price": 60
+        }
+      ],
+      "totalPrice": 220,
+      "status": "delivered",
+      "date": "2026-07-01"
+    },
+    {
+      "id": "o503",
+      "customerId": "6",
+      "restaurantId": "r105",
+      "items": [
+        {
+          "menuItemId": "m11",
+          "name": "Çıtır Tavuk Kovası",
+          "quantity": 1,
+          "price": 195
+        }
+      ],
+      "totalPrice": 195,
+      "status": "pending",
+      "date": "2026-07-02"
+    },
+    {
+      "id": "o504",
+      "customerId": "7",
+      "restaurantId": "r108",
+      "items": [
+        {
+          "menuItemId": "m17",
+          "name": "Çikolatalı Brownie",
+          "quantity": 2,
+          "price": 95
+        }
+      ],
+      "totalPrice": 190,
+      "status": "delivered",
+      "date": "2026-06-30"
+    },
+    {
+      "id": "6f08J9_suMQ",
+      "customerId": "1",
+      "restaurantId": "r101",
+      "items": [
+        {
+          "menuItemId": "m1",
+          "name": "Adana Dürüm",
+          "quantity": 1,
+          "price": 180,
+          "customizations": {
+            "removedIngredients": [
+              "Köz Biber",
+              "Maydanoz"
+            ],
+            "note": ""
+          }
+        }
+      ],
+      "totalPrice": 180,
+      "status": "preparing",
+      "note": "",
+      "date": "2026-07-02"
+    },
+    {
+      "id": "BaKqGWdjI98",
+      "customerId": "1",
+      "restaurantId": "r102",
+      "items": [
+        {
+          "menuItemId": "m4",
+          "name": "Classic Burger",
+          "quantity": 1,
+          "price": 160,
+          "customizations": {
+            "removedIngredients": [
+              "Cheddar",
+              "Domates",
+              "Ketçap"
+            ],
+            "note": ""
+          }
+        },
+        {
+          "menuItemId": "m6",
+          "name": "Patates Kızartması",
+          "quantity": 1,
+          "price": 60,
+          "customizations": {
+            "removedIngredients": [],
+            "note": ""
+          }
+        }
+      ],
+      "totalPrice": 220,
+      "status": "pending",
+      "note": "adfhwertywrtywrey34",
+      "date": "2026-07-02"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
