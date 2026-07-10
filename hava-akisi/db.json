@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@havaakisi.com",
+      "password": "admin",
+      "role": "admin",
+      "name": "Calfin Danang",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&h=150&q=80"
+    },
+    {
+      "id": "2",
+      "email": "editor@havaakisi.com",
+      "password": "editor",
+      "role": "editor",
+      "name": "Ayşe Yılmaz",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80"
+    },
+    {
+      "id": "3",
+      "email": "user@havaakisi.com",
+      "password": "user",
+      "role": "user",
+      "name": "Mehmet Demir",
+      "avatar": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=150&h=150&q=80"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "1",
+      "city": "İstanbul",
+      "severity": "danger",
+      "message": "Kırmızı Kodlu Uyarı: İstanbul genelinde kuvvetli fırtına ve ani sağanak yağış bekleniyor. Çatı uçması ve su baskınlarına karşı tedbirli olun!",
+      "active": true
+    }
+  ],
+  "favorites": [
+    {
+      "id": "2",
+      "userId": 1,
+      "cityName": "İzmir"
+    },
+    {
+      "id": "3",
+      "userId": 1,
+      "cityName": "Ankara"
+    },
+    {
+      "userId": "3",
+      "cityName": "İstanbul",
+      "id": "IEXA_OVV1no"
+    },
+    {
+      "userId": "3",
+      "cityName": "İstanbul",
+      "id": "yNKlu2PMixI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

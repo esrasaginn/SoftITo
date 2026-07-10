@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-bg-hover: rgba(255, 255, 255, 0.15);
+  --glass-bg-active: rgba(255, 255, 255, 0.22);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-border-focus: rgba(255, 255, 255, 0.3);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted: rgba(255, 255, 255, 0.45);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #0b0f19;
+}
+
+/* Cam Efektli (Glassmorphism) Kartlar ve Paneller */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  color: var(--text-primary);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.glass-panel-interactive:hover {
+  background: var(--glass-bg-hover);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Cam Efektli Giriş Kutuları (Inputs) ve Form Elemanları */
+.glass-input {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  color: var(--text-primary);
+  padding: 10px 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.glass-input::placeholder {
+  color: var(--text-muted);
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--glass-border-focus);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Cam Efektli Butonlar */
+.glass-btn {
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  color: var(--text-primary);
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.glass-btn:hover {
+  background: var(--glass-bg-hover);
+  border-color: var(--glass-border-focus);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.glass-btn:active {
+  background: var(--glass-bg-active);
+  transform: translateY(1px);
+}
+
+.glass-btn-primary {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.glass-btn-primary:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.glass-btn-danger {
+  background: rgba(220, 53, 69, 0.2);
+  border-color: rgba(220, 53, 69, 0.3);
+}
+
+.glass-btn-danger:hover {
+  background: rgba(220, 53, 69, 0.35);
+  border-color: rgba(220, 53, 69, 0.5);
+  box-shadow: 0 0 15px rgba(220, 53, 69, 0.2);
+}
+
+.glass-btn-warning {
+  background: rgba(255, 193, 7, 0.15);
+  border-color: rgba(255, 193, 7, 0.3);
+}
+
+.glass-btn-warning:hover {
+  background: rgba(255, 193, 7, 0.3);
+  border-color: rgba(255, 193, 7, 0.5);
+}
+
+/* Cam Efektli Tablo Elemanları */
+.glass-table {
+  width: 100%;
+  color: var(--text-primary);
+  border-collapse: collapse;
+}
+
+.glass-table th, .glass-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--glass-border);
+  text-align: left;
+}
+
+.glass-table th {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.glass-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Sol Menü (Sidebar) Navigasyon Stilleri */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px 12px;
+}
+
+.sidebar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, #fff 30%, rgba(255, 255, 255, 0.5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.sidebar-item-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.sidebar-item-link:hover {
+  color: var(--text-primary);
+  background: var(--glass-bg-hover);
+}
+
+.sidebar-item-link.active {
+  color: var(--text-primary);
+  background: var(--glass-bg-active);
+  border-left: 3px solid #fff;
+  box-shadow: inset 5px 0 10px -5px rgba(255, 255, 255, 0.3);
+}
+
+/* Cam Efektli Seçim Kutusu (Dropdown Select) */
+.glass-select {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  color: var(--text-primary);
+  padding: 10px 16px;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
+  padding-right: 40px;
+}
+
+.glass-select option {
+  background: #0f172a;
+  color: #fff;
+}
+
+.glass-select:focus {
+  border-color: var(--glass-border-focus);
+}
+
+/* Arayüz İçin Modern Kaydırma Çubuğu (Scrollbar) Stilleri */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Tasarım İyileştirmeleri */
+@media (max-width: 768px) {
+  .responsive-title {
+    font-size: 2.2rem !important;
+  }
+  .responsive-main {
+    padding: 16px 16px 80px 16px !important; /* Alt kısımda mobil navigasyon için pay bırakıldı */
+  }
+  .responsive-logo {
+    top: 16px !important;
+    left: 16px !important;
+    font-size: 1.5rem !important;
+  }
+  .responsive-nav {
+    bottom: 16px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    flex-direction: row !important;
+    gap: 32px !important;
+    background: rgba(15, 23, 42, 0.85) !important;
+    backdrop-filter: blur(12px) !important;
+    padding: 12px 24px !important;
+    border-radius: 50px !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+  }
+}
